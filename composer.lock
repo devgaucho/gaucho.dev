@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1ec9edc13c6bf89532b5c49263727a1",
+    "content-hash": "ea913ae6226820f6b4db5ad3771e67cf",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -118,6 +118,43 @@
                 "source": "https://github.com/devgaucho/env/tree/v0.2.0"
             },
             "time": "2023-01-29T20:29:07+00:00"
+        },
+        {
+            "name": "gaucho/kit",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgaucho/kit.git",
+                "reference": "7a4004d928aedaee9438d805c1085f44faff4fa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgaucho/kit/zipball/7a4004d928aedaee9438d805c1085f44faff4fa2",
+                "reference": "7a4004d928aedaee9438d805c1085f44faff4fa2",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gaucho\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "gaucho.dev",
+                    "email": "119246170+devgaucho@users.noreply.github.com"
+                }
+            ],
+            "description": "Funções básicas",
+            "support": {
+                "issues": "https://github.com/devgaucho/kit/issues",
+                "source": "https://github.com/devgaucho/kit/tree/v0.2.0"
+            },
+            "time": "2023-05-12T22:21:31+00:00"
         },
         {
             "name": "gaucho/mig",
