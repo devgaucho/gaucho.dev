@@ -1,0 +1,4 @@
+/.env
+/test*.php
+/todo.txt
+/vendor

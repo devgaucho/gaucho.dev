@@ -1,0 +1,12 @@
+{
+    "require": {
+        "catfan/medoo": "^2.1",
+        "gaucho/env": "^0.2.0",
+        "gaucho/mig": "^0.1.2"
+    },
+	"autoload": {
+		"psr-4": {
+			"src\\": "src/"
+		}
+	}
+}
