@@ -17,12 +17,13 @@ function controller($name){
 }
 
 $s=$Kit->segment();
+$m=$Kit->method();
 switch ($s[1]) {
 	case '/':
 		controller('Home')->get();
 		break;
 	case 'signin':
-		controller('Signin')->get();
+		controller('Signin')->$m();
 		break;		
 	default:
 		controller('NotFound')->get();

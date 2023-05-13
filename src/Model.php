@@ -2,8 +2,9 @@
 namespace src;
 
 use Medoo\Medoo;
+use gaucho\Kit;
 
-class Model{
+class Model extends Kit{
 	var $db;
 	function db(){
 		if(!is_object($this->db)){
