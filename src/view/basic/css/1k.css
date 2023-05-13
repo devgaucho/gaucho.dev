@@ -84,6 +84,10 @@ label {
 	font-weight: bold;
 }
 
+li{
+	line-height: 0em;
+}
+
 /* classes */
 .hide {
 	display: none;
