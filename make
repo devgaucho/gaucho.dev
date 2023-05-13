@@ -1,4 +1,5 @@
 # atualizar o código
+echo "atualizando código"
 git pull origin main
 
 # executar migrations
