@@ -15,3 +15,6 @@ RewriteRule ^(composer\.lock) - [F,L]
 RewriteRule ^(\.env) - [F,L]
 RewriteRule ^vendor/ - [F,L]
 RewriteRule ^.git/ - [F,L]
+
+# não listar arquivos
+Options -Indexes
