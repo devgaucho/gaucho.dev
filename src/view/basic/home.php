@@ -5,7 +5,9 @@
 			if($posts){
 				require 'loop/posts.php';
 			}else{
+				print '<p class="text-center">';
 				print 'Nenhum post para exibir';
+				print '</p>';
 			}
 			?>
 		</div>
