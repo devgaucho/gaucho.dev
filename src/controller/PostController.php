@@ -27,6 +27,44 @@ class PostController extends Controller{
 			die("erro ao criar o post");
 		}
 	}
+	function deleteGet($id){
+		$isAuth=$this->isAuth();
+		if(!$isAuth){
+			$this->redirect('/signin');
+		}
+		$PostModel=new PostModel();
+		$post=$PostModel->read($id);
+		if(!$post){
+			$this->notFound();
+		}
+		// verifica se o post existe e é do usuário
+		if($post['user_id']<>$isAuth['id']){
+			$this->redirect('/signin');
+		}		
+		// exibe a tela de exclusão
+		$data=[
+			'post'=>$post
+		];
+		$this->view("postDelete",$data);
+	}
+	function deletePost($id){
+		$isAuth=$this->isAuth();
+		if(!$isAuth){
+			$this->redirect('/signin');
+		}
+		// verifica se o post existe e é do usuário
+		$PostModel=new PostModel();
+		$post=$PostModel->read($id);
+		// verifica se o post existe e é do usuário
+		if($post['user_id']<>$isAuth['id']){
+			$this->redirect('/signin');
+		}else{
+			if($_POST['confirm']=='1'){
+				$PostModel->delete($id);
+			}
+		}
+		$this->redirect('/');
+	}
 	function get(){
 		$this->createGet();
 	}

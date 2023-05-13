@@ -23,6 +23,12 @@ class PostModel extends Model{
 			return false;
 		}
 	}
+	function delete($id){
+		$where=[
+			'id'=>$id
+		];
+		return $this->db()->delete('posts',$where);
+	}
 	function read($id,$cols=null){
 		$where=[
 			'id'=>$id
@@ -33,7 +39,8 @@ class PostModel extends Model{
 				'draft',
 				'id',
 				'post',
-				'title'
+				'title',
+				'user_id'
 			];
 		}
 		return $this->db()->get('posts',$cols,$where);

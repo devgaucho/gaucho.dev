@@ -15,10 +15,10 @@ switch ($s[1]) {
 		@$s[2] and
 		is_numeric($s[2])
 	){
-		if(
-			@$s[3] and
-			$s[3]=='edit'
-		){
+		if(@$s[3] and $s[3]=='delete'){
+			$method='delete'.$m;
+			$Kit->controller('Post')->$method($s[2]);
+		}elseif(@$s[3] and $s[3]=='edit'){
 			$method='update'.$m;
 			$Kit->controller('Post')->$method($s[2]);
 		}else{
