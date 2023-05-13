@@ -1,3 +1,5 @@
+clear
+
 # atualizar o código
 echo "atualiza o código"
 git pull origin main
