@@ -1,5 +1,5 @@
 /.env
-/img/logo.jpg
+/img/*
 /test*.php
 /todo.txt
 /vendor
