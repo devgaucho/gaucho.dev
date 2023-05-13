@@ -2,7 +2,7 @@
     "require": {
         "catfan/medoo": "^2.1",
         "gaucho/env": "^0.2.0",
-        "gaucho/mig": "^0.1.2",
+        "gaucho/mig": "0.1.3",
         "gaucho/kit": "0.4.0"
     },
 	"autoload": {
