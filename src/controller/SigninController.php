@@ -3,13 +3,13 @@ namespace src\controller;
 
 use src\Controller;
 
-class HomeController extends Controller{
+class SigninController extends Controller{
 	function get(){
 		$data=[
-			'title'=>$_ENV['SITE_NAME']
+			'title'=>'Entrar'
 		];
 		$data=$this->extraData($data);
 		$this->view('inc/header',$data);
-		$this->view('home',$data);		
+		$this->view('signin',$data);	
 	}
 }

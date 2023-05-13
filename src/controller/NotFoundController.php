@@ -3,13 +3,13 @@ namespace src\controller;
 
 use src\Controller;
 
-class HomeController extends Controller{
+class NotFoundController extends Controller{
 	function get(){
 		$data=[
-			'title'=>$_ENV['SITE_NAME']
+			'title'=>'Erro'
 		];
 		$data=$this->extraData($data);
 		$this->view('inc/header',$data);
-		$this->view('home',$data);		
+		$this->view('404',$data);		
 	}
 }

@@ -3,7 +3,7 @@
         "catfan/medoo": "^2.1",
         "gaucho/env": "^0.2.0",
         "gaucho/mig": "^0.1.2",
-        "gaucho/kit": "0.2.0"
+        "gaucho/kit": "0.4.0"
     },
 	"autoload": {
 		"psr-4": {

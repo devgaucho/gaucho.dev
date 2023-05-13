@@ -1,15 +1,30 @@
 <?php
 require __DIR__.'/cfg.php';
 
-use src\controller\HomeController;
+function controller($name){
+	global $Kit;
+	$root=$Kit->root();
+	$className=$name.'Controller';
+	$filename=$root.'/src/controller/'.$className.'.php';
+	if(file_exists($filename)){
+		require $filename;
+		$ns='src\controller\\'.$className;
+		$obj=new $ns();
+		return $obj;
+	}else{
+		die('controller <b>'.$filename.'</b> not found');
+	}
+}
 
 $s=$Kit->segment();
 switch ($s[1]) {
 	case '/':
-		$obj=new HomeController();
-		$obj->get();
+		controller('Home')->get();
 		break;
+	case 'signin':
+		controller('Signin')->get();
+		break;		
 	default:
-		# code...
+		controller('NotFound')->get();
 		break;
 }
