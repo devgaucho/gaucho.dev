@@ -28,7 +28,7 @@ $Kit=new Kit();
 		<div class="row">
 			<div class="col12 text-center">
 				<h1>
-					<a href="/">
+					<a href="<?php print $_ENV['SITE_URL']; ?>">
 						<?php print htmlentities(
 							$_ENV['SITE_NAME']
 						); ?>
