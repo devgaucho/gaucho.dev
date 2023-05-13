@@ -22,11 +22,15 @@ $Kit=new Kit();
 			<div class="col12 text-center">
 				<h1>
 					<a href="/">
-						<?php print htmlentities($SITE_NAME); ?>
+						<?php print htmlentities(
+							$_ENV['SITE_NAME']
+						); ?>
 					</a>
 				</h1>
 				<?php 
-				if($isAuth){
+				if(@$isAuth){
+					print '<a href="/post">Criar post</a>';
+					print ' &bull; ';
 					print '<strong>';
 					print $isAuth['name'];
 					print '</strong>';

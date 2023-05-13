@@ -10,11 +10,11 @@ class SigninController extends Controller{
 			$this->redirect('/');
 		}else{
 			$data=[
-				'title'=>'Entrar'		
+				'title'=>'Criar post'		
 			];
 			$data=$this->extraData($data);
 			$this->view('inc/header',$data);
-			$this->view('signin',$data);
+			$this->view('postEditor',$data);
 		}	
 	}
 	function post(){

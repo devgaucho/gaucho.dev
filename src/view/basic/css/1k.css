@@ -39,12 +39,21 @@ form.vertical{
 
 form.vertical input[type=email],
 form.vertical input[type=password],
-form.vertical input[type=text]{
+form.vertical input[type=text],
+form.vertical textarea{
 	display: block;
 	margin:0 auto;
 	max-width:360px;
 	min-width: 240px;
 	width: 75%;
+}
+
+form.big input[type=email],
+form.big input[type=password],
+form.big input[type=text],
+form.big textarea{
+	max-width:480px;	
+	width: 100%;
 }
 
 h1 {

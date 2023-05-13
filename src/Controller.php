@@ -7,8 +7,7 @@ use src\Model;
 class Controller extends Kit{
 	var $isAuth;
 	function extraData($data){
-		$data['SITE_NAME']=$_ENV['SITE_NAME'];
-		$data['SITE_URL']=$_ENV['SITE_URL'];		
+		$data['isAuth']=$this->isAuth();		
 		return $data;
 	}
 	function isAuth(){

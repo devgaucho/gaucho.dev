@@ -1,6 +1,7 @@
-createdAt
+created_at
 draft
 id
 post
 title
-updatedAt
+updated_at
+user_id
