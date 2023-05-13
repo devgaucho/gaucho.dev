@@ -6,17 +6,7 @@ use src\model\PostModel;
 
 class PostController extends Controller{
 	function createGet(){
-		$isAuth=$this->isAuth();
-		if(!$isAuth){
-			$this->redirect('/signin');
-		}
-		$data=[
-			'title'=>$_ENV['SITE_NAME'],
-			'isAuth'=>$this->isAuth()
-		];
-		$data=$this->extraData($data);
-		$this->view('inc/header',$data);
-		$this->view('postEditor',$data);
+		$this->updateGet();
 	}
 	function createPost(){
 		$isAuth=$this->isAuth();
@@ -67,5 +57,40 @@ class PostController extends Controller{
 	}
 	function post(){
 		$this->createPost();
+	}
+	function updateGet($id=null){
+		$isAuth=$this->isAuth();
+		if(!$isAuth){
+			$this->redirect('/signin');
+		}
+		$data=[
+			'title'=>$_ENV['SITE_NAME'],
+			'isAuth'=>$this->isAuth()
+		];
+		if(!is_null($id)){
+			$PostModel=new PostModel();
+			$data['post']=$PostModel->read($id);
+		}		
+		$data=$this->extraData($data);
+		$this->view('inc/header',$data);
+		$this->view('postEditor',$data);
+	}
+	function updatePost($id){
+		$isAuth=$this->isAuth();
+		if(!$isAuth){
+			$this->redirect('/signin');
+		}
+		$post=[
+			'title'=>$_POST['title'],
+			'post'=>$_POST['post'],
+			'draft'=>@$_POST['draft']
+		];
+		$PostModel=new PostModel();
+		if($PostModel->update($id,$post)){
+			$url='/post/'.$PostModel->data['id'].'/edit';
+			$this->redirect($url);
+		}else{
+			die("erro ao criar o post");
+		}
 	}
 }

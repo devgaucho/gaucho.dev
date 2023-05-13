@@ -52,6 +52,32 @@ class PostModel extends Model{
 		];
 		return $this->db()->select('posts','*',$where);
 	}	
+	function update($id,$data){
+		$post=$this->read($id);
+		if(!$post){
+			return false;
+		}
+		$this->data['id']=$post['id'];
+		$db=$this->db();
+		if(@$data['draft']=='1'){
+			$this->data['updated_at']=time();
+		}else{
+			if(is_null($post['created_at'])){
+				$this->data['created_at']=time();
+			}			
+		}
+		$where=[
+			'id'=>$id
+		];
+		if(
+			$this->valid($data) and
+			$db->update('posts',$this->data,$where)
+		){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	function valid($data){
 		if(!$this->validDraft($data['draft'])){
 			return false;
