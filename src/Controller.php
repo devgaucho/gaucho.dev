@@ -3,6 +3,7 @@ namespace src;
 
 use gaucho\Kit;
 use src\Model;
+use src\controller\NotFoundController;
 
 class Controller extends Kit{
 	var $isAuth;
@@ -16,5 +17,10 @@ class Controller extends Kit{
 			$this->isAuth=$Model->isAuth();
 		}
 		return $this->isAuth;
+	}
+	function notFound(){
+		$NotFoundController=new NotFoundController();
+		$NotFoundController->get();
+		die();
 	}
 }

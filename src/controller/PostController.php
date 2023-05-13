@@ -5,7 +5,7 @@ use src\Controller;
 use src\model\PostModel;
 
 class PostController extends Controller{
-	function get(){
+	function createGet(){
 		$isAuth=$this->isAuth();
 		if(!$isAuth){
 			$this->redirect('/signin');
@@ -16,9 +16,9 @@ class PostController extends Controller{
 		];
 		$data=$this->extraData($data);
 		$this->view('inc/header',$data);
-		$this->view('postEditor',$data);			
+		$this->view('postEditor',$data);
 	}
-	function post(){
+	function createPost(){
 		$isAuth=$this->isAuth();
 		if(!$isAuth){
 			$this->redirect('/signin');
@@ -31,10 +31,41 @@ class PostController extends Controller{
 		];
 		$PostModel=new PostModel();
 		if($PostModel->create($post)){
-			$url='/post/'.$PostModel->data['id'];
+			$url='/post/'.$PostModel->data['id'].'/edit';
 			$this->redirect($url);
 		}else{
 			die("erro ao criar o post");
 		}
+	}
+	function get(){
+		$this->createGet();
+	}
+	function read($id){
+		$isAuth=$this->isAuth();
+		// verifica se o post existe
+		$PostModel=new PostModel();
+		$post=$PostModel->read($id);
+		if(
+			$post
+		){
+			// verifica se o post é visivel pelo usuário
+			if(
+				$post['draft']=='1' and
+				$post['user_id']<>@$isAuth['id']
+			){
+				$this->redirect('/signin');
+			}else{
+				// exibe o post
+				$data=[
+					'post'=>$post
+				];
+				$this->view('postRead',$data);
+			}
+		}else{
+			$this->notFound();
+		}
+	}
+	function post(){
+		$this->createPost();
 	}
 }

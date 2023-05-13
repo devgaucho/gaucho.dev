@@ -5,6 +5,7 @@ use src\Controller;
 
 class NotFoundController extends Controller{
 	function get(){
+		$this->code(404);		
 		$data=[
 			'title'=>'Erro'
 		];

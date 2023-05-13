@@ -26,6 +26,7 @@ class PostModel extends Model{
 		if(is_null($cols)){
 			$cols=[
 				'created_at',				
+				'draft',
 				'id',
 				'post',
 				'title'
