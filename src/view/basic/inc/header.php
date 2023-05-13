@@ -25,5 +25,15 @@ $Kit=new Kit();
 						<?php print htmlentities($SITE_NAME); ?>
 					</a>
 				</h1>
+				<?php 
+				if($isAuth){
+					print '<strong>';
+					print $isAuth['name'];
+					print '</strong>';
+					$href='/logout?token_md5='.$isAuth['token_md5'];
+					$link='<a href="'.$href.'">Sair</a>';
+					print ' ('.$link.')';
+				}
+				?>
 			</div>
 		</div>

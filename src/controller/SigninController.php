@@ -6,12 +6,16 @@ use src\model\UserModel;
 
 class SigninController extends Controller{
 	function get(){
-		$data=[
-			'title'=>'Entrar'
-		];
-		$data=$this->extraData($data);
-		$this->view('inc/header',$data);
-		$this->view('signin',$data);	
+		if($this->isAuth()){
+			$this->redirect('/');
+		}else{
+			$data=[
+				'title'=>'Entrar'		
+			];
+			$data=$this->extraData($data);
+			$this->view('inc/header',$data);
+			$this->view('signin',$data);
+		}	
 	}
 	function post(){
 		$email=$_POST['email'];

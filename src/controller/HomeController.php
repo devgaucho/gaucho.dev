@@ -6,7 +6,8 @@ use src\Controller;
 class HomeController extends Controller{
 	function get(){
 		$data=[
-			'title'=>$_ENV['SITE_NAME']
+			'title'=>$_ENV['SITE_NAME'],
+			'isAuth'=>$this->isAuth()
 		];
 		$data=$this->extraData($data);
 		$this->view('inc/header',$data);

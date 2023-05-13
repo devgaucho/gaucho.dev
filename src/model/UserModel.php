@@ -24,6 +24,18 @@ class UserModel extends Model{
 		];
 		return $this->db->has('users',$where);
 	}
+	function read($id,$cols=null){
+		$where=[
+			'id'=>$id
+		];
+		if(is_null($cols)){
+			$cols=[
+				'id',
+				'name'
+			];
+		}
+		return $this->db()->get('users',$cols,$where);
+	}	
 	function readByEmailAndPassword($email,$password){
 		$db=$this->db();
 		$where=[

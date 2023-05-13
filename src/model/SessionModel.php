@@ -18,6 +18,12 @@ class SessionModel extends Model{
 			return false;
 		}
 	}
+	function read($id){
+		$where=[
+			'id'=>$id
+		];
+		return $this->db()->get('sessions','*',$where);
+	}
 	function setTokenExpiration(){
 		$duracao_em_dias=365*2;
 		$duracao_em_horas=$duracao_em_dias*24;
