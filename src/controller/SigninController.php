@@ -14,7 +14,7 @@ class SigninController extends Controller{
 			];
 			$data=$this->extraData($data);
 			$this->view('inc/header',$data);
-			$this->view('postEditor',$data);
+			$this->view('signin',$data);
 		}	
 	}
 	function post(){

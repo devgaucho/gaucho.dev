@@ -15,5 +15,5 @@ require 'inc/header.php';
 		?>
 	</div><!-- col6 -->
 	<div class="col3"></div>
-</div>
+</div><!-- row -->
 </div><!-- container -->

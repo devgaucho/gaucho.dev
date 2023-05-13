@@ -7,7 +7,11 @@ class PostModel extends Model{
 	var $data;
 	function create($data){
 		$db=$this->db();
-		$this->data['created_at']=time();
+		if(@$data['draft']=='1'){
+			$this->data['updated_at']=time();
+		}else{
+			$this->data['created_at']=time();			
+		}
 		$this->data['user_id']=$data['user_id'];
 		if(
 			$this->valid($data) and
@@ -33,6 +37,20 @@ class PostModel extends Model{
 			];
 		}
 		return $this->db()->get('posts',$cols,$where);
+	}	
+	function readPosts(){
+		$where=[
+			'draft'=>'0',
+			'ORDER'=>['created_at'=>'DESC']
+		];
+		return $this->db()->select('posts','*',$where);
+	}
+	function readPostsByUserId($user_id){
+		$where=[
+			'user_id'=>$user_id,
+			'ORDER'=>['id'=>'DESC']
+		];
+		return $this->db()->select('posts','*',$where);
 	}	
 	function valid($data){
 		if(!$this->validDraft($data['draft'])){
