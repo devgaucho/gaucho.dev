@@ -19,7 +19,7 @@ $Kit=new Kit();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css" integrity="sha512-aupidr80M36SeyviA/hZ2uEPnvt2dTJfyjm9y6z1MgaV13TgzmDiFdsH3cvSNG27mRIj7gJ2gNeg1HeySJyE3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" href="<?php print $_ENV['SITE_URL'];?>/img/<?php print $_ENV['SITE_LOGO'];?>">
 	<meta property="og:image" content="<?php print $_ENV['SITE_URL'];?>/img/<?php print $_ENV['SITE_LOGO'];?>" />
-	<meta name="twitter:title" content="Blog">
+	<meta name="twitter:title" content="<?php print $_ENV['SITE_NAME'];?>">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:image" content="<?php print $_ENV['SITE_URL'];?>/img/<?php print $_ENV['SITE_LOGO'];?>">	
 </head>
