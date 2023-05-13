@@ -18,6 +18,9 @@ foreach ($posts as $post) {
 	}
 	// link para ver
 	$href='/post/'.$post['id'];
+	if($post['draft']=='1'){
+		print '🚫 ';
+	}
 	$link='<a href="'.$href.'">'.$post['title'].'</a>';
 	print $link.'<br>';
 }

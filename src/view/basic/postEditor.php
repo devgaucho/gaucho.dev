@@ -3,9 +3,9 @@
 		<div class="col6 text-center">
 			<h2><?php print 'Post';?></h2>
 			<?php 
+			$checked=null;			
 			if(@$post){
 				$action='/post/'.$post['id'].'/edit';
-				$checked=null;
 				if($post['draft']=='1'){
 					$checked='checked="checked"';
 				}
