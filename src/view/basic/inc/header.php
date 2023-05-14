@@ -27,16 +27,16 @@ $Kit=new Kit();
 	<div class="container">
 		<div class="row">
 			<div class="col12 text-center">
-				<h1>
-					<a href="<?php print $_ENV['SITE_URL']; ?>">
-						<?php print htmlentities(
-							$_ENV['SITE_NAME']
-						); ?>
-					</a>
-				</h1>
+				<a href="<?php print $_ENV['SITE_URL']; ?>" title="<?php print htmlentities(
+					$_ENV['SITE_NAME']
+					); ?>">
+					<img class="circle" height="120" width="120" src="<?php print $_ENV['SITE_URL'];?>/img/<?php print $_ENV['SITE_LOGO'];?>" alt="<?php print htmlentities(
+					$_ENV['SITE_NAME']
+					); ?>">
+				</a>
 				<?php 
 				if(@$isAuth){
-					print '<a href="/post">Criar post</a>';
+					print '<br><a href="/post">Criar post</a>';
 					print ' &bull; ';
 					print '<strong>';
 					print $isAuth['name'];
