@@ -12,7 +12,17 @@ require 'inc/header.php';
 		</h1>
 		<?php 
 		print nl2br($post['post']);
+		$text=$post['title'].' '.$_ENV['SITE_URL'].'/post/';
+		$text.=$post['id'];
+		$text.=' #bolhadev';
+		$text=urlencode($text);
 		?>
+		<p class="text-center link-social">
+			<a href="https://twitter.com/intent/tweet?text=<?php print $text;?>">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				Compartilhar 
+			</a>
+		</p>
 	</div><!-- col6 -->
 	<div class="col3"></div>
 </div><!-- row -->
