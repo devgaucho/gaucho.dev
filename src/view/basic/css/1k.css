@@ -20,19 +20,6 @@ button {
 	cursor: pointer;
 }
 
-a:hover,
-a:link,
-a:visited,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	/* https://contrastchecker.com/?c=0000ff&b=ffffff */
-	color: blue;
-}
-
 form.vertical{
 	text-align:center;
 }
