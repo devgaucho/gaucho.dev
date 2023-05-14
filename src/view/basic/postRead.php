@@ -1,6 +1,8 @@
 <?php
+use gaucho\Kit;
 $title=$post['title'];
 require 'inc/header.php';
+$Kit=new Kit();
 ?>
 <div class="row">
 	<div class="col3"></div>
@@ -11,7 +13,7 @@ require 'inc/header.php';
 			?>
 		</h1>
 		<?php 
-		print nl2br($post['post']);
+		print $Kit->markdown($post['post']);
 		$text=$post['title'].' '.$_ENV['SITE_URL'].'/post/';
 		$text.=$post['id'];
 		$text.=' #bolhadev';
