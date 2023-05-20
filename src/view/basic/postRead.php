@@ -19,10 +19,11 @@ $Kit=new Kit();
 		$text.=' #bolhadev';
 		$text=urlencode($text);
 		?>
-		<p class="text-center">
-			<a href="/">Voltar para a página inicial</a>
-		</p>
 		<p class="text-center link-social">
+			<a href="/">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				Voltar para a página inicial
+			</a> &bull;
 			<a href="https://twitter.com/intent/tweet?text=<?php print $text;?>">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 				Compartilhar no Twitter
