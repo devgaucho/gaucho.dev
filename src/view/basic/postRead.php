@@ -23,10 +23,6 @@ $Kit=new Kit();
 			<a href="/">
 				<i class="fa fa-home" aria-hidden="true"></i>
 				Voltar para a página inicial
-			</a> &bull;
-			<a href="https://twitter.com/intent/tweet?text=<?php print $text;?>">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				Compartilhar no Twitter
 			</a>
 		</p>
 	</div><!-- col6 -->
