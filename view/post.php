@@ -12,7 +12,7 @@
 <body>
 	<?php
 	require 'logo.php';
-	print '<h1>'.htmlentities($title).'</title>';
+	print '<h1>'.htmlentities($title).'</h1>';
 	print $html;
 	?>
 	<p class="center">
