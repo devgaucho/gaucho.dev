@@ -1,0 +1,19 @@
+<h2 id="getjson">getJson</h2>
+<h3 id="com-fetch">com fetch</h3>
+<pre><code>fetch(&#39;arquivo.json&#39;)
+.then(response =&gt; response.json())
+.then(data =&gt; console.log(data))
+.catch(() =&gt; alert(&#39;erro&#39;));</code></pre>
+<h3 id="com-xmlhttprequest">com XMLHttpRequest</h3>
+<pre><code>var request = new XMLHttpRequest();
+request.open(&#39;GET&#39;,&#39;arquivo.json&#39;,true);
+request.onload=function() {
+    if (this.status &gt;= 200 &amp;&amp; this.status &lt; 400) {
+        var data = JSON.parse(this.response);
+        console.log(data);
+    }else{
+        alert(&#39;erro&#39;);
+    }
+};
+request.send();</code></pre>
+<p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>

@@ -1,0 +1,16 @@
+<h2 id="código-de-resposta-http">código de resposta (http)</h2>
+<pre><code>http_response_code($codigoInt);</code></pre>
+<h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um arquivo com append</h2>
+<pre><code>file_put_contents(&#39;nome do arquivo&#39;,$dados,FILE_APPEND);</code></pre>
+<p>Fonte: <a href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
+<h2 id="json-header">json (header)</h2>
+<pre><code>header(&#39;Content-Type:application/json&#39;);
+die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
+<h2 id="json-decode-array">json decode (array)</h2>
+<pre><code>$mix=json_decode($json,true);</code></pre>
+<h2 id="json-encode-pretty">json encode (pretty)</h2>
+<pre><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></pre>
+<h2 id="ler-dados-de-um-arquivo">ler dados de um arquivo</h2>
+<pre><code>$str=file_get_contents(&#39;nome_do_arquivo&#39;);</code></pre>
+<h2 id="user-agent">user-agent</h2>
+<pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>

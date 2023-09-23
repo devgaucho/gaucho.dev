@@ -1,14 +1,8 @@
 clear
-
-# atualizar o código
-echo "atualiza o código"
-git pull origin main
-
-# instalar o composer
-composer install
-
-# executar migrations
-php bin/mig.php
-
-# criar o usuário admin
-php bin/admin.php
+echo "convertendo arquivos .md para .html"
+for f in md/*.md
+do
+	apenasONome=$(basename "$f" | cut -d. -f1)
+	pandoc -f markdown "$f" -t html -o "html/$apenasONome.html"
+done
+echo "feito!"
