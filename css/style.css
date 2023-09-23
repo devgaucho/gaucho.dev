@@ -34,9 +34,8 @@ h2,h2,h4,h5,h6{
 h3,h4,h5,h6{
 	font-size:24px;
 }
-hr{
-	border:none;
-	border-top: 1px dashed silver;
+p{
+	margin-top:0;
 }
 pre{
 	background:black;
@@ -47,6 +46,9 @@ pre{
 	white-space:-pre-wrap;      /* Opera 4-6 */
 	white-space:-o-pre-wrap;    /* Opera 7 */
 	word-wrap:break-word;       /* Internet Explorer 5.5+ */
+}
+td{
+    vertical-align:top;
 }
 small{
 	font-size:18px;
@@ -61,9 +63,6 @@ small{
 .container{
     margin:0 auto;
     width:100%;
-}
-td{
-    vertical-align:top;
 }
 @media all and (max-width:799px){
     .container td{

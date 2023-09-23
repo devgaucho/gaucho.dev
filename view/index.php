@@ -40,5 +40,9 @@
 			</td>			
 		</tr>
 	</table>
+	<hr>
+	<p class="center">
+		<small>Esse blog roda melhor em 800x600 no browser IE6 ou superior</small>
+	</p>
 </body>
 </html>
