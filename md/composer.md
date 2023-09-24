@@ -1,4 +1,4 @@
-## autoload
+## autoload (adicione no composer.json)
 
 ```
 "autoload":{
