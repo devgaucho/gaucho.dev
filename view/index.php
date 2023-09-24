@@ -30,7 +30,7 @@
 				<a href="https://x.com/devgaucho" target="_blank">Twitter</a><br>
 			</td>
 			<td align=center width=50%>
-				<h2>Webdesign</h2>
+				<h2>Web dev</h2>
 				<!-- <a href="?post=composer">Composer</a><br> -->
 				<?php
 				foreach($posts as $arquivoDoPost=>$tituloDoPost){

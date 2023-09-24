@@ -5,6 +5,6 @@
 	<br>
 	<b>Anderson</b>
 	<br>
-	<small>dev php &bull; dataist wannabe</small>
+	<small>web dev (php) &bull; dataist wannabe</small>
 </div>
 <hr>
