@@ -32,11 +32,11 @@
 			<td align=center width=50%>
 				<h2>Webdesign</h2>
 				<!-- <a href="?post=composer">Composer</a><br> -->
-				<a href="?post=css">CSS</a><br>
-				<a href="?post=html">HTML</a><br>
-				<a href="?post=js">JavaScript</a><br>
-				<a href="?post=jquery">jQuery</a><br>
-				<a href="?post=php">PHP</a>
+				<?php
+				foreach($posts as $arquivoDoPost=>$tituloDoPost){
+					print '<a href="?post='.$arquivoDoPost.'">'.$tituloDoPost.'</a><br>';
+				}
+				?>
 			</td>			
 		</tr>
 	</table>

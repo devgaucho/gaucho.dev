@@ -1,5 +1,6 @@
 <?php
 $posts=[
+	'composer'=>"Composer",
 	'css'=>'CSS',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
