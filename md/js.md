@@ -1,3 +1,23 @@
+## constantes e variáveis
+
+### const
+
+- Nível de escopo: bloco
+- Rescrita de valor: não
+- Valor inicial como undefined: não
+
+### let
+
+- Nível de escopo: bloco
+- Rescrita de valor: sim
+- Valor inicial como undefined: não
+
+### var
+
+- Nível de escopo: função
+- Rescrita de valor: sim
+- Valor inicial como undefined: sim
+
 ## getJson
 ### com fetch
 ```
