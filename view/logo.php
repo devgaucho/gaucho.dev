@@ -6,5 +6,6 @@
 	<b>Anderson</b>
 	<br>
 	<small>web dev (php) &bull; dataist wannabe</small>
+	<?php require 'footer.php'; ?>
 </div>
 <hr>

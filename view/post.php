@@ -21,8 +21,6 @@
 		</a>
 	</p>
 	<hr>
-	<p class="center">
-		<small>Esse blog roda melhor em 800x600 no browser IE6 ou superior</small>
-	</p>	
+	<?php require 'footer.php'; ?>
 </body>
 </html>

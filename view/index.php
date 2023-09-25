@@ -12,24 +12,14 @@
 <body>
 	<table class=container width=100%>
 		<tr>
-			<td colspan=2>
+			<td>
 				<?php
 				require 'logo.php';
 				?>
 			</td>
 		</tr>
-		<tr>
-<!-- 			<td>
-				<h2>Projetos</h2>
-			</td> -->			
-			<td align=center width=50%>
-				<h2>Rede sociais</h2>
-				<!-- <a href="">Blog</a><br>				 -->
-				<!-- <a href="">#bolhadev</a><br> -->
-				<a href="https://github.com/devgaucho" target="_blank">Github</a><br>
-				<a href="https://x.com/devgaucho" target="_blank">Twitter</a><br>
-			</td>
-			<td align=center width=50%>
+		<tr>		
+			<td align=center width=100%>
 				<h2>Códigos</h2>
 				<!-- <a href="?post=composer">Composer</a><br> -->
 				<?php
@@ -41,8 +31,6 @@
 		</tr>
 	</table>
 	<hr>
-	<p class="center">
-		<small>Esse blog roda melhor em 800x600 no browser IE6 ou superior</small>
-	</p>
+	<?php require 'footer.php'; ?>
 </body>
 </html>
