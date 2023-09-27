@@ -9,6 +9,20 @@ file_put_contents('nome do arquivo',$dados,FILE_APPEND);
 ```
 Fonte: [PHP](https://www.php.net/manual/en/function.file-put-contents#example-2224)
 
+## exibir erros
+
+```
+if($bool){
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+}else{
+	ini_set('display_errors', 0);
+	ini_set('display_startup_errors', 0);
+	error_reporting(0);
+}
+```
+
 ## json (header)
 ```
 header('Content-Type:application/json');

@@ -3,6 +3,16 @@
 <h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um arquivo com append</h2>
 <pre><code>file_put_contents(&#39;nome do arquivo&#39;,$dados,FILE_APPEND);</code></pre>
 <p>Fonte: <a href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
+<h2 id="exibir-erros">exibir erros</h2>
+<pre><code>if($bool){
+    ini_set(&#39;display_errors&#39;, 1);
+    ini_set(&#39;display_startup_errors&#39;, 1);
+    error_reporting(E_ALL);
+}else{
+    ini_set(&#39;display_errors&#39;, 0);
+    ini_set(&#39;display_startup_errors&#39;, 0);
+    error_reporting(0);
+}</code></pre>
 <h2 id="json-header">json (header)</h2>
 <pre><code>header(&#39;Content-Type:application/json&#39;);
 die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
