@@ -1,4 +1,4 @@
-## autoload (adicione no composer.json)
+## autoload (adicionar no composer.json)
 
 ```
 "autoload":{
@@ -8,7 +8,7 @@
 },
 ```
 
-## autoload (mapear classes locais)
+## autoload (gerar arquivos do autoload)
 
 ```
 composer dump-autoload
