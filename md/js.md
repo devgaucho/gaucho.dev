@@ -26,7 +26,7 @@ a variável só acessível em um bloco igual ou inferior ao bloco onde é chamad
 
 ### escopo de função
 
-a variável é acessível em toda a função onde é chamada poi ela é içada (hoisted)
+a variável é acessível em toda a função onde é chamada pois ela é içada (hoisted) para cima
 
 ## getJson
 ### com fetch
