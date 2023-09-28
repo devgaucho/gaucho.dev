@@ -2,21 +2,31 @@
 
 ### const
 
-- Nível de escopo: bloco igual ou inferior ao bloco onde é chamada
+- Nível de escopo: bloco
 - Rescrita de valor: não
 - Valor inicial como undefined: não
 
 ### let
 
-- Nível de escopo: bloco igual ou inferior ao bloco onde é chamada
+- Nível de escopo: bloco 
 - Rescrita de valor: sim
-- Valor inicial como undefined: não (a variável precisa ser definida em uma linha anterior ao uso dela)
+- Valor inicial como undefined: não
 
 ### var
 
-- Nível de escopo: toda a função onde é chamada (global e hoisted)
+- Nível de escopo: função
 - Rescrita de valor: sim
 - Valor inicial como undefined: sim
+
+## escopos
+
+### escopo de bloco
+
+a variável só acessassível em um bloco igual ou inferior ao bloco onde é chamada
+
+### escopo de função
+
+a variável é acessivem em toda a função onde é chamada poi ela é içada (hoisted)
 
 ## getJson
 ### com fetch
@@ -40,5 +50,9 @@ request.onload=function() {
 };
 request.send();
 ```
+
+## undefined
+
+variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso
 
 Fonte: [Stack Overflow](https://stackoverflow.com/a/56474873)

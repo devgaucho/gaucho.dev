@@ -1,22 +1,27 @@
 <h2 id="constantes-e-variáveis">constantes e variáveis</h2>
 <h3 id="const">const</h3>
 <ul>
-<li>Nível de escopo: bloco igual ou inferior ao bloco onde é chamada</li>
+<li>Nível de escopo: bloco</li>
 <li>Rescrita de valor: não</li>
 <li>Valor inicial como undefined: não</li>
 </ul>
 <h3 id="let">let</h3>
 <ul>
-<li>Nível de escopo: bloco igual ou inferior ao bloco onde é chamada</li>
+<li>Nível de escopo: bloco</li>
 <li>Rescrita de valor: sim</li>
-<li>Valor inicial como undefined: não (a variável precisa ser definida em uma linha anterior ao uso dela)</li>
+<li>Valor inicial como undefined: não</li>
 </ul>
 <h3 id="var">var</h3>
 <ul>
-<li>Nível de escopo: toda a função onde é chamada (global e hoisted)</li>
+<li>Nível de escopo: função</li>
 <li>Rescrita de valor: sim</li>
 <li>Valor inicial como undefined: sim</li>
 </ul>
+<h2 id="escopos">escopos</h2>
+<h3 id="escopo-de-bloco">escopo de bloco</h3>
+<p>a variável só acessassível em um bloco igual ou inferior ao bloco onde é chamada</p>
+<h3 id="escopo-de-função">escopo de função</h3>
+<p>a variável é acessivem em toda a função onde é chamada poi ela é içada (hoisted)</p>
 <h2 id="getjson">getJson</h2>
 <h3 id="com-fetch">com fetch</h3>
 <pre><code>fetch(&#39;arquivo.json&#39;)
@@ -35,4 +40,6 @@ request.onload=function() {
     }
 };
 request.send();</code></pre>
+<h2 id="undefined">undefined</h2>
+<p>variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso</p>
 <p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>
