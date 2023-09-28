@@ -22,11 +22,11 @@
 
 ### escopo de bloco
 
-a variável só acessassível em um bloco igual ou inferior ao bloco onde é chamada
+a variável só acessível em um bloco igual ou inferior ao bloco onde é chamada
 
 ### escopo de função
 
-a variável é acessivem em toda a função onde é chamada poi ela é içada (hoisted)
+a variável é acessível em toda a função onde é chamada poi ela é içada (hoisted)
 
 ## getJson
 ### com fetch
