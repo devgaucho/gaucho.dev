@@ -10,7 +10,7 @@
 
 - Nível de escopo: bloco
 - Rescrita de valor: sim
-- Valor inicial como undefined: não
+- Valor inicial como undefined: sim
 
 ### var
 
