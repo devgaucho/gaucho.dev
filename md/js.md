@@ -2,19 +2,19 @@
 
 ### const
 
-- Nível de escopo: bloco
+- Nível de escopo: bloco onde é chamada
 - Rescrita de valor: não
 - Valor inicial como undefined: não
 
 ### let
 
-- Nível de escopo: bloco
+- Nível de escopo: bloco onde é chamada
 - Rescrita de valor: sim
 - Valor inicial como undefined: sim
 
 ### var
 
-- Nível de escopo: função
+- Nível de escopo: toda a função onde é chamada (escopo global)
 - Rescrita de valor: sim
 - Valor inicial como undefined: sim
 
