@@ -5,6 +5,7 @@ $posts=[
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
 	'js'=>'JavaScript',
+	'mustache'=>'Mustache',
 	'php'=>'PHP'
 ];
 if(
