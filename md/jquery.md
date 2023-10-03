@@ -1,6 +1,7 @@
 ## cdn
 ```
 <script src="https://unpkg.com/jquery"></script>
+```
 
 ## getJSON
 ```

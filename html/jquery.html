@@ -1,12 +1,21 @@
 <h2 id="cdn">cdn</h2>
-<pre><code>&lt;script src=&quot;https://unpkg.com/jquery&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;script src=&quot;https://unpkg.com/jquery&quot;&gt;&lt;/script&gt;</code></pre>
+<h2 id="getjson">getJSON</h2>
+<pre><code>$.getJSON(&quot;arquivo.json&quot;,function(data){...});</code></pre>
+<p>Fonte: <a href="https://api.jquery.com/jQuery.getJSON">jQuery</a></p>
+<h2 id="plugin">plugin</h2>
+<pre><code>// Definindo o plugin jQuery
+(function($) {
+    $.fn.mostrarAlerta = function(mensagem) {
+        return this.each(function() {
+            $(this).on(&#39;click&#39;, function() {
+                alert(mensagem);
+            });
+        });
+    };
+})(jQuery);
 
-## getJSON</code></pre>
-<p>$.getJSON(“arquivo.json”,function(data){…});</p>
-<pre><code>
-Fonte: [jQuery](https://api.jquery.com/jQuery.getJSON)
-
-## plugin
-</code></pre>
-<p>// Definindo o plugin jQuery (function($) { $.fn.mostrarAlerta = function(mensagem) { return this.each(function() { $(this).on(‘click’, function() { alert(mensagem); }); }); }; })(jQuery);</p>
-<p>// Usando o plugin $(document).ready(function() { $(‘#idDoBotao’).mostrarAlerta(‘Esta é a mensagem de alerta.’); }); ```</p>
+// Usando o plugin
+$(document).ready(function() {
+    $(&#39;#idDoBotao&#39;).mostrarAlerta(&#39;Esta é a mensagem de alerta.&#39;);
+});</code></pre>
