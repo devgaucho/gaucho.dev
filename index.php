@@ -5,6 +5,7 @@ $posts=[
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
 	'js'=>'JavaScript',
+	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
 	'php'=>'PHP'
 ];
