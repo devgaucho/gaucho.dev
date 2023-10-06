@@ -1,4 +1,4 @@
-"Na solidão o solitário se devora, em muitos é devorado por muitos. Então escolha."
+"Na solidão, o solitário devora a si mesmo; na multidão devoram-no inúmeros. Então escolhe"
 
 "A maneira certa de irritar as pessoas e fazê-las ter pensamentos malignos é fazê-las esperar muito tempo."
 
