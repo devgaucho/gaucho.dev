@@ -20,7 +20,7 @@
 		</tr>
 		<tr>		
 			<td align=center width=100%>
-				<h2>Códigos</h2>
+				<h2>Artigos</h2>
 				<!-- <a href="?post=composer">Composer</a><br> -->
 				<?php
 				foreach($posts as $arquivoDoPost=>$tituloDoPost){

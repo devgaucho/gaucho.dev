@@ -2,12 +2,12 @@
 $posts=[
 	'composer'=>"Composer",
 	'css'=>'CSS',
+	'nietzsche'=>'Frases do Nietzsche',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
 	'js'=>'JavaScript',
 	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
-	'nietzsche'=>'Nietzsche',
 	'php'=>'PHP'
 ];
 if(
