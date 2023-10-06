@@ -7,6 +7,7 @@ $posts=[
 	'js'=>'JavaScript',
 	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
+	'nietzsche'=>'Nietzsche',
 	'php'=>'PHP'
 ];
 if(
