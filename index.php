@@ -1,5 +1,6 @@
 <?php
 $posts=[
+	'apache'=>'Apache',
 	'composer'=>"Composer",
 	'css'=>'CSS',
 	'nietzsche'=>'Frases do Nietzsche',
