@@ -1,5 +1,6 @@
 ## rewrite (.htaccess)
 
+```
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -10,6 +11,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
+```
 
 ## utf-8 (.htaccess)
 
