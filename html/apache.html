@@ -9,5 +9,16 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 &lt;/IfModule&gt;
 # END WordPress</code></pre>
+<h2 id="rewrite-localhost-.htaccess">rewrite localhost (.htaccess)</h2>
+<pre><code># BEGIN WordPress
+&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteBase /
+RewriteRule ^/&lt;diretório&gt;/index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /&lt;diretório&gt;/index.php [L]
+&lt;/IfModule&gt;
+# END WordPress</code></pre>
 <h2 id="utf-8-.htaccess">utf-8 (.htaccess)</h2>
 <pre><code>AddDefaultCharset UTF-8</code></pre>

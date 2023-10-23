@@ -13,6 +13,9 @@
     ini_set(&#39;display_startup_errors&#39;, 0);
     error_reporting(0);
 }</code></pre>
+<h3 id="index.php-public">index.php (public)</h3>
+<pre><code>&lt;?php
+require __DIR__.&#39;/../index.php&#39;;</code></pre>
 <h2 id="json-header">json (header)</h2>
 <pre><code>header(&#39;Content-Type:application/json&#39;);
 die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
