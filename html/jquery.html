@@ -3,6 +3,11 @@
 <h2 id="getjson">getJSON</h2>
 <pre><code>$.getJSON(&quot;arquivo.json&quot;,function(data){...});</code></pre>
 <p>Fonte: <a href="https://api.jquery.com/jQuery.getJSON">jQuery</a></p>
+<h2 id="parser-de-html-com-hack">parser de html (com hack)</h2>
+<pre><code>var htmlString = &#39;&lt;div id=&quot;container&quot;&gt;Conteúdo da div&lt;/div&gt;&#39;;
+var $html = $(&#39;&lt;div&gt;&#39;+htmlString+&#39;&lt;/div&gt;&#39;);
+var conteudoDaDiv = $html.find(&#39;#container&#39;).html();
+alert(conteudoDaDiv);</code></pre>
 <h2 id="plugin">plugin</h2>
 <pre><code>// Definindo o plugin jQuery
 (function($) {

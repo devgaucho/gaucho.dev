@@ -10,6 +10,15 @@ $.getJSON("arquivo.json",function(data){...});
 
 Fonte: [jQuery](https://api.jquery.com/jQuery.getJSON)
 
+## parser de html (com hack)
+
+```
+var htmlString = '<div id="container">Conteúdo da div</div>';
+var $html = $('<div>'+htmlString+'</div>');
+var conteudoDaDiv = $html.find('#container').html();
+alert(conteudoDaDiv);
+```
+
 ## plugin
 
 ```
