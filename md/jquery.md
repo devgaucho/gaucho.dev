@@ -13,10 +13,11 @@ Fonte: [jQuery](https://api.jquery.com/jQuery.getJSON)
 ## parser de html (com hack)
 
 ```
-var htmlString = '<div id="container">Conteúdo da div</div>';
-var $html = $('<div>'+htmlString+'</div>');
-var conteudoDaDiv = $html.find('#container').html();
-alert(conteudoDaDiv);
+function pegarFragmento(htmlStr,selStr){
+	var $html = $('<div>'+htmlStr+'</div>');
+	var conteudoDaDiv = $html.find(selStr).html();
+	return conteudoDaDiv;	
+}
 ```
 
 ## plugin
