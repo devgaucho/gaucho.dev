@@ -1,3 +1,16 @@
+## baixar html
+
+```
+fetch('/arquivo.html')
+.then((response) => {
+	return response.text();
+})
+.then((html) => {
+	processarAResposta(html);
+});
+```
+
+
 ## constantes e variáveis
 
 ### const
