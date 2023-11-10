@@ -41,15 +41,15 @@ a variável só acessível em um bloco igual ou inferior ao bloco onde é chamad
 
 a variável é acessível em toda a função onde é chamada pois ela é içada (hoisted) para cima
 
-## getJson
-### com fetch
+## getJson (com fetch)
 ```
 fetch('arquivo.json')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(() => alert('erro'));
 ```
-### com XMLHttpRequest
+
+## getJson (com XMLHttpRequest)
 ```
 var request = new XMLHttpRequest();
 request.open('GET','arquivo.json',true);
@@ -62,6 +62,12 @@ request.onload=function() {
 	}
 };
 request.send();
+```
+
+## historico (ler propriedade do estado)
+
+```
+history.state.<nome da propriedade>
 ```
 
 ## undefined
