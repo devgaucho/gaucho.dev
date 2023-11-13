@@ -11,6 +11,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
+ErrorDocument 403 /index.php
 ```
 
 ## rewrite localhost (.htaccess)
