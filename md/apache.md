@@ -1,3 +1,12 @@
+## acesso negado a arquivos e diretórios
+
+```
+RewriteRule ^(composer\.json) - [F,L]
+RewriteRule ^(composer\.lock) - [F,L]
+RewriteRule ^vendor/ - [F,L]
+RewriteRule ^.git/ - [F,L]
+```
+
 ## rewrite (.htaccess)
 
 ```
@@ -12,21 +21,6 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 ErrorDocument 403 /index.php
-```
-
-## rewrite localhost (.htaccess)
-
-```
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^/<diretório>/index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /<diretório>/index.php [L]
-</IfModule>
-# END WordPress
 ```
 
 ## utf-8 (.htaccess)

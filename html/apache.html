@@ -1,3 +1,8 @@
+<h2 id="acesso-negado-a-arquivos-e-diretórios">acesso negado a arquivos e diretórios</h2>
+<pre><code>RewriteRule ^(composer\.json) - [F,L]
+RewriteRule ^(composer\.lock) - [F,L]
+RewriteRule ^vendor/ - [F,L]
+RewriteRule ^.git/ - [F,L]</code></pre>
 <h2 id="rewrite-.htaccess">rewrite (.htaccess)</h2>
 <pre><code># BEGIN WordPress
 &lt;IfModule mod_rewrite.c&gt;
@@ -10,16 +15,5 @@ RewriteRule . /index.php [L]
 &lt;/IfModule&gt;
 # END WordPress
 ErrorDocument 403 /index.php</code></pre>
-<h2 id="rewrite-localhost-.htaccess">rewrite localhost (.htaccess)</h2>
-<pre><code># BEGIN WordPress
-&lt;IfModule mod_rewrite.c&gt;
-RewriteEngine On
-RewriteBase /
-RewriteRule ^/&lt;diretório&gt;/index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /&lt;diretório&gt;/index.php [L]
-&lt;/IfModule&gt;
-# END WordPress</code></pre>
 <h2 id="utf-8-.htaccess">utf-8 (.htaccess)</h2>
 <pre><code>AddDefaultCharset UTF-8</code></pre>
