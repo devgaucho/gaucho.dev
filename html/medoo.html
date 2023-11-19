@@ -3,11 +3,11 @@
 $db=new Medoo([
     &#39;type&#39;=&gt;&#39;mysql&#39;,
     &#39;host&#39;=&gt;&#39;localhost&#39;,
-    &#39;database&#39;=&gt;&#39;name&#39;,
-    &#39;username&#39;=&gt;&#39;root&#39;,
-    &#39;password&#39;=&gt;&#39;senha1234&#39;,
+    &#39;database&#39;=&gt;$_ENV[&#39;MYSQL_DB&#39;],
+    &#39;username&#39;=&gt;$_ENV[&#39;MYSQL_USER&#39;],
+    &#39;password&#39;=&gt;$_ENV[&#39;MYSL_PASSWORD&#39;],
     &#39;charset&#39;=&gt;&#39;utf8mb4&#39;,
-    &#39;collation&#39;=&gt;&#39;utf8mb4_general_ci&#39;,
+    &#39;collation&#39;=&gt;&#39;utf8mb4_unicode_ci&#39;,
     &#39;port&#39;=&gt;3306
 ]);</code></pre>
 <h2 id="conexão-sqlite">conexão sqlite</h2>

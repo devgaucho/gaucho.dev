@@ -3,6 +3,7 @@ $posts=[
 	'apache'=>'Apache',
 	'composer'=>"Composer",
 	'css'=>'CSS',
+	'dba'=>'DBA',
 	'nietzsche'=>'Frases do Nietzsche',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
