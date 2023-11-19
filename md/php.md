@@ -3,6 +3,11 @@
 http_response_code($codigoInt);
 ```
 
+## código decimal do caractere
+```
+$dec=ord('A');//retorna 65
+```
+
 ## escrever dados em um arquivo com append
 ```
 file_put_contents('nome do arquivo',$dados,FILE_APPEND);
