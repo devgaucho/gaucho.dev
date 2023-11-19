@@ -31,7 +31,6 @@ if($bool){
 ### index.php (public)
 
 ```
-<?php
 require __DIR__.'/../index.php';
 ```
 
