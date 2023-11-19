@@ -1,65 +1,36 @@
 <p>Boas práticas no design de banco de dados são essenciais para garantir a eficiência, escalabilidade, e manutenibilidade de sistemas de armazenamento de dados. Aqui está um resumo das principais boas práticas:</p>
-<ol type="1">
-<li><strong>Normalização</strong>:
-<ul>
-<li>Aplique as formas normais para evitar redundância e garantir integridade dos dados.</li>
-</ul></li>
-<li><strong>Denormalização Controlada</strong>:
-<ul>
-<li>Em certos casos, pode ser apropriado desnormalizar para otimizar o desempenho, mas faça isso com cuidado e mantenha a integridade.</li>
-</ul></li>
-<li><strong>Escolha de Tipos de Dados Apropriados</strong>:
-<ul>
-<li>Use tipos de dados que se alinhem com o conteúdo dos campos, otimizando espaço de armazenamento.</li>
-</ul></li>
-<li><strong>Índices Eficientes</strong>:
-<ul>
-<li>Adicione índices para colunas frequentemente usadas em cláusulas WHERE e JOINs, mas evite índices em excesso, pois podem impactar o desempenho de escrita.</li>
-</ul></li>
-<li><strong>Chaves Primárias e Estrangeiras</strong>:
-<ul>
-<li>Utilize chaves primárias para identificar exclusivamente cada linha e chaves estrangeiras para manter integridade referencial.</li>
-</ul></li>
-<li><strong>Evite o Uso Excessivo de NULL</strong>:
-<ul>
-<li>Considere usar valores padrão em vez de NULL sempre que possível.</li>
-</ul></li>
-<li><strong>Normalização de Desempenho</strong>:
-<ul>
-<li>Em situações de leitura intensiva, considere a normalização de desempenho, denormalizando seletivamente para otimizar o acesso.</li>
-</ul></li>
-<li><strong>Pensamento Escalar</strong>:
-<ul>
-<li>Projete para escalabilidade, considerando o crescimento futuro de dados e carga.</li>
-</ul></li>
-<li><strong>Segurança e Privacidade</strong>:
-<ul>
-<li>Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados sensíveis.</li>
-</ul></li>
-<li><strong>Backup e Recuperação</strong>:
-<ul>
-<li>Implemente um plano robusto de backup e recuperação para evitar perda de dados.</li>
-</ul></li>
-<li><strong>Manutenção Regular</strong>:
-<ul>
-<li>Realize manutenção regular, como otimização de índices e atualizações estatísticas, para garantir o desempenho contínuo do banco de dados.</li>
-</ul></li>
-<li><strong>Padronização de Nomenclatura</strong>:
-<ul>
-<li>Use uma convenção de nomenclatura consistente para tabelas, colunas, índices e procedimentos armazenados para facilitar a manutenção.</li>
-</ul></li>
-<li><strong>Documentação Adequada</strong>:
-<ul>
-<li>Documente o esquema do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais para facilitar a compreensão e a manutenção.</li>
-</ul></li>
-<li><strong>Testes e Otimização Contínua</strong>:
-<ul>
-<li>Realize testes de desempenho regulares e otimize consultas conforme necessário para garantir uma execução eficiente.</li>
-</ul></li>
-<li><strong>Concorrência e Transações</strong>:
-<ul>
-<li>Gerencie transações cuidadosamente para manter a consistência e a integridade dos dados, especialmente em ambientes de concorrência.</li>
-</ul></li>
-</ol>
+<h2 id="normalização">1. Normalização:</h2>
+<p>Aplique as formas normais para evitar redundância e garantir integridade dos dados.</p>
+<h2 id="denormalização-controlada">2. Denormalização Controlada:</h2>
+<p>Em certos casos, pode ser apropriado desnormalizar para otimizar o desempenho, mas faça isso com cuidado e mantenha a integridade.</p>
+<h2 id="escolha-de-tipos-de-dados-apropriados">3. Escolha de Tipos de Dados Apropriados:</h2>
+<p>Use tipos de dados que se alinhem com o conteúdo dos campos, otimizando espaço de armazenamento.</p>
+<h2 id="índices-eficientes">4. Índices Eficientes:</h2>
+<p>Adicione índices para colunas frequentemente usadas em cláusulas WHERE e JOINs, mas evite índices em excesso, pois podem impactar o desempenho de escrita.</p>
+<h2 id="chaves-primárias-e-estrangeiras">5. Chaves Primárias e Estrangeiras:</h2>
+<p>Utilize chaves primárias para identificar exclusivamente cada linha e chaves estrangeiras para manter integridade referencial.</p>
+<h2 id="evite-o-uso-excessivo-de-null">6. Evite o Uso Excessivo de NULL:</h2>
+<p>Considere usar valores padrão em vez de NULL sempre que possível.</p>
+<h2 id="normalização-de-desempenho">7. Normalização de Desempenho:</h2>
+<p>Em situações de leitura intensiva, considere a normalização de desempenho, denormalizando seletivamente para otimizar o acesso.</p>
+<h2 id="pensamento-escalar">8. Pensamento Escalar:</h2>
+<p>Projete para escalabilidade, considerando o crescimento futuro de dados e carga.</p>
+<h2 id="segurança-e-privacidade">9. Segurança e Privacidade:</h2>
+<p>Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados sensíveis.</p>
+<h2 id="backup-e-recuperação">10. Backup e Recuperação:</h2>
+<p>Implemente um plano robusto de backup e recuperação para evitar perda de dados.</p>
+<h2 id="manutenção-regular">11. Manutenção Regular:</h2>
+<p>Realize manutenção regular, como otimização de índices e atualizações estatísticas, para garantir o desempenho contínuo do banco de dados.</p>
+<h2 id="padronização-de-nomenclatura">12. Padronização de Nomenclatura:</h2>
+<p>Use uma convenção de nomenclatura consistente para tabelas, colunas, índices e procedimentos armazenados para facilitar a manutenção.</p>
+<h2 id="documentação-adequada">13. Documentação Adequada:</h2>
+<p>Documente o esquema do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais para facilitar a compreensão e a manutenção.</p>
+<h2 id="testes-e-otimização-contínua">14. Testes e Otimização Contínua:</h2>
+<p>Realize testes de desempenho regulares e otimize consultas conforme necessário para garantir uma execução eficiente.</p>
+<h2 id="concorrência-e-transações">15. Concorrência e Transações:</h2>
+<p>Gerencie transações cuidadosamente para manter a consistência e a integridade dos dados, especialmente em ambientes de concorrência.</p>
 <p>Lembrando que cada aplicação é única, e as boas práticas devem ser adaptadas aos requisitos específicos do sistema em questão.</p>
-<p>Fonte: ChatGPT 3.5 (19nov2023)</p>
+<h3 id="fonte">Fonte:</h3>
+<ul>
+<li>ChatGPT 3.5 (19nov2023)</li>
+</ul>
