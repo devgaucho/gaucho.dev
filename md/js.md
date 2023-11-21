@@ -70,6 +70,30 @@ request.send();
 history.state.<nome da propriedade>
 ```
 
+## promise
+
+```
+let minhaPromise = new Promise(function(resolve, reject) {
+    let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
+
+    setTimeout(function() {
+        if (operacao) {
+            resolve('Operação bem-sucedida!');
+        } else {
+            reject('Operação falhou!');
+        }
+    }, 1000);
+});
+
+minhaPromise
+    .then(function(value) {
+        console.log(value); // Será executado se a operação for bem-sucedida
+    })
+    .catch(function(error) {
+        console.log(error); // Será executado se a operação falhar
+    });
+```
+
 ## undefined
 
 variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso
