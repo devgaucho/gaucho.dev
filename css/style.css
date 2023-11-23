@@ -1,5 +1,6 @@
 /*
 v2	ajustes no tamanho das linhas e nas tags das fontes
+v3	caixa de código com fundo prateado
 */
 
 h1{
@@ -21,10 +22,8 @@ h2,hr{
 	border-top:1px solid silver;
 }
 pre{
-	background:black;
-	color:lime;
-	font-weight:bold;
-	padding:24px;
+	background:silver;
+	padding:1em;
 	white-space:pre-wrap;       /* Since CSS 2.1 */
 	white-space:-moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space:-pre-wrap;      /* Opera 4-6 */

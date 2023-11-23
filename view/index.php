@@ -7,7 +7,7 @@
 	<meta name="twitter:title" content="Gaucho.dev" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="img/logo.jpg" />
-	<link rel="stylesheet" href="css/style.css?v2" />	
+	<link rel="stylesheet" href="css/style.css?v3" />	
 </head>
 <body>
 	<table class=container width=100%>
