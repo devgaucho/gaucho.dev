@@ -19,36 +19,36 @@
 ## webs colors (vga/srgb)
 <table align=center width="100%" border=1>
 	<tr>
-		<td bgcolor=Black width=36></td><td>Black  = "#000000"</td>
-		<td bgcolor=Green width=36></td><td>Green  = "#008000"</td>
+		<td bgcolor=Black width=36></td><td>Black  = #000000</td>
+		<td bgcolor=Green width=36></td><td>Green  = #008000</td>
 	</tr>
 	<tr>
-		<td bgcolor=Silver></td><td>Silver = "#C0C0C0"</td>
-		<td bgcolor=Lime></td><td>Lime   = "#00FF00"</td>
+		<td bgcolor=Silver></td><td>Silver = #C0C0C0</td>
+		<td bgcolor=Lime></td><td>Lime   = #00FF00"</td>
 	</tr>
 	<tr>
-		<td bgcolor=Gray></td><td>Gray   = "#808080"</td>
-		<td bgcolor=Olive></td><td>Olive  = "#808000"</td>
+		<td bgcolor=Gray></td><td>Gray   = #808080</td>
+		<td bgcolor=Olive></td><td>Olive  = #808000</td>
 	</tr>
 	<tr>
-		<td bgcolor=White></td><td>White  = "#FFFFFF"</td>
-		<td bgcolor=Yellow></td><td>Yellow = "#FFFF00"</td>
+		<td bgcolor=White></td><td>White  = #FFFFFF</td>
+		<td bgcolor=Yellow></td><td>Yellow = #FFFF00</td>
 	</tr>
 	<tr>
-		<td bgcolor=Maroon></td><td>Maroon = "#800000"</td>
-		<td bgcolor=Navy></td><td>Navy   = "#000080"</td>
+		<td bgcolor=Maroon></td><td>Maroon = #800000</td>
+		<td bgcolor=Navy></td><td>Navy   = #000080</td>
 	</tr>
 	<tr>
-		<td bgcolor=Red></td><td>Red    = "#FF0000"</td>
-		<td bgcolor=Blue></td><td>Blue   = "#0000FF"</td>
+		<td bgcolor=Red></td><td>Red    = #FF0000</td>
+		<td bgcolor=Blue></td><td>Blue   = #0000FF</td>
 	</tr>
 	<tr>
-		<td bgcolor=Purple></td><td>Purple = "#800080"</td>
-		<td bgcolor=Teal></td><td>Teal   = "#008080"</td>
+		<td bgcolor=Purple></td><td>Purple = #800080</td>
+		<td bgcolor=Teal></td><td>Teal   = #008080</td>
 	</tr>
 	<tr>
-		<td bgcolor=Fuchsia></td><td>Fuchsia  = "#FF00FF"</td>
-		<td bgcolor=Aqua></td><td bgcolor=>Aqua   = "#00FFFF"</td>
+		<td bgcolor=Fuchsia></td><td>Fuchsia  = #FF00FF</td>
+		<td bgcolor=Aqua></td><td bgcolor=>Aqua   = #00FFFF</td>
 	</tr>
 </table>
 
