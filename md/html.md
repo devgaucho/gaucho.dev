@@ -24,7 +24,7 @@
 	</tr>
 	<tr>
 		<td bgcolor=Silver></td><td>Silver = #C0C0C0</td>
-		<td bgcolor=Lime></td><td>Lime   = #00FF00"</td>
+		<td bgcolor=Lime></td><td>Lime   = #00FF00</td>
 	</tr>
 	<tr>
 		<td bgcolor=Gray></td><td>Gray   = #808080</td>
