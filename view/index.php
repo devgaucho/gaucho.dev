@@ -21,6 +21,7 @@
 		<tr>		
 			<td align=center width=100%>
 				<h2>Artigos</h2>
+				<h3>Sobre criação de sites</h3>
 				<!-- <a href="?post=composer">Composer</a><br> -->
 				<?php
 				foreach($posts as $arquivoDoPost=>$tituloDoPost){
