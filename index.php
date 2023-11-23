@@ -3,13 +3,13 @@ $posts=[
 	'apache'=>'Apache',
 	'composer'=>"Composer",
 	'css'=>'CSS',
-	'dba'=>'DBA',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
 	'js'=>'JavaScript',
 	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
-	'php'=>'PHP'
+	'php'=>'PHP',
+	'sql'=>'SQL',
 ];
 if(
 	isset(
