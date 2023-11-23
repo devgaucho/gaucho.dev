@@ -1,7 +1,7 @@
-<div class="center">
-	<small>
-		<a href="https://github.com/devgaucho">Github</a>
-		|
+<p class="center">
+	<b>
+		<a href="https://github.com/devgaucho">GitHub</a>
+		&bull;
 		<a href="https://x.com/devgaucho">Twitter</a>
-	</small>
-</div>
+	</b>
+</p>

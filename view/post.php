@@ -20,7 +20,6 @@
 			P&aacute;gina inicial
 		</a>
 	</p>
-	<hr>
 	<?php require 'footer.php'; ?>
 </body>
 </html>
