@@ -55,6 +55,13 @@ $json=json_encode($mix,JSON_PRETTY_PRINT);
 $str=file_get_contents('nome_do_arquivo');
 ```
 
+## sleep
+
+```
+sleep(1);//pausa de 1 segundo
+usleep(1);//pausa de 1 milisegundo
+```
+
 ## user-agent
 ```
 $str=$_SERVER['HTTP_USER_AGENT'];
