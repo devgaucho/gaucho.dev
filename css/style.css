@@ -1,12 +1,15 @@
 h1{
-	line-height:1.75em;
-	margin:0;
 	text-align:center;
+}
+h1,h2,h3{
+	line-height:2em;
+	margin:0;
+}
+h1::first-letter,h2::first-letter ,h3::first-letter{
+	text-transform: uppercase;
 }
 h2{
 	display:block;
-	line-height:2em;
-	margin:0;
 	margin-bottom:-0.5em;
 }
 h2,hr{
