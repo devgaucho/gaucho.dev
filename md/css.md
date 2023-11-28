@@ -6,6 +6,28 @@
 Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media/prefers-color-scheme)
 
 
+## fontes
+
+### mono
+
+```
+code{
+	font-family:"Courier New","Liberation Mono",Courier,monospace;
+}
+```
+
+### sans
+
+```
+body{
+	font-family: Arial,"Liberation Sans",Helvetica,sans-serif;
+	font-size:24px;
+	line-height:1.5em;
+}
+```
+
+Fonte: [MIT](http://web.mit.edu/jmorzins/www/fonts.html)
+
 ## media queries
 ```
 @media (min-width: 700px) and (orientation: landscape){...}

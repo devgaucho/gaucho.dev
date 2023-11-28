@@ -7,7 +7,7 @@
 	<meta name="twitter:title" content="Gaucho.dev" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="img/logo.jpg" />
-	<link rel="stylesheet" href="css/style.css?v3" />	
+	<link rel="stylesheet" href="css/style.css?v4" />	
 </head>
 <body>
 	<table class=container width=100%>
@@ -21,7 +21,6 @@
 		<tr>		
 			<td align=center width=100%>
 				<h2>Artigos</h2>
-				<h3>Sobre criação de sites</h3>
 				<!-- <a href="?post=composer">Composer</a><br> -->
 				<?php
 				foreach($posts as $arquivoDoPost=>$tituloDoPost){
