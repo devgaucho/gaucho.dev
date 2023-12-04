@@ -7,13 +7,13 @@
 5. mantenha as coisas simples, não tente reinventar a roda
 6. evite a repetição de códigos e as classes gigantes
 7. bibliotecas são melhores que frameworks
-8. nada de código inline²
+8. nada de código inline ou incorporado²
 
 ### 1) Tipos de indentação:
 
 ![Tipos de indentação](https://gaucho.dev/img/indentation.jpg)
 
-### 2) Exemplos de código inline:
+### 2) Exemplos de código inline ou incorporado:
 
 - `funções arrow`
 - operadores ternários
