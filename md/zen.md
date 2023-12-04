@@ -9,11 +9,11 @@
 7. bibliotecas são melhores que frameworks
 8. nada de código inline²
 
-### 1) tipos de indentação:
+### 1) Tipos de indentação:
 
 ![Tipos de indentação](https://gaucho.dev/img/indentation.jpg)
 
-### 2) exemplos de código inline:
+### 2) Exemplos de código inline:
 
 - `funções arrow`
 - operadores ternários
