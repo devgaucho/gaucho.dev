@@ -10,6 +10,7 @@ $posts=[
 	'mustache'=>'Mustache',
 	'php'=>'PHP',
 	'sql'=>'SQL',
+	'zen'=>'Zen do Gaucho',
 ];
 if(
 	isset(
