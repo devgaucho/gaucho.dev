@@ -10,6 +10,7 @@
 8. nada de código inline*
 
 *ex:
+
 - `funções arrow`
 - operadores ternários
 - `<script>`
