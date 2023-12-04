@@ -9,7 +9,7 @@
 7. bibliotecas são melhores que frameworks
 8. nada de código inline*
 
-*ex:
+*exemplos de código inline:
 
 - `funções arrow`
 - operadores ternários
