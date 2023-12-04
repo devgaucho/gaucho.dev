@@ -7,4 +7,4 @@
 5. mantenha as coisas simples, não tente reinventar a roda
 6. evite a repetição de códigos e as classes gigantes
 7. bibliotecas são melhores que frameworks
-8. nada de código inline (ex: operadores ternários,<style>,style,etc)
+8. nada de código inline (ex: operadores ternários,`funções arrow`,`<script>`,`<style>`,style,etc)
