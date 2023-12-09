@@ -14,13 +14,14 @@ $db=new Medoo([
 ]);
 ```
 
+
 ## conexão sqlite
 
 ```
 use Medoo\Medoo;
 $db=new Medoo([
 	'type'=>'sqlite',
-	'database'=>'db/db.sqlite3'
+	'database'=>__DIR__.'/db/db.sqlite3'
 ]);
 ```
 
