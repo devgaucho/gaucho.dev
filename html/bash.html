@@ -1,0 +1,5 @@
+<h2 id="rodando-comandos-em-paralelo">rodando comandos em paralelo</h2>
+<pre><code>parallel --gnu &lt;&lt; &#39;EOF&#39;
+date &gt;&gt; out1 &amp;&amp; sleep 5
+date &gt;&gt; out2 &amp;&amp; sleep 5
+EOF</code></pre>

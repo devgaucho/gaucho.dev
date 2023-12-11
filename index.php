@@ -1,6 +1,7 @@
 <?php
 $posts=[
 	'apache'=>'Apache',
+	'bash'=>'Bash',
 	'composer'=>"Composer",
 	'css'=>'CSS',
 	'html'=>'HTML',
