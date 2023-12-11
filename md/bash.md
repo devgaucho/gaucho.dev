@@ -18,6 +18,7 @@ date && parallel sleep ::: 5 5 5 5 5 5 5 5 && date
 ```
 
 Tempo para rodar:
+
 - 1 core = 40s
 - 2 core = 20s
 - 4 core = 10s
