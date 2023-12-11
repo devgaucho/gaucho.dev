@@ -26,5 +26,5 @@ ErrorDocument 403 /index.php
 ## utf-8 (.htaccess)
 
 ```
-AddCharset utf-8 .css .js .json
+AddCharset utf-8 .css .html .js .json .md .txt
 ```
