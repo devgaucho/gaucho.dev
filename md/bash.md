@@ -17,7 +17,7 @@ Fonte: [StackOverwlow](https://stackoverflow.com/a/33765906)
 date && parallel sleep ::: 5 5 5 5 5 5 5 5 && date
 ```
 
-Tempo para rodar:
+Tempo para rodar o comando acima:
 
 - 1 core = 40s
 - 2 core = 20s
