@@ -1,3 +1,33 @@
+## git
+
+### .gitignore
+
+```
+/.env
+*.swp
+/db
+/public/test*.php
+/todo.txt
+/vendor
+```
+
+## make
+
+### make install
+
+```
+LESS=/usr/bin/lessc
+PHP=/usr/bin/php
+UGLIFY=/usr/bin/uglifyjs.terser
+
+install: bin/mig.php less/style.less
+	clear
+	$(PHP) bin/mig.php
+	$(LESS) less/style.less public/css/style.css --clean-css
+	$(UGLIFY) js/script.js --output public/js/script.js --compress
+	echo "pronto!"
+```
+
 ## parallel
 
 ### rodando dois comandos em paralelo

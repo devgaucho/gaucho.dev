@@ -1,3 +1,23 @@
+<h2 id="git">git</h2>
+<h3 id="gitignore">.gitignore</h3>
+<pre><code>/.env
+*.swp
+/db
+/public/test*.php
+/todo.txt
+/vendor</code></pre>
+<h2 id="make">make</h2>
+<h3 id="make-install">make install</h3>
+<pre><code>LESS=/usr/bin/lessc
+PHP=/usr/bin/php
+UGLIFY=/usr/bin/uglifyjs.terser
+
+install: bin/mig.php less/style.less
+    clear
+    $(PHP) bin/mig.php
+    $(LESS) less/style.less public/css/style.css --clean-css
+    $(UGLIFY) js/script.js --output public/js/script.js --compress
+    echo &quot;pronto!&quot;</code></pre>
 <h2 id="parallel">parallel</h2>
 <h3 id="rodando-dois-comandos-em-paralelo">rodando dois comandos em paralelo</h3>
 <pre><code>parallel --gnu &lt;&lt; &#39;EOF&#39;
