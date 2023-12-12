@@ -67,7 +67,7 @@ tar -cvf arquivo.tar diretório
 ### extrair arquivos
 
 ```
-tar -xf arquivos.tar
+tar -xf arquivo.tar
 ```
 
 ## zip
