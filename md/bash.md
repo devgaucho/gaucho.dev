@@ -55,3 +55,17 @@ Tempo para rodar o comando acima:
 - 2 core = 20s
 - 4 core = 10s
 - 8 core = 5s
+
+## zip
+
+### zipar um diretório
+
+```
+zip -r nomeDoZip.zip nomeDoDiretorio
+```
+
+### extrair arquivos do zip
+
+```
+unzip nomeDoZip.zip
+```
