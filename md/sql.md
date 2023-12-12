@@ -50,3 +50,8 @@ Gerencie transações cuidadosamente para manter a consistência e a integridade
 Lembrando que cada aplicação é única, e as boas práticas devem ser adaptadas aos requisitos específicos do sistema em questão.
 
 Fonte: ChatGPT 3.5 (19nov2023)
+
+## Criar banco de dados (mysql)
+```
+CREATE DATABASE banco CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
