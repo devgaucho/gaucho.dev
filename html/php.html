@@ -31,3 +31,7 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
 usleep(1);//pausa de 1 milisegundo</code></pre>
 <h2 id="user-agent">user-agent</h2>
 <pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>
+<h2 id="versão">versão</h2>
+<pre><code>if (version_compare(PHP_VERSION, &#39;8.0.0&#39;) &lt; 0) {
+    die(&quot;é necessário ter PHP 8 ou superior&quot;);
+}</code></pre>

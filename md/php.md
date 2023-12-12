@@ -66,3 +66,10 @@ usleep(1);//pausa de 1 milisegundo
 ```
 $str=$_SERVER['HTTP_USER_AGENT'];
 ```
+
+## versão
+```
+if (version_compare(PHP_VERSION, '8.0.0') < 0) {
+    die("é necessário ter PHP 8 ou superior");
+}
+```
