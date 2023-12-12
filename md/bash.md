@@ -61,7 +61,7 @@ Tempo para rodar o comando acima:
 ### adicionar um diretório
 
 ```
-tar -cvzf [arquivo.tar.gz] [diretório]
+tar -cvzf arquivo.tar.gz diretório
 ```
 
 ### extrair arquivos
