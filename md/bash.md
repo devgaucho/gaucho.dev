@@ -56,6 +56,20 @@ Tempo para rodar o comando acima:
 - 4 core = 10s
 - 8 core = 5s
 
+## tar
+
+### adicionar um diretório
+
+```
+tar -cvzf [arquivo.tar.gz] [diretório]
+```
+
+### extrair arquivos
+
+```
+tar -xf arquivos.tar
+```
+
 ## zip
 
 ### zipar um diretório
