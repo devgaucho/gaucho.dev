@@ -1,74 +1,46 @@
-<h2 id="baixar-html">baixar html</h2>
-<pre><code>fetch(&#39;/arquivo.html&#39;)
-.then((response) =&gt; {
-    return response.text();
-})
-.then((html) =&gt; {
-    processarAResposta(html);
-});</code></pre>
-<h2 id="constantes-e-variáveis">constantes e variáveis</h2>
-<h3 id="const">const</h3>
+<h2>baixar html</h2>
+<p><code>fetch('/arquivo.html') .then((response) =&gt; {     return response.text(); }) .then((html) =&gt; {     processarAResposta(html); });</code></p>
+<h2>constantes e variáveis</h2>
+<h3>const</h3>
 <ul>
 <li>Nível de escopo: bloco</li>
 <li>Rescrita de valor: não</li>
 <li>Valor inicial como undefined: não</li>
 </ul>
-<h3 id="let">let</h3>
+<h3>let</h3>
 <ul>
 <li>Nível de escopo: bloco</li>
 <li>Rescrita de valor: sim</li>
 <li>Valor inicial como undefined: não</li>
 </ul>
-<h3 id="var">var</h3>
+<h3>var</h3>
 <ul>
 <li>Nível de escopo: função</li>
 <li>Rescrita de valor: sim</li>
 <li>Valor inicial como undefined: sim</li>
 </ul>
-<h2 id="escopos">escopos</h2>
-<h3 id="escopo-de-bloco">escopo de bloco</h3>
+<h2>escopos</h2>
+<h3>escopo de bloco</h3>
 <p>a variável só acessível em um bloco igual ou inferior ao bloco onde é chamada</p>
-<h3 id="escopo-de-função">escopo de função</h3>
+<h3>escopo de função</h3>
 <p>a variável é acessível em toda a função onde é chamada pois ela é içada (hoisted) para cima</p>
-<h2 id="getjson-com-fetch">getJson (com fetch)</h2>
-<pre><code>fetch(&#39;arquivo.json&#39;)
-.then(response =&gt; response.json())
-.then(data =&gt; console.log(data))
-.catch(() =&gt; alert(&#39;erro&#39;));</code></pre>
-<h2 id="getjson-com-xmlhttprequest">getJson (com XMLHttpRequest)</h2>
-<pre><code>var request = new XMLHttpRequest();
-request.open(&#39;GET&#39;,&#39;arquivo.json&#39;,true);
-request.onload=function() {
-    if (this.status &gt;= 200 &amp;&amp; this.status &lt; 400) {
-        var data = JSON.parse(this.response);
-        console.log(data);
-    }else{
-        alert(&#39;erro&#39;);
+<h2>getJson (com fetch)</h2>
+<p><code>fetch('arquivo.json') .then(response =&gt; response.json()) .then(data =&gt; console.log(data)) .catch(() =&gt; alert('erro'));</code></p>
+<h2>getJson (com XMLHttpRequest)</h2>
+<p><code>var request = new XMLHttpRequest(); request.open('GET','arquivo.json',true); request.onload=function() {     if (this.status &gt;= 200 &amp;&amp; this.status &lt; 400) {         var data = JSON.parse(this.response);         console.log(data);     }else{         alert('erro');     } }; request.send();</code></p>
+<h2>historico (ler propriedade do estado)</h2>
+<p><code>history.state.&lt;nome da propriedade&gt;</code></p>
+<h2>promise</h2>
+<p>``` let minhaPromise = new Promise(function(resolve, reject) { let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar</p>
+<pre><code>setTimeout(function() {
+    if (operacao) {
+        resolve(&#39;Operação bem-sucedida!&#39;);
+    } else {
+        reject(&#39;Operação falhou!&#39;);
     }
-};
-request.send();</code></pre>
-<h2 id="historico-ler-propriedade-do-estado">historico (ler propriedade do estado)</h2>
-<pre><code>history.state.&lt;nome da propriedade&gt;</code></pre>
-<h2 id="promise">promise</h2>
-<pre><code>let minhaPromise = new Promise(function(resolve, reject) {
-    let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
-
-    setTimeout(function() {
-        if (operacao) {
-            resolve(&#39;Operação bem-sucedida!&#39;);
-        } else {
-            reject(&#39;Operação falhou!&#39;);
-        }
-    }, 1000);
-});
-
-minhaPromise
-    .then(function(value) {
-        console.log(value); // Será executado se a operação for bem-sucedida
-    })
-    .catch(function(error) {
-        console.log(error); // Será executado se a operação falhar
-    });</code></pre>
-<h2 id="undefined">undefined</h2>
+}, 1000);</code></pre>
+<p>});</p>
+<p>minhaPromise .then(function(value) { console.log(value); // Será executado se a operação for bem-sucedida }) .catch(function(error) { console.log(error); // Será executado se a operação falhar }); ```</p>
+<h2>undefined</h2>
 <p>variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso</p>
 <p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>

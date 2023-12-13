@@ -1,20 +1,6 @@
-<h2 id="conexão-mysql">conexão mysql</h2>
-<pre><code>use Medoo\Medoo;
-$db=new Medoo([
-    &#39;type&#39;=&gt;&#39;mysql&#39;,
-    &#39;host&#39;=&gt;&#39;localhost&#39;,
-    &#39;database&#39;=&gt;$_ENV[&#39;MYSQL_DB&#39;],
-    &#39;username&#39;=&gt;$_ENV[&#39;MYSQL_USER&#39;],
-    &#39;password&#39;=&gt;$_ENV[&#39;MYSQL_PASSWORD&#39;],
-    &#39;charset&#39;=&gt;&#39;utf8mb4&#39;,
-    &#39;collation&#39;=&gt;&#39;utf8mb4_unicode_ci&#39;,
-    &#39;port&#39;=&gt;3306
-]);</code></pre>
-<h2 id="conexão-sqlite">conexão sqlite</h2>
-<pre><code>use Medoo\Medoo;
-$db=new Medoo([
-    &#39;type&#39;=&gt;&#39;sqlite&#39;,
-    &#39;database&#39;=&gt;__DIR__.&#39;/db/db.sqlite3&#39;
-]);</code></pre>
-<h2 id="instalar">instalar</h2>
-<pre><code>composer require catfan/medoo</code></pre>
+<h2>conexão mysql</h2>
+<p><code>use Medoo\Medoo; $db=new Medoo([     'type'=&gt;'mysql',     'host'=&gt;'localhost',     'database'=&gt;$_ENV['MYSQL_DB'],     'username'=&gt;$_ENV['MYSQL_USER'],     'password'=&gt;$_ENV['MYSQL_PASSWORD'],     'charset'=&gt;'utf8mb4',     'collation'=&gt;'utf8mb4_unicode_ci',     'port'=&gt;3306 ]);</code></p>
+<h2>conexão sqlite</h2>
+<p><code>use Medoo\Medoo; $db=new Medoo([     'type'=&gt;'sqlite',     'database'=&gt;__DIR__.'/db/db.sqlite3' ]);</code></p>
+<h2>instalar</h2>
+<p><code>composer require catfan/medoo</code></p>

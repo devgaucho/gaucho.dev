@@ -1,37 +1,24 @@
-<h2 id="código-de-resposta-http">código de resposta (http)</h2>
-<pre><code>http_response_code($codigoInt);</code></pre>
-<h2 id="código-decimal-do-caractere">código decimal do caractere</h2>
-<pre><code>$dec=ord(&#39;A&#39;);//retorna 65</code></pre>
-<h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um arquivo com append</h2>
-<pre><code>file_put_contents(&#39;nome do arquivo&#39;,$dados,FILE_APPEND);</code></pre>
-<p>Fonte: <a href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
-<h2 id="exibir-erros">exibir erros</h2>
-<pre><code>if($bool){
-    ini_set(&#39;display_errors&#39;, 1);
-    ini_set(&#39;display_startup_errors&#39;, 1);
-    error_reporting(E_ALL);
-}else{
-    ini_set(&#39;display_errors&#39;, 0);
-    ini_set(&#39;display_startup_errors&#39;, 0);
-    error_reporting(0);
-}</code></pre>
-<h2 id="json-header">json (header)</h2>
-<pre><code>header(&#39;Content-Type:application/json&#39;);
-die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
-<h2 id="json-decode-array">json decode (array)</h2>
-<pre><code>$mix=json_decode($json,true);</code></pre>
-<h2 id="json-encode-pretty">json encode (pretty)</h2>
-<pre><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></pre>
-<h2 id="ler-dados-de-um-arquivo">ler dados de um arquivo</h2>
-<pre><code>$str=file_get_contents(&#39;nome_do_arquivo&#39;);</code></pre>
-<h2 id="publicindex.php">public/index.php</h2>
-<pre><code>require __DIR__.&#39;/../cfg.php&#39;;</code></pre>
-<h2 id="sleep">sleep</h2>
-<pre><code>sleep(1);//pausa de 1 segundo
-usleep(1);//pausa de 1 milisegundo</code></pre>
-<h2 id="user-agent">user-agent</h2>
-<pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>
-<h2 id="versão">versão</h2>
-<pre><code>if (version_compare(PHP_VERSION, &#39;8.0.0&#39;) &lt; 0) {
-    die(&quot;é necessário ter PHP 8 ou superior&quot;);
-}</code></pre>
+<h2>código de resposta (http)</h2>
+<p><code>http_response_code($codigoInt);</code></p>
+<h2>código decimal do caractere</h2>
+<p><code>$dec=ord('A');//retorna 65</code></p>
+<h2>escrever dados em um arquivo com append</h2>
+<p><code>file_put_contents('nome do arquivo',$dados,FILE_APPEND);</code> Fonte: <a href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
+<h2>exibir erros</h2>
+<p><code>if($bool){     ini_set('display_errors', 1);     ini_set('display_startup_errors', 1);     error_reporting(E_ALL); }else{     ini_set('display_errors', 0);     ini_set('display_startup_errors', 0);     error_reporting(0); }</code></p>
+<h2>json (header)</h2>
+<p><code>header('Content-Type:application/json'); die(json_encode($mix,JSON_PRETTY_PRINT));</code></p>
+<h2>json decode (array)</h2>
+<p><code>$mix=json_decode($json,true);</code></p>
+<h2>json encode (pretty)</h2>
+<p><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></p>
+<h2>ler dados de um arquivo</h2>
+<p><code>$str=file_get_contents('nome_do_arquivo');</code></p>
+<h2>public/index.php</h2>
+<p><code>require __DIR__.'/../cfg.php';</code></p>
+<h2>sleep</h2>
+<p><code>sleep(1);//pausa de 1 segundo usleep(1);//pausa de 1 milisegundo</code></p>
+<h2>user-agent</h2>
+<p><code>$str=$_SERVER['HTTP_USER_AGENT'];</code></p>
+<h2>versão</h2>
+<p><code>if (version_compare(PHP_VERSION, '8.0.0') &lt; 0) {     die("é necessário ter PHP 8 ou superior"); }</code></p>

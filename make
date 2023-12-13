@@ -3,7 +3,7 @@ echo "1/3) convertendo arquivos .md para .html"
 for f in md/*.md
 do
 	apenasONome=$(basename "$f" | cut -d. -f1)
-	pandoc -f markdown "$f" -t html -o "html/$apenasONome.html"
+	pandoc -f markdown_strict "$f" -t html -o "html/$apenasONome.html"
 done
 
 echo

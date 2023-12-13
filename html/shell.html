@@ -1,34 +1,16 @@
-<h2 id="git">git</h2>
-<h3 id="gitignore">.gitignore</h3>
-<pre><code>/.env
-*.swp
-/db
-/public/test*.php
-/todo.txt
-/vendor</code></pre>
-<h2 id="make">make</h2>
-<h3 id="make-install">make install</h3>
-<pre><code>LESS=/usr/bin/lessc
-PHP=/usr/bin/php
-UGLIFY=/usr/bin/uglifyjs.terser
-
-install: bin/mig.php less/style.less
-    clear
-    composer install
-    composer dump-autoload
-    $(PHP) bin/mig.php
-    $(LESS) less/style.less public/css/style.css --clean-css
-    $(UGLIFY) js/script.js --output public/js/script.js --compress
-    echo &quot;pronto!&quot;</code></pre>
-<h2 id="parallel">parallel</h2>
-<h3 id="rodando-dois-comandos-em-paralelo">rodando dois comandos em paralelo</h3>
-<pre><code>parallel --gnu &lt;&lt; &#39;EOF&#39;
-date &gt;&gt; out1 &amp;&amp; sleep 5
-date &gt;&gt; out2 &amp;&amp; sleep 5
-EOF</code></pre>
+<h2>git</h2>
+<h3>.gitignore</h3>
+<p><code>/.env *.swp /db /public/test*.php /todo.txt /vendor</code></p>
+<h2>make</h2>
+<h3>make install</h3>
+<p>``` LESS=/usr/bin/lessc PHP=/usr/bin/php UGLIFY=/usr/bin/uglifyjs.terser</p>
+<p>install: bin/mig.php less/style.less clear composer install composer dump-autoload $(PHP) bin/mig.php $(LESS) less/style.less public/css/style.css --clean-css $(UGLIFY) js/script.js --output public/js/script.js --compress echo "pronto!" ```</p>
+<h2>parallel</h2>
+<h3>rodando dois comandos em paralelo</h3>
+<p><code>parallel --gnu &lt;&lt; 'EOF' date &gt;&gt; out1 &amp;&amp; sleep 5 date &gt;&gt; out2 &amp;&amp; sleep 5 EOF</code></p>
 <p>Fonte: <a href="https://stackoverflow.com/a/33765906">StackOverwlow</a></p>
-<h3 id="rodando-comandos-em-paralelo-com-argumentos">rodando comandos em paralelo com argumentos</h3>
-<pre><code>date &amp;&amp; parallel sleep ::: 5 5 5 5 5 5 5 5 &amp;&amp; date</code></pre>
+<h3>rodando comandos em paralelo com argumentos</h3>
+<p><code>date &amp;&amp; parallel sleep ::: 5 5 5 5 5 5 5 5 &amp;&amp; date</code></p>
 <p>Tempo para rodar o comando acima:</p>
 <ul>
 <li>1 core = 40s</li>
@@ -36,13 +18,13 @@ EOF</code></pre>
 <li>4 core = 10s</li>
 <li>8 core = 5s</li>
 </ul>
-<h2 id="tar">tar</h2>
-<h3 id="adicionar-um-diretório">adicionar um diretório</h3>
-<pre><code>tar -cvf arquivo.tar diretório</code></pre>
-<h3 id="extrair-arquivos">extrair arquivos</h3>
-<pre><code>tar -xf arquivo.tar</code></pre>
-<h2 id="zip">zip</h2>
-<h3 id="zipar-um-diretório">zipar um diretório</h3>
-<pre><code>zip -r nomeDoZip.zip nomeDoDiretorio</code></pre>
-<h3 id="extrair-arquivos-do-zip">extrair arquivos do zip</h3>
-<pre><code>unzip nomeDoZip.zip</code></pre>
+<h2>tar</h2>
+<h3>adicionar um diretório</h3>
+<p><code>tar -cvf arquivo.tar diretório</code></p>
+<h3>extrair arquivos</h3>
+<p><code>tar -xf arquivo.tar</code></p>
+<h2>zip</h2>
+<h3>zipar um diretório</h3>
+<p><code>zip -r nomeDoZip.zip nomeDoDiretorio</code></p>
+<h3>extrair arquivos do zip</h3>
+<p><code>unzip nomeDoZip.zip</code></p>
