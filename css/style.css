@@ -5,6 +5,7 @@ v4	fontes
 v5	imagens e legendas
 v6	tamanho máximo da imagem
 v7	sem capitalizar
+v8	markdown_strict
 */
 
 body{
@@ -13,11 +14,11 @@ body{
 	line-height:1.5em;
 }
 code{
-	font-family:"Courier New","Liberation Mono",Courier,monospace;
-}
-figcaption{
-	color:gray;
-	text-align:center;
+	background:silver;
+	font-family:"Courier New","Liberation Mono",Courier,monospace;	
+	padding:1em;
+	white-space:pre-wrap;       /* Since CSS 2.1 */
+	word-wrap:break-word;       /* Internet Explorer 5.5+ */
 }
 h1{
 	text-align:center;
@@ -34,15 +35,6 @@ img{
 	display:block;
 	margin:0 auto;
 	max-width: 100%;
-}
-pre{
-	background:silver;
-	padding:1em;
-	white-space:pre-wrap;       /* Since CSS 2.1 */
-	white-space:-moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space:-pre-wrap;      /* Opera 4-6 */
-	white-space:-o-pre-wrap;    /* Opera 7 */
-	word-wrap:break-word;       /* Internet Explorer 5.5+ */
 }
 td{
     vertical-align:top;
