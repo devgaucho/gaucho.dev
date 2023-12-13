@@ -15,8 +15,9 @@
 
 ### 2) Exemplos de código inline ou incorporado:
 
+- atributo `style`
 - funções arrow
 - operadores ternários
 - `<script>`
 - `<style>`
-- atributo style
+
