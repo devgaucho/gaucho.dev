@@ -6,5 +6,5 @@
 <h2>parser de html (com hack)</h2>
 <p><code>function pegarFragmento(htmlStr,selStr){     var $html = $('&lt;div&gt;'+htmlStr+'&lt;/div&gt;');     var conteudoDaDiv = $html.find(selStr).html();     return conteudoDaDiv;    }</code></p>
 <h2>plugin</h2>
-<p>``` // Definindo o plugin jQuery (function($) { $.fn.mostrarAlerta = function(mensagem) { return this.each(function() { $(this).on('click', function() { alert(mensagem); }); }); }; })(jQuery);</p>
-<p>// Usando o plugin $(document).ready(function() { $('#idDoBotao').mostrarAlerta('Esta é a mensagem de alerta.'); }); ```</p>
+<p>``` (function($) { $.fn.mostrarAlerta = function(mensagem) { return this.each(function() { $(this).on('click', function() { alert(mensagem); }); }); }; })(jQuery);</p>
+<p>$(document).ready(function() { $('#idDoBotao').mostrarAlerta('Esta é a mensagem de alerta.'); }); ```</p>

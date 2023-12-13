@@ -23,7 +23,6 @@ function pegarFragmento(htmlStr,selStr){
 ## plugin
 
 ```
-// Definindo o plugin jQuery
 (function($) {
     $.fn.mostrarAlerta = function(mensagem) {
         return this.each(function() {
@@ -34,7 +33,6 @@ function pegarFragmento(htmlStr,selStr){
     };
 })(jQuery);
 
-// Usando o plugin
 $(document).ready(function() {
     $('#idDoBotao').mostrarAlerta('Esta é a mensagem de alerta.');
 });
