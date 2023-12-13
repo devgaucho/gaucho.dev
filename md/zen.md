@@ -19,4 +19,4 @@
 - operadores ternários
 - `<script>`
 - `<style>`
-- style
+- atributo style
