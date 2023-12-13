@@ -2,6 +2,7 @@
 v2	ajustes no tamanho das linhas e nas tags das fontes
 v3	caixa de código com fundo prateado
 v4	fontes
+v5	imagens e legendas
 */
 
 body{
@@ -11,6 +12,10 @@ body{
 }
 code{
 	font-family:"Courier New","Liberation Mono",Courier,monospace;
+}
+figcaption{
+	color:gray;
+	text-align:center;
 }
 h1{
 	text-align:center;
@@ -25,6 +30,10 @@ h2{
 h2,hr{
 	border:none;
 	border-top:1px solid silver;
+}
+img{
+	display:block;
+	margin:0 auto;
 }
 pre{
 	background:silver;

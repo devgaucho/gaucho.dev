@@ -23,5 +23,6 @@ if(
 	$html=file_get_contents('html/'.$_GET['post'].'.html');
 	require 'view/post.php';
 }else{
+	$title='Gaucho.dev';
 	require 'view/index.php';
 }
