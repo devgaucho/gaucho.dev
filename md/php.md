@@ -28,12 +28,6 @@ if($bool){
 }
 ```
 
-## public/index.php
-
-```
-require __DIR__.'/../cfg.php';
-```
-
 ## json (header)
 ```
 header('Content-Type:application/json');
@@ -53,6 +47,12 @@ $json=json_encode($mix,JSON_PRETTY_PRINT);
 ## ler dados de um arquivo
 ```
 $str=file_get_contents('nome_do_arquivo');
+```
+
+## public/index.php
+
+```
+require __DIR__.'/../cfg.php';
 ```
 
 ## sleep
