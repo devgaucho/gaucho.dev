@@ -1,4 +1,8 @@
-## favicon:
+## anatomia básica
+
+![Partes de uma tag HTML](https://gaucho.dev/img/html.png)
+
+## favicon
 ```
 <link rel="shortcut icon" href="img/logo.jpg"/>
 ```
