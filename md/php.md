@@ -28,10 +28,10 @@ if($bool){
 }
 ```
 
-### index.php (public)
+## public/index.php
 
 ```
-require __DIR__.'/../index.php';
+require __DIR__.'/../cfg.php';
 ```
 
 ## json (header)
