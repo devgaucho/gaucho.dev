@@ -1,4 +1,8 @@
-<h2>cdn</h2>
-<p><code>&lt;script src="https://unpkg.com/mustache"&gt;&lt;/script&gt;</code></p>
-<h2>uso básico (javascript)</h2>
-<p><code>function renderTemplate(templateId, data) {     var template = $('#' + templateId).html();     var rendered=Mustache.render(template, data);     $('#root').html(rendered); }</code></p>
+<h2 id="cdn">cdn</h2>
+<pre><code>&lt;script src=&quot;https://unpkg.com/mustache&quot;&gt;&lt;/script&gt;</code></pre>
+<h2 id="uso-básico-javascript">uso básico (javascript)</h2>
+<pre><code>function renderTemplate(templateId, data) {
+    var template = $(&#39;#&#39; + templateId).html();
+    var rendered=Mustache.render(template, data);
+    $(&#39;#root&#39;).html(rendered);
+}</code></pre>

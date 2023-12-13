@@ -1,10 +1,25 @@
-<h2>cdn</h2>
-<p><code>&lt;script src="https://unpkg.com/jquery"&gt;&lt;/script&gt;</code></p>
-<h2>getJSON</h2>
-<p><code>$.getJSON("arquivo.json",function(data){...});</code></p>
+<h2 id="cdn">cdn</h2>
+<pre><code>&lt;script src=&quot;https://unpkg.com/jquery&quot;&gt;&lt;/script&gt;</code></pre>
+<h2 id="getjson">getJSON</h2>
+<pre><code>$.getJSON(&quot;arquivo.json&quot;,function(data){...});</code></pre>
 <p>Fonte: <a href="https://api.jquery.com/jQuery.getJSON">jQuery</a></p>
-<h2>parser de html (com hack)</h2>
-<p><code>function pegarFragmento(htmlStr,selStr){     var $html = $('&lt;div&gt;'+htmlStr+'&lt;/div&gt;');     var conteudoDaDiv = $html.find(selStr).html();     return conteudoDaDiv;    }</code></p>
-<h2>plugin</h2>
-<p>``` (function($) { $.fn.mostrarAlerta = function(mensagem) { return this.each(function() { $(this).on('click', function() { alert(mensagem); }); }); }; })(jQuery);</p>
-<p>$(document).ready(function() { $('#idDoBotao').mostrarAlerta('Esta é a mensagem de alerta.'); }); ```</p>
+<h2 id="parser-de-html-com-hack">parser de html (com hack)</h2>
+<pre><code>function pegarFragmento(htmlStr,selStr){
+    var $html = $(&#39;&lt;div&gt;&#39;+htmlStr+&#39;&lt;/div&gt;&#39;);
+    var conteudoDaDiv = $html.find(selStr).html();
+    return conteudoDaDiv;   
+}</code></pre>
+<h2 id="plugin">plugin</h2>
+<pre><code>(function($) {
+    $.fn.mostrarAlerta = function(mensagem) {
+        return this.each(function() {
+            $(this).on(&#39;click&#39;, function() {
+                alert(mensagem);
+            });
+        });
+    };
+})(jQuery);
+
+$(document).ready(function() {
+    $(&#39;#idDoBotao&#39;).mostrarAlerta(&#39;Esta é a mensagem de alerta.&#39;);
+});</code></pre>
