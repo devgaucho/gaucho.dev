@@ -1,7 +1,6 @@
 <?php
 $posts=[
 	'apache'=>'Apache',
-	'bash'=>'Bash',
 	'composer'=>"Composer",
 	'css'=>'CSS',
 	'html'=>'HTML',
@@ -10,6 +9,7 @@ $posts=[
 	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
 	'php'=>'PHP',
+	'shell'=>'Shell script',
 	'sql'=>'SQL',
 	'zen'=>'Zen do Gaucho',
 ];
