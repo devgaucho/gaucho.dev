@@ -7,6 +7,7 @@ v6	tamanho máximo da imagem
 v7	sem capitalizar
 v8	<pre> otimizado
 v9	fix do cache
+v10	<code> em bold
 */
 
 body{
@@ -16,6 +17,7 @@ body{
 }
 code{
 	font-family:"Courier New","Liberation Mono",Courier,monospace;
+	font-weight: bold;
 }
 figcaption{
 	color:gray;
