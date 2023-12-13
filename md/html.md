@@ -1,6 +1,6 @@
 ## anatomia básica
 
-![Partes de uma tag HTML](https://gaucho.dev/img/html.png)
+![Partes de uma tag HTML](img/html.png)
 
 ## favicon
 ```

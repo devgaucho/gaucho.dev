@@ -11,7 +11,7 @@
 
 ### 1) Tipos de indentação:
 
-![Tipos de indentação](https://gaucho.dev/img/indentation.jpg)
+![Tipos de indentação](img/indentation.jpg)
 
 ### 2) Exemplos de código inline ou incorporado:
 
