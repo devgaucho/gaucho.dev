@@ -4,6 +4,7 @@ v3	caixa de código com fundo prateado
 v4	fontes
 v5	imagens e legendas
 v6	tamanho máximo da imagem
+v7	sem capitalizar
 */
 
 body{
@@ -20,9 +21,6 @@ figcaption{
 }
 h1{
 	text-align:center;
-}
-h1::first-letter,h2::first-letter ,h3::first-letter{
-	text-transform: uppercase;
 }
 h2{
 	display:block;

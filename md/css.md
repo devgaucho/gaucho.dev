@@ -1,3 +1,11 @@
+## capitalizar
+
+```
+h1::first-letter,h2::first-letter ,h3::first-letter{
+	text-transform: uppercase;
+}
+```
+
 ## dark mode
 ```
 @media (prefers-color-scheme: dark){...}
