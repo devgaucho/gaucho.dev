@@ -16,7 +16,7 @@
 ### 2) Exemplos de código inline ou incorporado:
 
 - atributo `style`
-- funções arrow (vai contra o item 1 do zen também)
+- funções arrow (é uma violação do item 1 do zen também)
 - operadores ternários
 - `<script>`
 - `<style>`
