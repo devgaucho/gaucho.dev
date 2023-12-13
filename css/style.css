@@ -3,6 +3,7 @@ v2	ajustes no tamanho das linhas e nas tags das fontes
 v3	caixa de código com fundo prateado
 v4	fontes
 v5	imagens e legendas
+v6	tamanho máximo da imagem
 */
 
 body{
@@ -34,6 +35,7 @@ h2,hr{
 img{
 	display:block;
 	margin:0 auto;
+	max-width: 100%;
 }
 pre{
 	background:silver;
