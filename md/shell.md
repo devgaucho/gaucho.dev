@@ -70,6 +70,12 @@ tar -cvf arquivo.tar diretório
 tar -xf arquivo.tar
 ```
 
+## linhas únicas em 3 listas diferentes
+
+```
+sort <(cat lista1 lista2 lista3) | uniq -d
+```
+
 ## zip
 
 ### zipar um diretório

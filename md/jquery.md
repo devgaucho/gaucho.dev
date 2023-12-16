@@ -42,13 +42,11 @@ $(document).ready(function() {
 
 ```
 $(document).ready(function() {
-  // enviar form ao pressionar enter no textarea
-  const textarea = $("textarea");
-  textarea.on("keypress", function(event) {
-    if (event.keyCode === 13) {
-      if (event.shiftKey) {
-        textarea.val(textarea.val() + "\n");
-      } else {
+  const textarea=$("textarea");
+  textarea.on("keydown",function(event) {
+    if(event.keyCode===13){
+      if(!event.shiftKey){
+        event.preventDefault();
         $(this).closest("form").submit();
       }
     }
