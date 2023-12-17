@@ -29,6 +29,11 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
 <h2 id="sleep">sleep</h2>
 <pre><code>sleep(1);//pausa de 1 segundo
 usleep(1);//pausa de 1 milisegundo</code></pre>
+<h2 id="tradução-básica-de-strings">tradução básica de strings</h2>
+<pre><code>$trans=[&quot;hello&quot;=&gt;&quot;olá&quot;,&quot;world&quot;=&gt;&quot;mundo&quot;];
+print strtr(&quot;hello world&quot;,$trans);</code></pre>
+<p>Retorna “olá mundo”</p>
+<p>Fonte: <a href="https://www.php.net/manual/en/function.strtr">PHP</a></p>
 <h2 id="user-agent">user-agent</h2>
 <pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>
 <h2 id="versão">versão</h2>

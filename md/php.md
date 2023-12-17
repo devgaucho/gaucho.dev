@@ -56,11 +56,19 @@ require __DIR__.'/../cfg.php';
 ```
 
 ## sleep
-
 ```
 sleep(1);//pausa de 1 segundo
 usleep(1);//pausa de 1 milisegundo
 ```
+
+## tradução básica de strings
+```
+$trans=["hello"=>"olá","world"=>"mundo"];
+print strtr("hello world",$trans);
+```
+Retorna "olá mundo"
+
+Fonte: [PHP](https://www.php.net/manual/en/function.strtr)
 
 ## user-agent
 ```
