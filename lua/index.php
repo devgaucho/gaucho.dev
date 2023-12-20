@@ -60,8 +60,8 @@
 	Github
 	</a> &bull;
 	<a href="http://www.lua.org/manual/5.3/" target="_blank">
-		Manual
-	</a> (inglês)
+		Manual da linguagem
+	</a>
 	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
 function hello_lua()
