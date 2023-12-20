@@ -58,7 +58,11 @@
 	<p>
 	<a href="https://github.com/vvanders/wasm_lua/" target="_blank">
 	Github
-	</a></p>
+	</a> &bull;
+	<a href="http://www.lua.org/manual/5.3/" target="_blank">
+		Manual
+	</a> (inglês)
+	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
 function hello_lua()
     print "Hello Lua!"
