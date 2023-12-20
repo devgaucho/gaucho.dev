@@ -67,7 +67,7 @@
 		Manual (v5.2)
 	</a> &bull;
 	<a href="https://www.lua.org/pil/contents.html" target="_blank">
-		Livro (v.5.0)
+		Livro (v5.0)
 	</a>
 	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
