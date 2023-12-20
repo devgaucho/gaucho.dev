@@ -61,6 +61,9 @@
 	</a> &bull;
 	<a href="http://www.lua.org/manual/5.2/pt/" target="_blank">
 		Manual da linguagem
+	</a> &bull;
+	<a href="https://www.lua.org/pil/contents.html" target="_blank">
+		Livro
 	</a>
 	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
