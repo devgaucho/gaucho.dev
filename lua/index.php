@@ -64,10 +64,10 @@
 	Github
 	</a> &bull;
 	<a href="http://www.lua.org/manual/5.2/pt/" target="_blank">
-		Manual da linguagem
+		Manual da linguagem (v5.2)
 	</a> &bull;
 	<a href="https://www.lua.org/pil/contents.html" target="_blank">
-		Livro
+		Livro (v.5.0)
 	</a>
 	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
