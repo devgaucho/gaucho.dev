@@ -64,7 +64,7 @@
 	Github
 	</a> &bull;
 	<a href="http://www.lua.org/manual/5.2/pt/" target="_blank">
-		Manual da linguagem (v5.2)
+		Manual (v5.2)
 	</a> &bull;
 	<a href="https://www.lua.org/pil/contents.html" target="_blank">
 		Livro (v.5.0)
