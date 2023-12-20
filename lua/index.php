@@ -59,7 +59,7 @@
 	<a href="https://github.com/vvanders/wasm_lua/" target="_blank">
 	Github
 	</a> &bull;
-	<a href="http://www.lua.org/manual/5.3/" target="_blank">
+	<a href="http://www.lua.org/manual/5.2/pt/" target="_blank">
 		Manual da linguagem
 	</a>
 	</p>
