@@ -64,11 +64,12 @@
 	</a>
 	</p>
         <textarea id="edit" style="max-width:calc(100% - 20px); width: 480px; height: 360px;" onkeyup="text_changed();">
+texto={}
 function escreva(texto)
-    print(texto)
+    print(texto["valor"])
 end
-
-escreva("Olá Lua!")</textarea>
+texto["valor"]="Olá Lua!"
+escreva(texto)</textarea>
         <div id="result" style="display:block;margin:0 auto;width: 200px;"></div>
         </div>
     </body>
