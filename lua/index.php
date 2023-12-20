@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-    <meta charset="utf-8">
     <head>
+    <meta charset="utf-8">
 	<title>Lua v5.3.4</title>
        <script type='text/javascript'>
         var Module = {
