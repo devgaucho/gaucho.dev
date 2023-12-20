@@ -55,7 +55,7 @@
         <div style="text-align:center;">
 	<h1>Lua v5.3.4</h1>
 	<p>
-	<a href="https://github.com/vvanders/wasm_lua/">
+	<a href="https://github.com/vvanders/wasm_lua/" target="_blank">
 	Github
 	</a></p>
         <textarea id="edit" style="width: 480px; height: 360px;" onkeyup="text_changed();">
