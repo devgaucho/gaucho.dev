@@ -59,7 +59,7 @@
 	<a href="https://github.com/vvanders/wasm_lua/" target="_blank">
 	Github
 	</a></p>
-        <textarea id="edit" style="width: 480px; height: 360px;" onkeyup="text_changed();">
+        <textarea id="edit" style="width: 480px; height: 360px;" onkeyup="text_changed();max-width:100%;">
 function hello_lua()
     print "Hello Lua!"
 end
