@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
     <meta charset="utf-8">
     <head>
+	<title>Lua v5.3.4</title>
        <script type='text/javascript'>
         var Module = {
             postRun: [
@@ -51,14 +52,19 @@
        </script>
     </head>
     <body>
-        <div>
-        <textarea id="edit" style="width: 800px; height: 480px;" onkeyup="text_changed();">
+        <div style="text-align:center;">
+	<h1>Lua v5.3.4</h1>
+	<p>
+	<a href="https://github.com/vvanders/wasm_lua/">
+	Github
+	</a></p>
+        <textarea id="edit" style="width: 480px; height: 360px;" onkeyup="text_changed();">
 function hello_lua()
     print "Hello Lua!"
 end
 
 hello_lua()</textarea>
-        <div id="result" style="width: 800px; float: right"></div>
+        <div id="result" style="display:block;margin:0 auto;width: 200px;"></div>
         </div>
     </body>
 </html>
