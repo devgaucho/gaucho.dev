@@ -59,6 +59,8 @@ $out=match($in){
 print $out;
 ```
 
+Fonte: [PHP](https://www.php.net/manual/pt_BR/control-structures.match.php)
+
 ## public/index.php
 
 ```
