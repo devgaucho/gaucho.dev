@@ -49,6 +49,16 @@ $json=json_encode($mix,JSON_PRETTY_PRINT);
 $str=file_get_contents('nome_do_arquivo');
 ```
 
+## match
+```
+$in='hello world';
+$out=match($in){
+        'hello world'=>'olá mundo',
+        'olá mundo'=>'hello world'
+};
+print $out;
+```
+
 ## public/index.php
 
 ```

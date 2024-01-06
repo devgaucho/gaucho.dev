@@ -24,6 +24,13 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
 <pre><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></pre>
 <h2 id="ler-dados-de-um-arquivo">ler dados de um arquivo</h2>
 <pre><code>$str=file_get_contents(&#39;nome_do_arquivo&#39;);</code></pre>
+<h2 id="match">match</h2>
+<pre><code>$in=&#39;hello world&#39;;
+$out=match($in){
+        &#39;hello world&#39;=&gt;&#39;olá mundo&#39;,
+        &#39;olá mundo&#39;=&gt;&#39;hello world&#39;
+};
+print $out;</code></pre>
 <h2 id="publicindex.php">public/index.php</h2>
 <pre><code>require __DIR__.&#39;/../cfg.php&#39;;</code></pre>
 <h2 id="sleep">sleep</h2>
