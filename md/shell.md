@@ -1,3 +1,12 @@
+## buscar arquivos
+
+### mp4 maiores que 200M no diretório /opt
+
+```
+find /opt -type f -size +200M -name \*.mp4
+```
+
+
 ## git
 
 ### .gitignore
