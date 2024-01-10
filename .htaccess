@@ -1,1 +1,2 @@
 AddCharset utf-8 .css .js
+AddType application/wasm .wasm
