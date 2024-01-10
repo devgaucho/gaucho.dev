@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golang (adição simples em Wasm)</title>
+  <script type="text/javascript" src="wasm_exec.js"></script>
+  <script>
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch('main.wasm'), go.importObject)
+        .then(({instance}) => go.run(instance))
+  </script>
+</head>
+<body>
+	<p>10+90=<span id="output"></span></p>
+	<p>
+		Fonte: <a href="https://github.com/ragingwind/wasm-helloworld/tree/master/packages/go">Github</a>
+	</p>
+</body>
+</html>
