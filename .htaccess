@@ -1,2 +1,3 @@
 AddCharset utf-8 .css .js .wat
 AddType application/wasm .wasm
+AddType text/plain .wat
