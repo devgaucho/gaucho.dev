@@ -8,17 +8,17 @@
 	<p><span id="out"></span></p>
 	<script>
 	var memory=new  WebAssembly.Memory({initial:1});
-	function  consoleLogString(offset,length) {
-		var  bytes = new  Uint8Array(memory.buffer, offset, length);
-		var  string = new  TextDecoder('utf8').decode(bytes);
+	function consoleLogString(offset,length){
+		var bytes=new  Uint8Array(memory.buffer, offset, length);
+		var string=new  TextDecoder('utf8').decode(bytes);
 		document.getElementById('out').innerHTML=string;
 	};
 	var  importObject={
 		console:{
-			log:  consoleLogString
+			log:consoleLogString
 		},
 		js:{
-			mem:  memory
+			mem:memory
 		}
 	};
 	WebAssembly.instantiateStreaming(fetch('hello.wasm'),importObject)
