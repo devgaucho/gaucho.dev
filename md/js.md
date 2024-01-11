@@ -70,6 +70,19 @@ request.send();
 history.state.<nome da propriedade>
 ```
 
+## operadores binários
+
+```
+if(a && b){
+	alert("a AND b");
+}
+if(a || b){
+	alert("a OR B");
+}
+```
+
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators)
+
 ## promise
 
 ```
@@ -99,3 +112,9 @@ minhaPromise
 variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso
 
 Fonte: [Stack Overflow](https://stackoverflow.com/a/56474873)
+
+## voltar
+
+```
+history.back();
+```

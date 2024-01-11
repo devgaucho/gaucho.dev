@@ -49,6 +49,14 @@ request.onload=function() {
 request.send();</code></pre>
 <h2 id="historico-ler-propriedade-do-estado">historico (ler propriedade do estado)</h2>
 <pre><code>history.state.&lt;nome da propriedade&gt;</code></pre>
+<h2 id="operadores-binários">operadores binários</h2>
+<pre><code>if(a &amp;&amp; b){
+    alert(&quot;a AND b&quot;);
+}
+if(a || b){
+    alert(&quot;a OR B&quot;);
+}</code></pre>
+<p>Fonte: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators">MDN</a></p>
 <h2 id="promise">promise</h2>
 <pre><code>let minhaPromise = new Promise(function(resolve, reject) {
     let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
@@ -72,3 +80,5 @@ minhaPromise
 <h2 id="undefined">undefined</h2>
 <p>variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso</p>
 <p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>
+<h2 id="voltar">voltar</h2>
+<pre><code>history.back();</code></pre>
