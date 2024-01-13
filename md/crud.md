@@ -9,7 +9,7 @@ curl -X POST example.com
 ### create (com payload)
 
 ```
-curl -H "Content-Type: application/json" -d "{\"msg\": \"hello world\"}" example.com
+curl -X POST -H "Content-Type: application/json" -d "{\"msg\": \"hello world\"}" example.com
 ```
 
 ### read
@@ -28,6 +28,12 @@ curl -X PUT example.com
 
 ```
 curl -X PUT -H "Content-Type: application/json" -d "{\"msg\": \"ola mundo\"}" example.com
+```
+
+usando um arquivo como payload:
+
+```
+curl -X PUT -d @nomeDoArquivo example.com
 ```
 
 ### delete

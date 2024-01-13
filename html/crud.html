@@ -2,13 +2,15 @@
 <h3 id="create">create</h3>
 <pre><code>curl -X POST example.com</code></pre>
 <h3 id="create-com-payload">create (com payload)</h3>
-<pre><code>curl -H &quot;Content-Type: application/json&quot; -d &quot;{\&quot;msg\&quot;: \&quot;hello world\&quot;}&quot; example.com</code></pre>
+<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; -d &quot;{\&quot;msg\&quot;: \&quot;hello world\&quot;}&quot; example.com</code></pre>
 <h3 id="read">read</h3>
 <pre><code>curl -X GET example.com</code></pre>
 <h3 id="update">update</h3>
 <pre><code>curl -X PUT example.com</code></pre>
 <h3 id="update-com-payload">update (com payload)</h3>
 <pre><code>curl -X PUT -H &quot;Content-Type: application/json&quot; -d &quot;{\&quot;msg\&quot;: \&quot;ola mundo\&quot;}&quot; example.com</code></pre>
+<p>usando um arquivo como payload:</p>
+<pre><code>curl -X PUT -d @nomeDoArquivo example.com</code></pre>
 <h3 id="delete">delete</h3>
 <pre><code>curl -X DELETE example.com</code></pre>
 <p>Fontes:</p>
