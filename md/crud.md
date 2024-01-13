@@ -1,3 +1,5 @@
+![crud e rest](img/crud.png)
+
 ## curl
 
 ### create
