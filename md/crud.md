@@ -1,4 +1,4 @@
-## curl (crud)
+## curl
 
 ### create
 
