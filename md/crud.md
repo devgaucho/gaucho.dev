@@ -37,6 +37,7 @@ curl -X DELETE example.com
 ```
 
 Fontes:
+
 - [CodeJava](https://www.codejava.net/rest-api/curl-for-testing-crud-rest-apis)
 - [Terminal Cheat Sheet](https://terminalcheatsheet.com/pt-BR/guides/curl-rest-api)
 
