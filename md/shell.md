@@ -6,7 +6,6 @@
 find /opt -type f -size +200M -name \*.mp4
 ```
 
-
 ## git
 
 ### .gitignore
