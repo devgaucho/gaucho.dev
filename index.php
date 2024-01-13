@@ -3,6 +3,7 @@ $posts=[
 	'apache'=>'Apache',
 	'composer'=>"Composer",
 	'css'=>'CSS',
+	'git'=>'Git',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
 	'js'=>'JavaScript',
