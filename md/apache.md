@@ -11,6 +11,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
+
+# erro 403
 ErrorDocument 403 /index.php
-AddCharset utf-8 .css .html .js .json .md .txt
+
+# charset
+AddCharset utf-8 .css .html .js .json .md .txt .wat
+
+# mimes
+AddType application/wasm .wasm
+AddType text/plain .wat
 ```
