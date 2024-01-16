@@ -8,6 +8,7 @@
 6. evite a repetição de códigos e as classes gigantes
 7. bibliotecas são melhores que frameworks
 8. nada de código inline ou incorporado²
+9. evite deixar linhas em branco
 
 ### 1) Tipos de indentação:
 
