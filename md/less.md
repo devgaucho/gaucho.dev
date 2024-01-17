@@ -1,7 +1,7 @@
 ## compilar
 
 ```
-lessc -x less/style.less public/css/style.css
+lessc --clean-css less/style.less public/css/style.css
 ```
 
 ## import
