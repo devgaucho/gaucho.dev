@@ -11,6 +11,8 @@ lessc -x less/style.less public/css/style.css
 @import 'inc/1k.less';
 ```
 
+Fonte: [Less](https://lesscss.org/features/#import-atrules-feature)
+
 ## instalar (ubuntu)
 
 ```
