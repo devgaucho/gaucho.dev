@@ -20,6 +20,7 @@ sudo apt install -y node-less node-less-plugin-clean-css
 ## variáveis
 
 ```
+
 @corDoTexto: black;
 
 body{
