@@ -8,6 +8,12 @@ http_response_code($codigoInt);
 $dec=ord('A');//retorna 65
 ```
 
+## email válido
+
+```
+$isValid=filter_var($email,FILTER_VALIDATE_EMAIL);
+```
+
 ## escrever dados em um arquivo com append
 ```
 file_put_contents('nome do arquivo',$dados,FILE_APPEND);
