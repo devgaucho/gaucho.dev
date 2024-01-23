@@ -39,6 +39,16 @@ print $out;</code></pre>
 <h2 id="sleep">sleep</h2>
 <pre><code>sleep(1);//pausa de 1 segundo
 usleep(1);//pausa de 1 milisegundo</code></pre>
+<h2 id="tempo-de-execução-em-segundos.milisegundos">tempo de execução em segundos.milisegundos</h2>
+<pre><code>$start=hrtime(true);
+sleep(2);
+$end=hrtime(true);
+$totalNs=$end-$start;
+$totalSMs=$totalNs/1e+9;
+// $totalMs=(($totalNs/1000)/1000)/1000;
+// $totalSMs=number_format($totalMs,3);
+$totalSMs=number_format($totalSMs,3);
+print $totalSMs;</code></pre>
 <h2 id="tradução-básica-de-strings">tradução básica de strings</h2>
 <pre><code>$trans=[&quot;hello&quot;=&gt;&quot;olá&quot;,&quot;world&quot;=&gt;&quot;mundo&quot;];
 print strtr(&quot;hello world&quot;,$trans);</code></pre>

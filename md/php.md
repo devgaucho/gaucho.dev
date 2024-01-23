@@ -79,6 +79,19 @@ sleep(1);//pausa de 1 segundo
 usleep(1);//pausa de 1 milisegundo
 ```
 
+## tempo de execução em segundos.milisegundos
+```
+$start=hrtime(true);
+sleep(2);
+$end=hrtime(true);
+$totalNs=$end-$start;
+$totalSMs=$totalNs/1e+9;
+// $totalMs=(($totalNs/1000)/1000)/1000;
+// $totalSMs=number_format($totalMs,3);
+$totalSMs=number_format($totalSMs,3);
+print $totalSMs;
+```
+
 ## tradução básica de strings
 ```
 $trans=["hello"=>"olá","world"=>"mundo"];
