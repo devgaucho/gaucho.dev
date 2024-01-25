@@ -38,6 +38,14 @@ $(document).ready(function() {
 });
 ```
 
+## post
+
+```
+$.post("/user",{name:'Full Name'},function(data){
+	alert( "resposta = " + data );
+});
+```
+
 ## submeter form ao pressionar enter
 
 ```

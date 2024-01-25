@@ -23,6 +23,10 @@
 $(document).ready(function() {
     $(&#39;#idDoBotao&#39;).mostrarAlerta(&#39;Esta é a mensagem de alerta.&#39;);
 });</code></pre>
+<h2 id="post">post</h2>
+<pre><code>$.post(&quot;/user&quot;,{name:&#39;Full Name&#39;},function(data){
+    alert( &quot;resposta = &quot; + data );
+});</code></pre>
 <h2 id="submeter-form-ao-pressionar-enter">submeter form ao pressionar enter</h2>
 <pre><code>$(document).ready(function() {
   const textarea=$(&quot;textarea&quot;);
