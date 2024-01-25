@@ -31,13 +31,14 @@ date &gt;&gt; out2 &amp;&amp; sleep 5
 EOF</code></pre>
 <p>Fonte: <a href="https://stackoverflow.com/a/33765906">StackOverwlow</a></p>
 <h3 id="rodando-comandos-em-paralelo-com-argumentos">rodando comandos em paralelo com argumentos</h3>
-<pre><code>date &amp;&amp; parallel sleep ::: 5 5 5 5 5 5 5 5 &amp;&amp; date</code></pre>
+<pre><code>date &amp;&amp; parallel sleep ::: 1 1 1 1 1 1 1 1 1 1 &amp;&amp; date</code></pre>
 <p>Tempo para rodar o comando acima:</p>
 <ul>
-<li>1 core = 40s</li>
-<li>2 core = 20s</li>
-<li>4 core = 10s</li>
-<li>8 core = 5s</li>
+<li>1 core = 10s</li>
+<li>2 cores = 5s</li>
+<li>4 cores = 2.5s</li>
+<li>8 cores = 1.25s</li>
+<li>10 cores = 1s</li>
 </ul>
 <h2 id="tar">tar</h2>
 <h3 id="adicionar-um-diretório">adicionar um diretório</h3>

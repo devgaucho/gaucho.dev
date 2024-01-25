@@ -54,15 +54,16 @@ Fonte: [StackOverwlow](https://stackoverflow.com/a/33765906)
 ### rodando comandos em paralelo com argumentos
 
 ```
-date && parallel sleep ::: 5 5 5 5 5 5 5 5 && date
+date && parallel sleep ::: 1 1 1 1 1 1 1 1 1 1 && date
 ```
 
 Tempo para rodar o comando acima:
 
-- 1 core = 40s
-- 2 core = 20s
-- 4 core = 10s
-- 8 core = 5s
+- 1 core = 10s
+- 2 cores = 5s
+- 4 cores = 2.5s
+- 8 cores = 1.25s
+- 10 cores = 1s
 
 ## tar
 
