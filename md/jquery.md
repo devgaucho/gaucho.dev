@@ -46,6 +46,8 @@ $.post("/user",{name:'Full Name'},function(data){
 });
 ```
 
+Fonte: [jQuery](https://api.jquery.com/jQuery.post/)
+
 ## submeter form ao pressionar enter
 
 ```
