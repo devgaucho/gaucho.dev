@@ -11,13 +11,13 @@ find /opt -type f -size +200M -name \*.mp4
 ### formatar pendrive
 
 ```
-mintstick -m format
+sudo setsid mintstick -m format
 ```
 
 ### gravar iso
 
 ```
-mintstick -m iso
+sudo setsid mintstick -m iso
 ```
 
 ## git
