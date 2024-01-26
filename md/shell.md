@@ -6,6 +6,20 @@
 find /opt -type f -size +200M -name \*.mp4
 ```
 
+## formatar pendrive & gravar iso (linux mint)
+
+### formatar pendrive
+
+```
+mintstick -m format
+```
+
+### gravar iso
+
+```
+mintstick -m iso
+```
+
 ## git
 
 ### .gitignore
