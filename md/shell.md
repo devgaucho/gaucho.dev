@@ -99,6 +99,12 @@ tar -xf arquivo.tar
 sort <(cat lista1 lista2 lista3) | uniq -d
 ```
 
+## tabelas de alocação (ver os nomes)
+
+```
+sudo parted --list
+```
+
 ## zip
 
 ### zipar um diretório
