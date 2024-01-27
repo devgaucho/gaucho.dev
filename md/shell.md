@@ -84,7 +84,7 @@ Tempo para rodar o comando acima:
 ### adicionar um diretório
 
 ```
-tar -cvf arquivo.tar diretório
+tar -hcvf arquivo.tar diretório
 ```
 
 ### extrair arquivos
