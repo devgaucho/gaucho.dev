@@ -4,6 +4,7 @@ $posts=[
 	'composer'=>"Composer",
 	'css'=>'CSS',
 	'crud'=>'CRUD',
+	'framework'=>'Framework',
 	'git'=>'Git',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
