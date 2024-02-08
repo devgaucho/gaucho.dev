@@ -1,4 +1,4 @@
-## Zen do Gaucho
+## Zen Gaucho
 
 1. letras do alfabeto latino e números são melhores que símbolos
 2. indentação linux¹ com tab ao invés de espaços

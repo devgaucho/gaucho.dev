@@ -15,7 +15,7 @@ $posts=[
 	'php'=>'PHP',
 	'shell'=>'Shell script',
 	'sql'=>'SQL',
-	'zen'=>'Zen do Gaucho',
+	'zen'=>'Zen Gaucho',
 ];
 if(
 	isset(
