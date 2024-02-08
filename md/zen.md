@@ -9,6 +9,7 @@
 7. bibliotecas são melhores que frameworks
 8. nada de código inline ou incorporado²
 9. evite deixar linhas em branco
+10. evite usar IDES, elas poluem o código e deixam o dev preguiçoso
 
 ### 1) Tipos de indentação:
 
