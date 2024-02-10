@@ -20,8 +20,9 @@
 ### 2) Exemplos de código inline ou incorporado:
 
 - atributo `style`
-- função arrow (é uma violação do item 1 do *Zen* também)
+- função arrow (vai contra o item 1)
 - operador ternário
 - `<script>`
 - `<style>`
+- usar vários métodos na mesma linha (vai contra os itens 1 e 12)
 
