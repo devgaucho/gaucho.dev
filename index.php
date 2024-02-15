@@ -4,7 +4,6 @@ $posts=[
 	'composer'=>"Composer",
 	'css'=>'CSS',
 	'crud'=>'CRUD',
-	'framework'=>'Framework',
 	'git'=>'Git',
 	'html'=>'HTML',
 	'jquery'=>'jQuery',
@@ -14,6 +13,7 @@ $posts=[
 	'mustache'=>'Mustache',
 	'php'=>'PHP',
 	'shell'=>'Shell script',
+	'spa'=>'SPA (framework)',
 	'sql'=>'SQL',
 	'zen'=>'Zen Gaucho',
 ];

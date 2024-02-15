@@ -1,7 +1,7 @@
 # Instalar
 
 ```
-composer create-project gaucho/gaucho <nome do projeto>
+composer create-project spa/spa <nome do projeto>
 ```
 
 # SPA (gerar)

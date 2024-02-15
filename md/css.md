@@ -14,6 +14,18 @@ h1::first-letter,h2::first-letter ,h3::first-letter{
 Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media/prefers-color-scheme)
 
 
+## firefox
+
+```
+@-moz-document url-prefix() { 
+  .selector {
+     color: lime;
+  }
+}
+```
+
+Fonte: [CSS-Tricks](https://css-tricks.com/snippets/css/css-hacks-targeting-firefox/)
+
 ## fontes
 
 ### mono
