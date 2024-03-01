@@ -2,6 +2,20 @@
 <pre><code>http_response_code($codigoInt);</code></pre>
 <h2 id="código-decimal-do-caractere">código decimal do caractere</h2>
 <pre><code>$dec=ord(&#39;A&#39;);//retorna 65</code></pre>
+<h2 id="download-via-curl">download via curl</h2>
+<pre><code>function download($url){
+    ob_start();
+    $url=escapeshellarg($url);
+    $cmd=&#39; curl -s &quot;&#39;.$url.&#39;&quot;&#39;;
+    system($cmd);
+    $str=ob_get_contents();
+    ob_end_clean();
+    if(empty($str)){
+        return false;
+    }else{
+        return $str;
+    }
+}</code></pre>
 <h2 id="email-válido">email válido</h2>
 <pre><code>$isValid=filter_var($email,FILTER_VALIDATE_EMAIL);</code></pre>
 <h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um arquivo com append</h2>

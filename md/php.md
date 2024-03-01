@@ -8,6 +8,23 @@ http_response_code($codigoInt);
 $dec=ord('A');//retorna 65
 ```
 
+## download via curl
+```
+function download($url){
+	ob_start();
+	$url=escapeshellarg($url);
+	$cmd=' curl -s "'.$url.'"';
+	system($cmd);
+	$str=ob_get_contents();
+	ob_end_clean();
+	if(empty($str)){
+		return false;
+	}else{
+		return $str;
+	}
+}
+```
+
 ## email válido
 
 ```
