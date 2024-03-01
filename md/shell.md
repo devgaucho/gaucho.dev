@@ -38,7 +38,7 @@ sudo setsid mintstick -m iso
 ### ler da linha 2 até a 5
 
 ```
-awk 'NR>=2 && NR<=5' arquivo.txt
+gawk 'NR>=2 && NR<=5' arquivo.txt
 ```
 
 ## linhas únicas (filtrar)
