@@ -6,7 +6,7 @@
 <pre><code>function download($url){
     ob_start();
     $url=escapeshellarg($url);
-    $cmd=&#39; curl -s &quot;&#39;.$url.&#39;&quot;&#39;;
+    $cmd=&#39;curl -s &quot;&#39;.$url.&#39;&quot;&#39;;
     system($cmd);
     $str=ob_get_contents();
     ob_end_clean();

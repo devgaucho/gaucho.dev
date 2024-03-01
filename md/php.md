@@ -13,7 +13,7 @@ $dec=ord('A');//retorna 65
 function download($url){
 	ob_start();
 	$url=escapeshellarg($url);
-	$cmd=' curl -s "'.$url.'"';
+	$cmd='curl -s "'.$url.'"';
 	system($cmd);
 	$str=ob_get_contents();
 	ob_end_clean();
