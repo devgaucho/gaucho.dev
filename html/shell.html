@@ -14,11 +14,13 @@
 /public/test*.php
 /todo.txt
 /vendor</code></pre>
-<h2 id="ler-linhas-específicas-de-um-arquivo">ler linhas específicas de um arquivo</h2>
+<h2 id="linhas">linhas</h2>
+<h2 id="contar-o-número-de-linhas">contar o número de linhas</h2>
+<pre><code>wc -l arquivo.txt</code></pre>
+<h3 id="filtrar-linhas-únicas">filtrar linhas únicas</h3>
+<pre><code>cat in.txt | sort | uniq &gt;&gt; out.txt</code></pre>
 <h3 id="ler-da-linha-2-até-a-5">ler da linha 2 até a 5</h3>
 <pre><code>gawk &#39;NR&gt;=2 &amp;&amp; NR&lt;=5&#39; arquivo.txt</code></pre>
-<h2 id="linhas-únicas-filtrar">linhas únicas (filtrar)</h2>
-<pre><code>cat in.txt | sort | uniq &gt;&gt; out.txt</code></pre>
 <h2 id="make">make</h2>
 <h3 id="make-install">make install</h3>
 <pre><code>LESS=/usr/bin/lessc

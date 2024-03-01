@@ -33,18 +33,24 @@ sudo setsid mintstick -m iso
 /vendor
 ```
 
-## ler linhas específicas de um arquivo
+## linhas
+
+## contar o número de linhas
+
+```
+wc -l arquivo.txt
+```
+
+### filtrar linhas únicas
+
+```
+cat in.txt | sort | uniq >> out.txt
+```
 
 ### ler da linha 2 até a 5
 
 ```
 gawk 'NR>=2 && NR<=5' arquivo.txt
-```
-
-## linhas únicas (filtrar)
-
-```
-cat in.txt | sort | uniq >> out.txt
 ```
 
 ## make
