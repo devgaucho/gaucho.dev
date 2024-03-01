@@ -33,6 +33,12 @@ sudo setsid mintstick -m iso
 /vendor
 ```
 
+## linhas únicas (filtrar)
+
+```
+cat in.txt | sort | uniq >> out.txt
+```
+
 ## make
 
 ### make install
