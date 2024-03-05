@@ -10,7 +10,7 @@
 8. nada de código inline ou incorporado²
 9. evite deixar linhas em branco
 10. evite usar IDES, elas poluem o código e deixam o dev preguiçoso
-11. use no máximo 3 tabs de indentação por linha
+11. use no máximo 5 tabs de indentação por linha
 12. evite encadeamentos (chaining) e métodos em cascata (cascading)
 
 ### 1) Tipos de indentação:
