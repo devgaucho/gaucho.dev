@@ -119,6 +119,12 @@ tar -xf arquivo.tar
 sort <(cat lista1 lista2 lista3) | uniq -d
 ```
 
+## repetir comando a cada n segundos
+
+```
+watch -n 1 date
+```
+
 ## tabelas de alocação (ver os nomes)
 
 ```
