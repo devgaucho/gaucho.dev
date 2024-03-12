@@ -1,55 +1,48 @@
 ## Boas práticas do DBA
 
-Boas práticas no design de banco de dados são essenciais para garantir a eficiência, escalabilidade, e manutenibilidade de sistemas de armazenamento de dados. Aqui está um resumo das principais boas práticas:
+## 1. Normalização e Denormalização:
 
-### 1. Normalização:
-Aplique as formas normais para evitar redundância e garantir integridade dos dados.
+- Normalize o banco de dados para evitar redundância e garantir a integridade dos dados.
+- Utilize a denormalização controlada (tabelas com dados agrupados) para otimizar o desempenho (evitando joins) em casos específicos, com cuidado para manter a integridade.
 
-### 2. Denormalização Controlada:
-Em certos casos, pode ser apropriado desnormalizar para otimizar o desempenho, mas faça isso com cuidado e mantenha a integridade.
+## 2. Escolha Adequada de Tipos de Dados e Índices:
 
-### 3. Escolha de Tipos de Dados Apropriados:
-Use tipos de dados que se alinhem com o conteúdo dos campos, otimizando espaço de armazenamento.
+- Utilize tipos de dados que se alinhem com o conteúdo dos campos para otimizar o espaço de armazenamento.
+- Crie índices para colunas frequentemente usadas em consultas, mas evite o uso excessivo para não impactar o desempenho de escrita.
 
-### 4. Índices Eficientes:
-Adicione índices para colunas frequentemente usadas em cláusulas WHERE e JOINs, mas evite índices em excesso, pois podem impactar o desempenho de escrita.
+## 3. Chaves Primárias e Estrangeiras, e Valores Padrão:
 
-### 5. Chaves Primárias e Estrangeiras:
-Utilize chaves primárias para identificar exclusivamente cada linha e chaves estrangeiras para manter integridade referencial.
+- Utilize chaves primárias para identificar cada linha e chaves estrangeiras para manter a integridade referencial (impede a inserção de chaves inválidas).
+- Use valores padrão em vez de NULL sempre que possível.
 
-### 6. Evite o Uso Excessivo de NULL:
-Considere usar valores padrão em vez de NULL sempre que possível.
+## 4. Escalabilidade, Segurança e Backup:
 
-### 7. Normalização de Desempenho:
-Em situações de leitura intensiva, considere a normalização de desempenho, denormalizando seletivamente para otimizar o acesso.
+- Projete o banco de dados para escalabilidade, considerando o crescimento futuro de dados e carga.
+- Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados.
+- Crie um plano robusto de backup e recuperação para evitar perda de dados.
 
-### 8. Pensamento Escalar:
-Projete para escalabilidade, considerando o crescimento futuro de dados e carga.
+## 5. Manutenção Regular, Padronização e Documentação:
 
-### 9. Segurança e Privacidade:
-Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados sensíveis.
+- Realize manutenções regulares, como otimização de índices e atualizações estatísticas.
+- Utilize uma convenção de nomenclatura consistente (tabelas com nome no plural e colunas em snake_case) para facilitar a manutenção.
+- Documente o esquema (estrutura) do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais.
 
-### 10. Backup e Recuperação:
-Implemente um plano robusto de backup e recuperação para evitar perda de dados.
+Fonte: Gemini 1.5 (12mar2024)
 
-### 11. Manutenção Regular:
-Realize manutenção regular, como otimização de índices e atualizações estatísticas, para garantir o desempenho contínuo do banco de dados.
+## Configurar o MySQL (~/.my.cfg)
 
-### 12. Padronização de Nomenclatura:
-Use uma convenção de nomenclatura consistente para tabelas, colunas, índices e procedimentos armazenados para facilitar a manutenção.
+```
+[client]
+default-character-set=utf8mb4
 
-### 13. Documentação Adequada:
-Documente o esquema do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais para facilitar a compreensão e a manutenção.
+[mysql]
+default-character-set=utf8mb4
 
-### 14. Testes e Otimização Contínua:
-Realize testes de desempenho regulares e otimize consultas conforme necessário para garantir uma execução eficiente.
-
-### 15. Concorrência e Transações:
-Gerencie transações cuidadosamente para manter a consistência e a integridade dos dados, especialmente em ambientes de concorrência.
-
-Lembrando que cada aplicação é única, e as boas práticas devem ser adaptadas aos requisitos específicos do sistema em questão.
-
-Fonte: ChatGPT 3.5 (19nov2023)
+[mysqld]
+collation-server=utf8mb4_unicode_ci
+init-connect='SET NAMES utf8mb4'
+character-set-server=utf8mb4
+```
 
 ## Criar banco de dados (mysql)
 ```

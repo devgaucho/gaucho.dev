@@ -1,36 +1,42 @@
 <h2 id="boas-práticas-do-dba">Boas práticas do DBA</h2>
-<p>Boas práticas no design de banco de dados são essenciais para garantir a eficiência, escalabilidade, e manutenibilidade de sistemas de armazenamento de dados. Aqui está um resumo das principais boas práticas:</p>
-<h3 id="normalização">1. Normalização:</h3>
-<p>Aplique as formas normais para evitar redundância e garantir integridade dos dados.</p>
-<h3 id="denormalização-controlada">2. Denormalização Controlada:</h3>
-<p>Em certos casos, pode ser apropriado desnormalizar para otimizar o desempenho, mas faça isso com cuidado e mantenha a integridade.</p>
-<h3 id="escolha-de-tipos-de-dados-apropriados">3. Escolha de Tipos de Dados Apropriados:</h3>
-<p>Use tipos de dados que se alinhem com o conteúdo dos campos, otimizando espaço de armazenamento.</p>
-<h3 id="índices-eficientes">4. Índices Eficientes:</h3>
-<p>Adicione índices para colunas frequentemente usadas em cláusulas WHERE e JOINs, mas evite índices em excesso, pois podem impactar o desempenho de escrita.</p>
-<h3 id="chaves-primárias-e-estrangeiras">5. Chaves Primárias e Estrangeiras:</h3>
-<p>Utilize chaves primárias para identificar exclusivamente cada linha e chaves estrangeiras para manter integridade referencial.</p>
-<h3 id="evite-o-uso-excessivo-de-null">6. Evite o Uso Excessivo de NULL:</h3>
-<p>Considere usar valores padrão em vez de NULL sempre que possível.</p>
-<h3 id="normalização-de-desempenho">7. Normalização de Desempenho:</h3>
-<p>Em situações de leitura intensiva, considere a normalização de desempenho, denormalizando seletivamente para otimizar o acesso.</p>
-<h3 id="pensamento-escalar">8. Pensamento Escalar:</h3>
-<p>Projete para escalabilidade, considerando o crescimento futuro de dados e carga.</p>
-<h3 id="segurança-e-privacidade">9. Segurança e Privacidade:</h3>
-<p>Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados sensíveis.</p>
-<h3 id="backup-e-recuperação">10. Backup e Recuperação:</h3>
-<p>Implemente um plano robusto de backup e recuperação para evitar perda de dados.</p>
-<h3 id="manutenção-regular">11. Manutenção Regular:</h3>
-<p>Realize manutenção regular, como otimização de índices e atualizações estatísticas, para garantir o desempenho contínuo do banco de dados.</p>
-<h3 id="padronização-de-nomenclatura">12. Padronização de Nomenclatura:</h3>
-<p>Use uma convenção de nomenclatura consistente para tabelas, colunas, índices e procedimentos armazenados para facilitar a manutenção.</p>
-<h3 id="documentação-adequada">13. Documentação Adequada:</h3>
-<p>Documente o esquema do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais para facilitar a compreensão e a manutenção.</p>
-<h3 id="testes-e-otimização-contínua">14. Testes e Otimização Contínua:</h3>
-<p>Realize testes de desempenho regulares e otimize consultas conforme necessário para garantir uma execução eficiente.</p>
-<h3 id="concorrência-e-transações">15. Concorrência e Transações:</h3>
-<p>Gerencie transações cuidadosamente para manter a consistência e a integridade dos dados, especialmente em ambientes de concorrência.</p>
-<p>Lembrando que cada aplicação é única, e as boas práticas devem ser adaptadas aos requisitos específicos do sistema em questão.</p>
-<p>Fonte: ChatGPT 3.5 (19nov2023)</p>
+<h2 id="normalização-e-denormalização">1. Normalização e Denormalização:</h2>
+<ul>
+<li>Normalize o banco de dados para evitar redundância e garantir a integridade dos dados.</li>
+<li>Utilize a denormalização controlada (tabelas com dados agrupados) para otimizar o desempenho (evitando joins) em casos específicos, com cuidado para manter a integridade.</li>
+</ul>
+<h2 id="escolha-adequada-de-tipos-de-dados-e-índices">2. Escolha Adequada de Tipos de Dados e Índices:</h2>
+<ul>
+<li>Utilize tipos de dados que se alinhem com o conteúdo dos campos para otimizar o espaço de armazenamento.</li>
+<li>Crie índices para colunas frequentemente usadas em consultas, mas evite o uso excessivo para não impactar o desempenho de escrita.</li>
+</ul>
+<h2 id="chaves-primárias-e-estrangeiras-e-valores-padrão">3. Chaves Primárias e Estrangeiras, e Valores Padrão:</h2>
+<ul>
+<li>Utilize chaves primárias para identificar cada linha e chaves estrangeiras para manter a integridade referencial (impede a inserção de chaves inválidas).</li>
+<li>Use valores padrão em vez de NULL sempre que possível.</li>
+</ul>
+<h2 id="escalabilidade-segurança-e-backup">4. Escalabilidade, Segurança e Backup:</h2>
+<ul>
+<li>Projete o banco de dados para escalabilidade, considerando o crescimento futuro de dados e carga.</li>
+<li>Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados.</li>
+<li>Crie um plano robusto de backup e recuperação para evitar perda de dados.</li>
+</ul>
+<h2 id="manutenção-regular-padronização-e-documentação">5. Manutenção Regular, Padronização e Documentação:</h2>
+<ul>
+<li>Realize manutenções regulares, como otimização de índices e atualizações estatísticas.</li>
+<li>Utilize uma convenção de nomenclatura consistente (tabelas com nome no plural e colunas em snake_case) para facilitar a manutenção.</li>
+<li>Documente o esquema (estrutura) do banco de dados, relacionamentos, regras de negócios e outros aspectos cruciais.</li>
+</ul>
+<p>Fonte: Gemini 1.5 (12mar2024)</p>
+<h2 id="configurar-o-mysql-.my.cfg">Configurar o MySQL (~/.my.cfg)</h2>
+<pre><code>[client]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4
+
+[mysqld]
+collation-server=utf8mb4_unicode_ci
+init-connect=&#39;SET NAMES utf8mb4&#39;
+character-set-server=utf8mb4</code></pre>
 <h2 id="criar-banco-de-dados-mysql">Criar banco de dados (mysql)</h2>
 <pre><code>CREATE DATABASE banco CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</code></pre>
