@@ -1,26 +1,26 @@
 <h2 id="boas-práticas-do-dba">Boas práticas do DBA</h2>
-<h2 id="normalização-e-denormalização">1. Normalização e Denormalização:</h2>
+<h3 id="normalização-e-denormalização">1. Normalização e Denormalização:</h3>
 <ul>
 <li>Normalize o banco de dados para evitar redundância e garantir a integridade dos dados.</li>
 <li>Utilize a denormalização controlada (tabelas com dados agrupados) para otimizar o desempenho (evitando joins) em casos específicos, com cuidado para manter a integridade.</li>
 </ul>
-<h2 id="escolha-adequada-de-tipos-de-dados-e-índices">2. Escolha Adequada de Tipos de Dados e Índices:</h2>
+<h3 id="escolha-adequada-de-tipos-de-dados-e-índices">2. Escolha Adequada de Tipos de Dados e Índices:</h3>
 <ul>
 <li>Utilize tipos de dados que se alinhem com o conteúdo dos campos para otimizar o espaço de armazenamento.</li>
 <li>Crie índices para colunas frequentemente usadas em consultas, mas evite o uso excessivo para não impactar o desempenho de escrita.</li>
 </ul>
-<h2 id="chaves-primárias-e-estrangeiras-e-valores-padrão">3. Chaves Primárias e Estrangeiras, e Valores Padrão:</h2>
+<h3 id="chaves-primárias-e-estrangeiras-e-valores-padrão">3. Chaves Primárias e Estrangeiras, e Valores Padrão:</h3>
 <ul>
 <li>Utilize chaves primárias para identificar cada linha e chaves estrangeiras para manter a integridade referencial (impede a inserção de chaves inválidas).</li>
 <li>Use valores padrão em vez de NULL sempre que possível.</li>
 </ul>
-<h2 id="escalabilidade-segurança-e-backup">4. Escalabilidade, Segurança e Backup:</h2>
+<h3 id="escalabilidade-segurança-e-backup">4. Escalabilidade, Segurança e Backup:</h3>
 <ul>
 <li>Projete o banco de dados para escalabilidade, considerando o crescimento futuro de dados e carga.</li>
 <li>Implemente boas práticas de segurança, como controle de acesso, criptografia e auditoria de dados.</li>
 <li>Crie um plano robusto de backup e recuperação para evitar perda de dados.</li>
 </ul>
-<h2 id="manutenção-regular-padronização-e-documentação">5. Manutenção Regular, Padronização e Documentação:</h2>
+<h3 id="manutenção-regular-padronização-e-documentação">5. Manutenção Regular, Padronização e Documentação:</h3>
 <ul>
 <li>Realize manutenções regulares, como otimização de índices e atualizações estatísticas.</li>
 <li>Utilize uma convenção de nomenclatura consistente (tabelas com nome no plural e colunas em snake_case) para facilitar a manutenção.</li>
