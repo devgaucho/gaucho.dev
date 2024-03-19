@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pt">
 <head>
 	<title><?php print htmlentities($title);?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />	
