@@ -13,16 +13,18 @@
 11. use no máximo 5 tabs de indentação por linha
 12. evite encadeamentos (chaining) e métodos em cascata (cascading)
 
-### 1) Tipos de indentação:
+### Notas
+
+#### 1) Tipos de indentação:
 
 ![Tipos de indentação](img/indentation.jpg)
 
-### 2) Exemplos de código inline ou incorporado:
+#### 2) Exemplos de código inline ou incorporado:
 
 - atributo `style`
 - função arrow (vai contra o item 1)
 - operador ternário
 - `<script>`
 - `<style>`
-- usar vários métodos na mesma linha (vai contra os itens 1 e 12)
+- vários métodos na mesma linha (vai contra os itens 1 e 12)
 
