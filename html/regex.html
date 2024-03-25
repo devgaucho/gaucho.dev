@@ -1,6 +1,6 @@
 <h2 id="trim-de-urls">trim de urls</h2>
-<p>remove barras, cerquilhas e espaços do final do link</p>
-<pre><code>rtrim($link,&#39; #/&#39;)</code></pre>
+<p>remove barras, cerquilhas e espaços do começo e do final do link</p>
+<pre><code>trim($link,&#39; #/&#39;)</code></pre>
 <h2 id="validação-de-urls">validação de urls</h2>
 <p>validação de urls do <span class="citation" data-cites="grub">@grub</span></p>
 <pre><code>preg_match(&#39;#\b(([\w-]+://?|www[.])[^\s()&lt;&gt;]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#iS&#39;,$link)</code></pre>

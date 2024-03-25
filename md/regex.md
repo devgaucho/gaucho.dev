@@ -1,9 +1,9 @@
 ## trim de urls
 
-remove barras, cerquilhas e espaços do final do link
+remove barras, cerquilhas e espaços do começo e do final do link
 
 ```
-rtrim($link,' #/')
+trim($link,' #/')
 ```
 
 ## validação de urls
