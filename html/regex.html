@@ -2,6 +2,6 @@
 <p>remove barras, cerquilhas e espaços do começo e do final do link</p>
 <pre><code>trim($link,&#39; #/&#39;)</code></pre>
 <h2 id="validação-de-urls">validação de urls</h2>
-<p>validação de urls do <span class="citation" data-cites="grub">[@grub]</span>(https://x.com/grub)</p>
+<p>validação de urls do @<a href="https://x.com/grub">grub</a></p>
 <pre><code>preg_match(&#39;#\b(([\w-]+://?|www[.])[^\s()&lt;&gt;]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#iS&#39;,$link)</code></pre>
 <p>Fonte: <a href="https://mathiasbynens.be/demo/url-regex">mathiasbynens.be</a></p>
