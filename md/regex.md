@@ -8,7 +8,7 @@ trim($link,' #/')
 
 ## validação de urls
 
-validação de urls do @[gruber](https://x.com/gruber)
+validação de urls do [\@gruber](https://x.com/gruber)
 
 ```
 preg_match('#\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#iS',$link)
