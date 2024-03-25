@@ -13,7 +13,7 @@ Fonte: [mathiasbynens.be](https://mathiasbynens.be/demo/url-regex)
 remove caracteres estranhos de links
 
 ```
-trim($link,!"#$%&\'()*+,-./@:;<=>[\\]^_`{|}~)
+trim($link,'!"#$%&\'()*+,-./@:;<=>[\\]^_`{|}~')
 ```
 
 Fonte: [mathiasbynens.be](https://mathiasbynens.be/demo/url-regex)
