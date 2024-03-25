@@ -1,9 +1,9 @@
 ## trim de urls
 
-remove caracteres estranhos de links
+remove barras, cerquilhas e espaços do final do link
 
 ```
-trim($link,'!"#$%&\'()*+,-./@:;<=>[\\]^_`{|}~')
+rtrim($link,' #/')
 ```
 
 Fonte: [mathiasbynens.be](https://mathiasbynens.be/demo/url-regex)
