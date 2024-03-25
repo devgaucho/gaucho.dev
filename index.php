@@ -12,6 +12,7 @@ $posts=[
 	'medoo'=>'Medoo',
 	'mustache'=>'Mustache',
 	'php'=>'PHP',
+	'regex'=>'Regex',
 	'shell'=>'Shell script',
 	'spa'=>'SPA (framework)',
 	'sql'=>'SQL',

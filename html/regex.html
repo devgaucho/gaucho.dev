@@ -1,0 +1,8 @@
+<h2 id="urls">urls</h2>
+<p>validação de urls do <span class="citation" data-cites="grub">@grub</span></p>
+<pre><code>preg_match(&#39;#\b(([\w-]+://?|www[.])[^\s()&lt;&gt;]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#iS&#39;,$link)</code></pre>
+<p>Fonte: <a href="https://mathiasbynens.be/demo/url-regex">mathiasbynens.be</a></p>
+<h2 id="trim-de-urls">trim de urls</h2>
+<p>remove caracteres estranhos de links</p>
+<pre><code>trim($link,!&quot;#$%&amp;\&#39;()*+,-./@:;&lt;=&gt;[\\]^_`{|}~)</code></pre>
+<p>Fonte: <a href="https://mathiasbynens.be/demo/url-regex">mathiasbynens.be</a></p>
