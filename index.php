@@ -14,7 +14,7 @@ $posts=[
 	'php'=>'PHP',
 	'regex'=>'Regex',
 	'shell'=>'Shell script',
-	'spa'=>'SPA (framework)',
+	//'spa'=>'SPA (framework)',
 	'sql'=>'SQL',
 	'zen'=>'Zen Gaucho',
 ];
