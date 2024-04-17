@@ -70,7 +70,7 @@ request.send();
 history.state.<nome da propriedade>
 ```
 
-## node
+## node v20.x
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
