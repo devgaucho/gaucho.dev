@@ -49,36 +49,36 @@ request.onload=function() {
 request.send();</code></pre>
 <h2 id="historico-ler-propriedade-do-estado">historico (ler propriedade do estado)</h2>
 <pre><code>history.state.&lt;nome da propriedade&gt;</code></pre>
-<h2 id="operadores-binários">operadores binários</h2>
-<pre><code>if(a &amp;&amp; b){
-    alert(&quot;a AND b&quot;);
-}
-if(a || b){
-    alert(&quot;a OR B&quot;);
-}</code></pre>
-<p>Fonte: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators">MDN</a></p>
-<h2 id="promise">promise</h2>
-<pre><code>let minhaPromise = new Promise(function(resolve, reject) {
-    let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
+<h2 id="node">node</h2>
+<pre><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
+``
 
-    setTimeout(function() {
-        if (operacao) {
-            resolve(&#39;Operação bem-sucedida!&#39;);
-        } else {
-            reject(&#39;Operação falhou!&#39;);
-        }
-    }, 1000);
-});
+## operadores binários
+</code></pre>
+<p>if(a &amp;&amp; b){ alert(“a AND b”); } if(a || b){ alert(“a OR B”); }</p>
+<pre><code>
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators)
 
-minhaPromise
-    .then(function(value) {
-        console.log(value); // Será executado se a operação for bem-sucedida
-    })
-    .catch(function(error) {
-        console.log(error); // Será executado se a operação falhar
-    });</code></pre>
-<h2 id="undefined">undefined</h2>
-<p>variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso</p>
-<p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>
-<h2 id="voltar">voltar</h2>
-<pre><code>history.back();</code></pre>
+## promise
+</code></pre>
+<p>let minhaPromise = new Promise(function(resolve, reject) { let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar</p>
+<pre><code>setTimeout(function() {
+    if (operacao) {
+        resolve(&#39;Operação bem-sucedida!&#39;);
+    } else {
+        reject(&#39;Operação falhou!&#39;);
+    }
+}, 1000);</code></pre>
+<p>});</p>
+<p>minhaPromise .then(function(value) { console.log(value); // Será executado se a operação for bem-sucedida }) .catch(function(error) { console.log(error); // Será executado se a operação falhar });</p>
+<pre><code>
+## undefined
+
+variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso
+
+Fonte: [Stack Overflow](https://stackoverflow.com/a/56474873)
+
+## voltar
+</code></pre>
+<p>history.back(); ```</p>
