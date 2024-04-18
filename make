@@ -15,7 +15,7 @@ git push origin main
 
 echo
 
-echo "3/3) dando deploy"
+echo "3/3) dando deploy no s1"
 ssh ubuntu@s1 'cd www/gaucho.dev && git pull origin main'
 
 echo "feito!"
