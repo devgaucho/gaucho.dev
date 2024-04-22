@@ -51,6 +51,16 @@ if($bool){
 }
 ```
 
+### headers (apache)
+
+```
+print '<pre>';
+$headers=apache_request_headers();
+foreach($headers as $header=>$value){
+	print $header.': '.$value'.PHP_EOL;
+}
+```
+
 ## json (header)
 ```
 header('Content-Type:application/json');
