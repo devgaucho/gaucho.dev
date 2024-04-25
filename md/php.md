@@ -8,6 +8,13 @@ http_response_code($codigoInt);
 $dec=ord('A');//retorna 65
 ```
 
+## contém
+```
+if(str_contains('hello world','hello')){
+	print 'a string "hello world" contém a string "hello"';
+}
+```
+
 ## download via curl
 ```
 function download($url){
