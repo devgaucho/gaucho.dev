@@ -13,6 +13,15 @@ h1::first-letter,h2::first-letter ,h3::first-letter{
 
 Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media/prefers-color-scheme)
 
+## centralizar o conteúdo de uma div
+
+```
+div{
+	display: grid;
+	place-content: center;
+}
+```
+
 
 ## firefox
 
