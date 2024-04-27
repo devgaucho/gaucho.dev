@@ -7,6 +7,18 @@
 <link rel="shortcut icon" href="img/logo.jpg"/>
 ```
 
+## header
+```
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title></title>
+</head>
+<body>
+```
+
 ## tags sociais
 ```
 <meta property="og:image" content="img/logo.jpg"/>
