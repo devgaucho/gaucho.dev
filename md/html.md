@@ -14,7 +14,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title></title>
+<title><?php print htmlentities($title);?></title>
 </head>
 <body>
 ```
@@ -35,8 +35,8 @@
 ## webs colors (vga/srgb)
 <table align=center width="100%" border=1>
 	<tr>
-		<td bgcolor=Black width=36></td><td>Black  = #000000</td>
-		<td bgcolor=Green width=36></td><td>Green  = #008000</td>
+		<td bgcolor=Black width=36></td><td>Black=#000000</td>
+		<td bgcolor=Green width=36></td><td>Green=#008000</td>
 	</tr>
 	<tr>
 		<td bgcolor=Silver></td><td>Silver = #C0C0C0</td>
@@ -64,7 +64,7 @@
 	</tr>
 	<tr>
 		<td bgcolor=Fuchsia></td><td>Fuchsia  = #FF00FF</td>
-		<td bgcolor=Aqua></td><td bgcolor=>Aqua   = #00FFFF</td>
+		<td bgcolor=Aqua></td><td bgcolor=>Aqua = #00FFFF</td>
 	</tr>
 </table>
 
