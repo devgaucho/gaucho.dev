@@ -25,11 +25,13 @@ sudo setsid mintstick -m iso
 ### .gitignore
 
 ```
+/db/*.sqlite3
 /.env
-*.swp
-/db
+/.idea
 /public/test*.php
-/todo.txt
+*.swp
+/test*.php
+/*.txt
 /vendor
 ```
 
