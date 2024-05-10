@@ -101,6 +101,14 @@ Tempo para rodar o comando acima:
 - 8 cores = 1.25s
 - 10 cores = 1s
 
+## stat
+
+Pra ver a data de modificação de um arquivo:
+
+```
+stat nomeDoArquivo
+```
+
 ## tar
 
 ### adicionar um diretório
