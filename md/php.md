@@ -106,6 +106,17 @@ Fonte: [PHP](https://www.php.net/manual/pt_BR/control-structures.match.php)
 ```
 require __DIR__.'/../cfg.php';
 ```
+## remover espaços duplicados
+
+```
+$str=preg_replace('/\s+/',' ',$str);
+```
+
+## remover quebras de linha duplicadas
+
+```
+$str=str_replace("\r\n\r\n","\r\n",$str);
+```
 
 ## sleep
 ```
