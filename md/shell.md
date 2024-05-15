@@ -87,6 +87,21 @@ EOF
 
 Fonte: [StackOverwlow](https://stackoverflow.com/a/33765906)
 
+## Poppler
+
+- pdfdetach -- lists or extracts embedded files (attachments)
+- pdffonts -- font analyzer
+- pdfimages -- image extractor
+- pdfinfo -- document information
+- pdfseparate -- page extraction tool
+- pdfsig -- verifies digital signatures
+- pdftocairo -- PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using Cairo
+- pdftohtml -- PDF to HTML converter
+- pdftoppm -- PDF to PPM/PNG/JPEG image converter
+- pdftops -- PDF to PostScript (PS) converter
+- pdftotext -- text extraction
+- pdfunite -- document merging tool
+
 ### rodando comandos em paralelo com argumentos
 
 ```
