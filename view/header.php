@@ -8,6 +8,6 @@
 	<meta name="twitter:title" content="<?php print htmlentities($title);?>" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="img/logo_460.png" />
-	<link rel="stylesheet" href="css/style.css?v12" />
+	<link rel="stylesheet" href="css/style.css?v13" />
 </head>
 <body>

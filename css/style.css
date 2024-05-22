@@ -10,6 +10,7 @@ v9	fix do cache
 v10	<code> em bold
 v11	<bloquote> cinza
 v12	fix do <blockquote> cinza
+v13	fix do <blockquote> cinza
 */
 
 body{
@@ -17,7 +18,7 @@ body{
 	font-size:24px;
 	line-height:1.5em;
 }
-bloquote{
+blockquote{
 	background:#c0c0c0;
 	border-left:gray solid 5px;
 }
