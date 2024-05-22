@@ -1,7 +1,7 @@
 ## Zen Gaucho
 
 1. letras do alfabeto latino e números são melhores que símbolos
-2. indentação BSD ou K&R¹ com tab no tamanho 8 ao invés de espaços
+2. indentação K&R¹ com tab no tamanho 8 ao invés de espaços
 3. no máximo 70 caracteres por linha
 4. use POO sempre que possível, mas não mais que o necessário
 5. mantenha as coisas simples, não tente reinventar a roda
