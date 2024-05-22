@@ -1,5 +1,3 @@
-## Itens:
-
 1. bibliotecas que rodam sózinhas são melhores que frameworks
 2. evite a repetição de códigos e as classes gigantes (D.R.Y.)
 3. evite encadeamentos (chaining) e métodos em cascata (cascading)
@@ -28,9 +26,9 @@
 #### 2) Exemplos de código inline ou incorporado:
 
 - atributo `style`
-- função arrow (vai contra o item 4)
+- função arrow (vai contra o Zen 4)
 - operador ternário
 - `<script>`
 - `<style>`
-- vários métodos na mesma linha (vai contra os itens 3 e 4)
+- vários métodos na mesma linha (vai contra os Zen's 3 e 4)
 
