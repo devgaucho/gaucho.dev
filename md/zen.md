@@ -17,7 +17,7 @@
 
 #### 1) Tipos de indentação:
 
-- K&R: Também conhecido como Linux (ótimo pois economiza LOCs)
+- K&R: Também conhecido como Linux (ótimo pois ocupa menos linhas)
 - BSD: Também conhecido como Allman, GNU e PEAR (padrão do PHPStorm)
 - Whitesmiths: Também conhecido como Haskell
 
