@@ -31,7 +31,7 @@
 
 - atributo `style`
 - função arrow (vai contra a regra 4)
-- operador ternário
+- operador ternário (vai contra a regra 4)
 - `<script>`
 - `<style>`
 - vários métodos na mesma linha (vai contra as regras 3 e 4)
