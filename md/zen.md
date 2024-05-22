@@ -1,17 +1,19 @@
+## Itens:
+
 1. bibliotecas que rodam sózinhas são melhores que frameworks
-1. evite a repetição de códigos e as classes gigantes (D.R.Y.)
-1. evite encadeamentos (chaining) e métodos em cascata (cascading)
-1. mantenha as coisas simples, não tente reinventar a roda
-1. nada de código inline ou incorporado²
-1. use POO sempre que possível, mas não mais que o necessário
+2. evite a repetição de códigos e as classes gigantes (D.R.Y.)
+3. evite encadeamentos (chaining) e métodos em cascata (cascading)
+4. mantenha as coisas simples, não tente reinventar a roda
+5. nada de código inline ou incorporado²
+6. use POO sempre que possível, mas não mais que o necessário
 
 ## Estilo de código:
 
 1. evite deixar linhas em branco
-1. evite usar caracteres não alfanuméricos além do underscore (0x5F)
-1. evite usar espaços antes e depois de caracteres não alfanuméricos
-1. no máximo 70 caracteres por linha
-1. use o estilo de indentação K&R¹ com tab (0x09) no tamanho 8
+2. evite usar caracteres não alfanuméricos além do underscore (0x5F)
+3. evite usar espaços antes e depois de caracteres não alfanuméricos
+4. no máximo 70 caracteres por linha
+5. use o estilo de indentação K&R¹ com tab (0x09) no tamanho 8
 
 ### Notas
 
@@ -26,9 +28,9 @@
 #### 2) Exemplos de código inline ou incorporado:
 
 - atributo `style`
-- função arrow (vai contra o item 1)
+- função arrow (vai contra o item 4)
 - operador ternário
 - `<script>`
 - `<style>`
-- vários métodos na mesma linha (vai contra os itens 1 e 12)
+- vários métodos na mesma linha (vai contra os itens 3 e 4)
 
