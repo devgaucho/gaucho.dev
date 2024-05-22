@@ -1,7 +1,7 @@
 ## Zen Gaucho
 
 1. letras do alfabeto latino e números são melhores que símbolos
-2. indentação bsd ou linux¹ com tab no tamanho 8 ao invés de espaços
+2. indentação BSD ou K&R¹ com tab no tamanho 8 ao invés de espaços
 3. no máximo 70 caracteres por linha
 4. use POO sempre que possível, mas não mais que o necessário
 5. mantenha as coisas simples, não tente reinventar a roda
@@ -16,6 +16,10 @@
 ### Notas
 
 #### 1) Tipos de indentação:
+
+- K&R: Também conhecido como Linux (ótimo pois economiza LOCs)
+- BSD: Também conhecido como Allman, GNU e PEAR (padrão do PHPStorm)
+- Whitesmiths: Também conhecido como Haskell
 
 ![Tipos de indentação](img/indentation.jpg)
 
