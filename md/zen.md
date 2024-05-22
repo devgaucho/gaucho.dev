@@ -1,5 +1,3 @@
-## Zen Gaucho
-
 1. bibliotecas que rodam sózinhas são melhores que frameworks
 1. evite a repetição de códigos e as classes gigantes (D.R.Y.)
 1. evite encadeamentos (chaining) e métodos em cascata (cascading)
@@ -7,7 +5,7 @@
 1. nada de código inline ou incorporado²
 1. use POO sempre que possível, mas não mais que o necessário
 
-### Estilo de código:
+## Estilo de código:
 
 1. evite deixar linhas em branco
 1. evite usar caracteres não alfanuméricos além do underscore (0x5F)
