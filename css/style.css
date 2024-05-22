@@ -20,7 +20,11 @@ body{
 }
 blockquote{
 	background:#c0c0c0;
-	border-left:gray solid 5px;
+	border-left:gray solid 10px;
+	font-weight:bold;
+	line-height:1.5em;
+	margin:0;
+	padding:1px 10px;
 }
 code{
 	font-family:"Courier New","Liberation Mono",Courier,monospace;

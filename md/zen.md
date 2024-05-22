@@ -1,5 +1,7 @@
 > A palavra "zen" vem do termo sânscrito dhyāna, que denota o estado de concentração típico da prática meditativa
 
+## Zen Gaucho
+
 1. bibliotecas que rodam sózinhas são melhores que frameworks
 2. evite a repetição de códigos e as classes gigantes (D.R.Y.)
 3. evite encadeamentos (chaining) e métodos em cascata (cascading)
