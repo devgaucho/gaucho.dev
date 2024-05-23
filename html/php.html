@@ -48,6 +48,13 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
 <pre><code>$mix=json_decode($json,true);</code></pre>
 <h2 id="json-encode-pretty">json encode (pretty)</h2>
 <pre><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></pre>
+<h2 id="json-validate-polyfill-php-8.3">json validate (polyfill php &lt; 8.3)</h2>
+<pre><code>function json_validate(string $string): bool {
+    json_decode($string);
+
+    return json_last_error() === JSON_ERROR_NONE;
+}</code></pre>
+<p>Fonte: <a href="https://www.php.net/releases/8.3/en.php">PHP</a></p>
 <h2 id="ler-dados-de-um-arquivo">ler dados de um arquivo</h2>
 <pre><code>$str=file_get_contents(&#39;nome_do_arquivo&#39;);</code></pre>
 <h2 id="match">match</h2>

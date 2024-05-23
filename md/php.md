@@ -84,6 +84,18 @@ $mix=json_decode($json,true);
 $json=json_encode($mix,JSON_PRETTY_PRINT);
 ```
 
+## json validate (polyfill php < 8.3)
+
+```
+function json_validate(string $string): bool {
+    json_decode($string);
+
+    return json_last_error() === JSON_ERROR_NONE;
+}
+```
+
+Fonte: [PHP](https://www.php.net/releases/8.3/en.php)
+
 ## ler dados de um arquivo
 ```
 $str=file_get_contents('nome_do_arquivo');
