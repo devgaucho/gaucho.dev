@@ -16,8 +16,10 @@ Fonte: [Less](https://lesscss.org/features/#import-atrules-feature)
 ## instalar (ubuntu)
 
 ```
-sudo apt install -y node-less node-less-plugin-clean-css
+npm install less less-plugin-clean-css -g
 ```
+
+Fonte: [Less](https://lesscss.org/usage/)
 
 ## variáveis
 
