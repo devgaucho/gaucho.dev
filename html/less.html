@@ -7,6 +7,11 @@
 <h2 id="instalar-ubuntu">instalar (ubuntu)</h2>
 <pre><code>npm install less less-plugin-clean-css -g</code></pre>
 <p>Fonte: <a href="https://lesscss.org/usage/">Less</a></p>
+<h2 id="percentage-fix">percentage (fix)</h2>
+<p>Por alguma razão esse código não funciona corretamente no lessc &gt;=4.*:</p>
+<pre><code>@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);</code></pre>
+<p>Mas esse código funciona:</p>
+<pre><code>@fluidGridColumnWidth: (@gridColumnWidth / @gridRowWidth) * 100%;</code></pre>
 <h2 id="variáveis">variáveis</h2>
 <pre><code>@corDoTexto: black;
 

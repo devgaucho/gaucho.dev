@@ -21,6 +21,20 @@ npm install less less-plugin-clean-css -g
 
 Fonte: [Less](https://lesscss.org/usage/)
 
+## percentage (fix)
+
+Por alguma razão esse código não funciona corretamente no lessc >=4.*:
+
+```
+@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
+```
+
+Mas esse código funciona:
+
+```
+@fluidGridColumnWidth: (@gridColumnWidth / @gridRowWidth) * 100%;
+```
+
 ## variáveis
 
 ```
