@@ -52,6 +52,35 @@
 <pre><code>if(str_contains(&#39;hello world&#39;,&#39;hello&#39;)){
     print &#39;a string &quot;hello world&quot; contém a string &quot;hello&quot;&#39;;
 }</code></pre>
+<h2 id="dom">dom</h2>
+<pre><code>//composer require phpgt/cssxpath
+
+namespace src;
+use Gt\CssXPath\Translator;
+use DOMDocument;
+use DOMXPath;
+class DOM
+{
+    function getLinks($html,$cssExpression=&#39;a&#39;){
+        $links=$this-&gt;query($html,$cssExpression);
+        $hrefs=[];
+        foreach($links as $link){
+            if($link-&gt;hasAttribute(&#39;href&#39;)) {
+                $hrefs[]=$link-&gt;getAttribute(&#39;href&#39;);
+            }
+        }
+        return $hrefs;
+    }
+    function query($html,$cssExpression){
+        $xpathExpression=new Translator($cssExpression);
+        //fix do html inválido
+        libxml_use_internal_errors(true);
+        $dom=new DOMDocument();
+        $dom-&gt;loadHTML($html);
+        $xpath=new DOMXPath($dom);  
+        return $xpath-&gt;query($xpathExpression);
+    }
+}</code></pre>
 <h2 id="download-via-curl">download via curl</h2>
 <pre><code>function download($url){
     ob_start();

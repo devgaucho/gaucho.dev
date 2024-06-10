@@ -73,6 +73,39 @@ if(str_contains('hello world','hello')){
 }
 ```
 
+## dom
+
+```
+//composer require phpgt/cssxpath
+
+namespace src;
+use Gt\CssXPath\Translator;
+use DOMDocument;
+use DOMXPath;
+class DOM
+{
+	function getLinks($html,$cssExpression='a'){
+		$links=$this->query($html,$cssExpression);
+		$hrefs=[];
+		foreach($links as $link){
+			if($link->hasAttribute('href')) {
+				$hrefs[]=$link->getAttribute('href');
+			}
+		}
+		return $hrefs;
+	}
+	function query($html,$cssExpression){
+		$xpathExpression=new Translator($cssExpression);
+		//fix do html inválido
+		libxml_use_internal_errors(true);
+		$dom=new DOMDocument();
+		$dom->loadHTML($html);
+		$xpath=new DOMXPath($dom);	
+		return $xpath->query($xpathExpression);
+	}
+}
+```
+
 ## download via curl
 ```
 function download($url){
