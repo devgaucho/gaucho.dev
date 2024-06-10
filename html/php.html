@@ -1,3 +1,49 @@
+<h2 id="arredondar-para-baixo">arredondar para baixo</h2>
+<pre><code>number_format(floor(&#39;0.055&#39; * 100) / 100, 2, &#39;.&#39;, &#39;&#39;);//retorna 0.05</code></pre>
+<h2 id="arredondar-para-cima">arredondar para cima</h2>
+<pre><code>number_format(&#39;0.055&#39;,2);//retorna 0.06</code></pre>
+<h2 id="cmd">cmd</h2>
+<pre><code>function cmd($cmd,$raw=false){
+    // Abre um manipulador de arquivo para read e write
+    $descriptorspec=[
+        //stdin é um pipe que o processo filho lê
+        0=&gt;[&quot;pipe&quot;,&quot;r&quot;],
+        //stdout é um pipe que o processo pai escreve
+        1=&gt;[&quot;pipe&quot;,&quot;w&quot;],
+        //stderr é um pipe que o processo pai escreve
+        2=&gt;[&quot;pipe&quot;,&quot;w&quot;]
+    ];
+    // Inicia o processo
+    $process=proc_open($cmd,$descriptorspec,$pipes);
+    if(is_resource($process)){
+        // Fecha os pipes de entrada
+        fclose($pipes[0]);
+        // Lê a saída do processo
+        $output=stream_get_contents($pipes[1]);
+        fclose($pipes[1]);
+        // Lê a saída de erro do processo
+        $error=stream_get_contents($pipes[2]);
+        fclose($pipes[2]);
+        // captura o código de retorno
+        $fileDescriptor=proc_close($process);
+        $out=[
+            &#39;stdout&#39; =&gt; $output,//stdout
+            &#39;stderr&#39; =&gt; $error,//stderr
+            //0 = default, 127 = not found
+            &#39;file_descriptor&#39; =&gt; $fileDescriptor
+        ];
+        if($raw){
+            return $out;
+        }
+        if($out[&#39;file_descriptor&#39;]==&#39;0&#39;){
+            return $output;
+        }else{
+            return false;
+        }
+    }else{
+        return false;
+    }
+}</code></pre>
 <h2 id="código-de-resposta-http">código de resposta (http)</h2>
 <pre><code>http_response_code($codigoInt);</code></pre>
 <h2 id="código-decimal-do-caractere">código decimal do caractere</h2>
