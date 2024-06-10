@@ -76,8 +76,8 @@ if(str_contains('hello world','hello')){
 ## dom
 
 ```
+<?php
 //composer require phpgt/cssxpath
-
 namespace src;
 use Gt\CssXPath\Translator;
 use DOMDocument;
