@@ -1,5 +1,5 @@
 <h2 id="argumentos-cli">argumentos (cli)</h2>
-<pre><code>let numeroDoArgumento=2;
+<pre><code>var numeroDoArgumento=2;
 console.log(&#39;argumento &#39;+numeroDoArgumento+&#39; = &#39;+process.argv[numeroDoArgumento]);</code></pre>
 <h2 id="baixar-html">baixar html</h2>
 <pre><code>fetch(&#39;/arquivo.html&#39;)
@@ -85,11 +85,11 @@ minhaPromise
         console.log(error); // Será executado se a operação falhar
     });</code></pre>
 <h2 id="stdin">stdin</h2>
-<pre><code>let input=&#39;&#39;;
-process.stdin.on(&#39;data&#39;,(chunk)=&gt;{
-    input+=chunk.toString();
+<pre><code>var input = &#39;&#39;;
+process.stdin.on(&#39;data&#39;,function(chunk){
+    input += chunk.toString();
 });
-process.stdin.on(&#39;end&#39;,()=&gt;{
+process.stdin.on(&#39;end&#39;,function(){
     console.log(input.trim());
 });</code></pre>
 <h2 id="undefined">undefined</h2>

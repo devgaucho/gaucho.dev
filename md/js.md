@@ -1,7 +1,7 @@
 ## argumentos (cli)
 
 ```
-let numeroDoArgumento=2;
+var numeroDoArgumento=2;
 console.log('argumento '+numeroDoArgumento+' = '+process.argv[numeroDoArgumento]);
 ```
 
@@ -126,11 +126,11 @@ minhaPromise
 ## stdin
 
 ```
-let input='';
-process.stdin.on('data',(chunk)=>{
-	input+=chunk.toString();
+var input = '';
+process.stdin.on('data',function(chunk){
+	input += chunk.toString();
 });
-process.stdin.on('end',()=>{
+process.stdin.on('end',function(){
 	console.log(input.trim());
 });
 ```
