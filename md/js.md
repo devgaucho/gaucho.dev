@@ -9,14 +9,13 @@ console.log('argumento '+numeroDoArgumento+' = '+process.argv[numeroDoArgumento]
 
 ```
 fetch('/arquivo.html')
-.then((response) => {
+.then(function(response){
 	return response.text();
 })
-.then((html) => {
+.then(function(html){
 	processarAResposta(html);
 });
 ```
-
 
 ## constantes e variáveis
 
@@ -51,9 +50,15 @@ a variável é acessível em toda a função onde é chamada pois ela é içada 
 ## getJson (com fetch)
 ```
 fetch('arquivo.json')
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(() => alert('erro'));
+.then(function(response){
+	return response.json();
+})
+.then(function(data){
+	return console.log(data);
+})
+.catch(function(){
+	alert('erro');
+});
 ```
 
 ## getJson (com XMLHttpRequest)
@@ -102,16 +107,15 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/O
 ## promise
 
 ```
-let minhaPromise = new Promise(function(resolve, reject) {
-    let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
-
-    setTimeout(function() {
-        if (operacao) {
+var minhaPromise=new Promise(function(resolve,reject){
+    var operacao=true;// Simula uma operação que pode ser bem-sucedida ou falhar
+    setTimeout(function(){
+        if(operacao){
             resolve('Operação bem-sucedida!');
-        } else {
+        }else{
             reject('Operação falhou!');
         }
-    }, 1000);
+    },1000);
 });
 
 minhaPromise

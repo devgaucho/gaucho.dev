@@ -3,10 +3,10 @@
 console.log(&#39;argumento &#39;+numeroDoArgumento+&#39; = &#39;+process.argv[numeroDoArgumento]);</code></pre>
 <h2 id="baixar-html">baixar html</h2>
 <pre><code>fetch(&#39;/arquivo.html&#39;)
-.then((response) =&gt; {
+.then(function(response){
     return response.text();
 })
-.then((html) =&gt; {
+.then(function(html){
     processarAResposta(html);
 });</code></pre>
 <h2 id="constantes-e-variáveis">constantes e variáveis</h2>
@@ -35,9 +35,15 @@ console.log(&#39;argumento &#39;+numeroDoArgumento+&#39; = &#39;+process.argv[nu
 <p>a variável é acessível em toda a função onde é chamada pois ela é içada (hoisted) para cima</p>
 <h2 id="getjson-com-fetch">getJson (com fetch)</h2>
 <pre><code>fetch(&#39;arquivo.json&#39;)
-.then(response =&gt; response.json())
-.then(data =&gt; console.log(data))
-.catch(() =&gt; alert(&#39;erro&#39;));</code></pre>
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    return console.log(data);
+})
+.catch(function(){
+    alert(&#39;erro&#39;);
+});</code></pre>
 <h2 id="getjson-com-xmlhttprequest">getJson (com XMLHttpRequest)</h2>
 <pre><code>var request = new XMLHttpRequest();
 request.open(&#39;GET&#39;,&#39;arquivo.json&#39;,true);
@@ -65,16 +71,15 @@ if(a || b){
 }</code></pre>
 <p>Fonte: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators">MDN</a></p>
 <h2 id="promise">promise</h2>
-<pre><code>let minhaPromise = new Promise(function(resolve, reject) {
-    let operacao = true; // Simula uma operação que pode ser bem-sucedida ou falhar
-
-    setTimeout(function() {
-        if (operacao) {
+<pre><code>var minhaPromise=new Promise(function(resolve,reject){
+    var operacao=true;// Simula uma operação que pode ser bem-sucedida ou falhar
+    setTimeout(function(){
+        if(operacao){
             resolve(&#39;Operação bem-sucedida!&#39;);
-        } else {
+        }else{
             reject(&#39;Operação falhou!&#39;);
         }
-    }, 1000);
+    },1000);
 });
 
 minhaPromise
