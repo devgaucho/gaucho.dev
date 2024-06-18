@@ -1,3 +1,6 @@
+<h2 id="argumentos-cli">argumentos (cli)</h2>
+<pre><code>let numeroDoArgumento=2;
+console.log(&#39;argumento &#39;+numeroDoArgumento+&#39; = &#39;+process.argv[numeroDoArgumento]);</code></pre>
 <h2 id="baixar-html">baixar html</h2>
 <pre><code>fetch(&#39;/arquivo.html&#39;)
 .then((response) =&gt; {
@@ -52,6 +55,7 @@ request.send();</code></pre>
 <h2 id="node-v20.x">node v20.x</h2>
 <pre><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20</code></pre>
+<p>Fonte: <a href="https://nodejs.org/en/download/package-manager">Node.js</a></p>
 <h2 id="operadores-binários">operadores binários</h2>
 <pre><code>if(a &amp;&amp; b){
     alert(&quot;a AND b&quot;);
@@ -80,8 +84,22 @@ minhaPromise
     .catch(function(error) {
         console.log(error); // Será executado se a operação falhar
     });</code></pre>
-<h2 id="undefined">undefined</h2>
-<p>variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso</p>
-<p>Fonte: <a href="https://stackoverflow.com/a/56474873">Stack Overflow</a></p>
-<h2 id="voltar">voltar</h2>
-<pre><code>history.back();</code></pre>
+<h2 id="stdin">stdin</h2>
+<pre><code>let input=&#39;&#39;;
+process.stdin.on(&#39;data&#39;,(chunk)=&gt;{
+    input+=chunk.toString();
+});
+process.stdin.on(&#39;end&#39;,()=&gt;{
+        console.log(input.trim());
+});
+``
+
+## undefined
+
+variáveis do tipo let não podem ser usadas antes antes de serem declaradas, elas precisam ser declaradas em alguma linha anterior ao seu uso
+
+Fonte: [Stack Overflow](https://stackoverflow.com/a/56474873)
+
+## voltar
+</code></pre>
+<p>history.back(); ```</p>
