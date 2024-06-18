@@ -1,3 +1,10 @@
+## argumentos (cli)
+
+```
+let numeroDoArgumento=2;
+console.log('argumento '+numeroDoArgumento+' = '+process.argv[numeroDoArgumento]);
+```
+
 ## baixar html
 
 ```
@@ -77,6 +84,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
 ```
 
+Fonte: [Node.js](https://nodejs.org/en/download/package-manager)
+
 ## operadores binários
 
 ```
@@ -113,6 +122,18 @@ minhaPromise
         console.log(error); // Será executado se a operação falhar
     });
 ```
+
+## stdin
+
+```
+let input='';
+process.stdin.on('data',(chunk)=>{
+	input+=chunk.toString();
+});
+process.stdin.on('end',()=>{
+        console.log(input.trim());
+});
+``
 
 ## undefined
 
