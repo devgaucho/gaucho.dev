@@ -75,3 +75,14 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 ```
 
 Fonte: [Stack Overflow](https://stackoverflow.com/a/248013)
+
+## itcss (inverted triangle css)
+- settings = variables = variáveis
+- tools = general = geral
+- generic = reset
+- base = tags
+- objects = layout
+- components = classes
+- trumps = importante
+
+fonte: [anselme](https://www.anselme.com.br/2024/06/19/itcss-inverted-triangle-css/)
