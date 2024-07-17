@@ -16,6 +16,7 @@
 3. evite usar espaços antes e depois de caracteres não alfanuméricos
 4. no máximo 70 caracteres por linha
 5. use o estilo de indentação K&R¹ com tab (0x09) no tamanho 8
+6. variáveis e métodos em snake_case e constantes em SCREAMING_SNAKE_CASE
 
 ### Notas
 
