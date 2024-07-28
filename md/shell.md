@@ -156,6 +156,15 @@ watch -n 1 date
 sudo parted --list
 ```
 
+## tsv
+
+### gerar 2 arquivos
+
+```
+cut -f1 en-pt.txt > en.txt
+cut -f2 en-pt.txt > pt.txt
+```
+
 ## zip
 
 ### zipar um diretório
