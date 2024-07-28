@@ -49,6 +49,12 @@ wc -l arquivo.txt
 cat in.txt | sort | uniq >> out.txt
 ```
 
+### imprimir a apenas a linha 1
+
+```
+sed -n '1p' arquivo.txt
+```
+
 ### ler da linha 2 até a 5
 
 ```

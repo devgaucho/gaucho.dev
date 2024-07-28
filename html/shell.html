@@ -21,6 +21,8 @@
 <pre><code>wc -l arquivo.txt</code></pre>
 <h3 id="filtrar-linhas-únicas">filtrar linhas únicas</h3>
 <pre><code>cat in.txt | sort | uniq &gt;&gt; out.txt</code></pre>
+<h3 id="imprimir-a-apenas-a-linha-1">imprimir a apenas a linha 1</h3>
+<pre><code>sed -n &#39;1p&#39; arquivo.txt</code></pre>
 <h3 id="ler-da-linha-2-até-a-5">ler da linha 2 até a 5</h3>
 <pre><code>gawk &#39;NR&gt;=2 &amp;&amp; NR&lt;=5&#39; arquivo.txt</code></pre>
 <h2 id="make">make</h2>
