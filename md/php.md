@@ -232,11 +232,9 @@ usleep(1);//pausa de 1 milisegundo
 ## tempo de execução em segundos.milisegundos
 ```
 $start=hrtime(true);
-sleep(2);
+//código a ser executado
 $end=hrtime(true);
 $totalNs=$end-$start;
-//$totalSMs=$totalNs/1e+9;
-//$totalSMs=number_format($totalSMs,3);
 $totalSMs=(($totalNs/1000)/1000)/1000;
 $totalSMs=number_format($totalSMs,3);
 print $totalSMs;
