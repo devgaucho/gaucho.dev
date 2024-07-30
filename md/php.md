@@ -237,7 +237,7 @@ $end=hrtime(true);
 $totalNs=$end-$start;
 $totalSMs=(($totalNs/1000)/1000)/1000;
 $totalSMs=number_format($totalSMs,3);
-print $totalSMs;
+print $totalSMs.' segundo(s)';
 ```
 
 ## tradução básica de strings

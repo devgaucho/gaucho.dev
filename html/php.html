@@ -158,7 +158,7 @@ $end=hrtime(true);
 $totalNs=$end-$start;
 $totalSMs=(($totalNs/1000)/1000)/1000;
 $totalSMs=number_format($totalSMs,3);
-print $totalSMs;</code></pre>
+print $totalSMs.&#39; segundo(s)&#39;;</code></pre>
 <h2 id="tradução-básica-de-strings">tradução básica de strings</h2>
 <pre><code>$trans=[&quot;hello&quot;=&gt;&quot;olá&quot;,&quot;world&quot;=&gt;&quot;mundo&quot;];
 print strtr(&quot;hello world&quot;,$trans);</code></pre>
