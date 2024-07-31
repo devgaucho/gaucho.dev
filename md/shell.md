@@ -6,6 +6,27 @@
 find /opt -type f -size +200M -name \*.mp4
 ```
 
+## cpu
+
+### bogomips
+
+```
+cat /proc/cpuinfo | grep bogomips
+
+```
+
+### detalhes da cpu
+
+```
+lscpu
+```
+
+### frequência dos núcleos
+
+```
+sudo apt install cpufrequtils -y && cpufreq-info
+```
+
 ## formatar pendrive & gravar iso (linux mint)
 
 ### formatar pendrive

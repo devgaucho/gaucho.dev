@@ -1,6 +1,14 @@
 <h2 id="buscar-arquivos">buscar arquivos</h2>
 <h3 id="mp4-maiores-que-200m-no-diretório-opt">mp4 maiores que 200M no diretório /opt</h3>
 <pre><code>find /opt -type f -size +200M -name \*.mp4</code></pre>
+<h2 id="cpu">cpu</h2>
+<h3 id="bogomips">bogomips</h3>
+<pre><code>cat /proc/cpuinfo | grep bogomips
+</code></pre>
+<h3 id="detalhes-da-cpu">detalhes da cpu</h3>
+<pre><code>lscpu</code></pre>
+<h3 id="frequência-dos-núcleos">frequência dos núcleos</h3>
+<pre><code>sudo apt install cpufrequtils -y &amp;&amp; cpufreq-info</code></pre>
 <h2 id="formatar-pendrive-gravar-iso-linux-mint">formatar pendrive &amp; gravar iso (linux mint)</h2>
 <h3 id="formatar-pendrive">formatar pendrive</h3>
 <pre><code>sudo setsid mintstick -m format</code></pre>
