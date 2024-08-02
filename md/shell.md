@@ -70,10 +70,10 @@ wc -l arquivo.txt
 cat in.txt | sort | uniq >> out.txt
 ```
 
-### imprimir a apenas a linha 1
+### imprimir a apenas a linha 10
 
 ```
-sed -n '1p' arquivo.txt
+cat arquivo.txt | grep -m 10 . | tail -n 1
 ```
 
 ### ler da linha 2 até a 5
