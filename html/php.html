@@ -169,6 +169,11 @@ print strtr(&quot;hello world&quot;,$trans);</code></pre>
 <p>Fonte: <a href="https://www.php.net/manual/en/function.strtr">PHP</a></p>
 <h2 id="user-agent">user-agent</h2>
 <pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>
+<h2 id="verificar-se-a-string-contém-apenas-letras">verificar se a string contém apenas letras</h2>
+<pre><code>$char=&#39;café&#39;;
+if(preg_match(&#39;/^[\p{L}]$/u&#39;,$char)){
+    print &#39;contém apenas letras&#39;;
+}</code></pre>
 <h2 id="versão">versão</h2>
 <pre><code>if (version_compare(PHP_VERSION, &#39;8.0.0&#39;) &lt; 0) {
     die(&quot;é necessário ter PHP 8 ou superior&quot;);

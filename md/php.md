@@ -262,6 +262,15 @@ Fonte: [PHP](https://www.php.net/manual/en/function.strtr)
 $str=$_SERVER['HTTP_USER_AGENT'];
 ```
 
+## verificar se a string contém apenas letras
+
+```
+$char='café';
+if(preg_match('/^[\p{L}]$/u',$char)){
+	print 'contém apenas letras';
+}
+```
+
 ## versão
 ```
 if (version_compare(PHP_VERSION, '8.0.0') < 0) {
