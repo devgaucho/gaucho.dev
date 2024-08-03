@@ -211,10 +211,18 @@ Fonte: [PHP](https://www.php.net/manual/pt_BR/control-structures.match.php)
 ```
 require __DIR__.'/../cfg.php';
 ```
-## remover espaços duplicados
+## remover espaços 
+
+### apenas espaços duplicados
 
 ```
 $str=preg_replace('/\s+/',' ',$str);
+```
+
+### espaços duplicados e quebras de linha
+
+```
+$str=preg_replace('/ {2,}/',' ',$str);
 ```
 
 ## remover quebras de linha duplicadas

@@ -144,8 +144,11 @@ print $out;</code></pre>
 <p>Fonte: <a href="https://www.php.net/manual/pt_BR/control-structures.match.php">PHP</a></p>
 <h2 id="publicindex.php">public/index.php</h2>
 <pre><code>require __DIR__.&#39;/../cfg.php&#39;;</code></pre>
-<h2 id="remover-espaços-duplicados">remover espaços duplicados</h2>
+<h2 id="remover-espaços">remover espaços</h2>
+<h3 id="apenas-espaços-duplicados">apenas espaços duplicados</h3>
 <pre><code>$str=preg_replace(&#39;/\s+/&#39;,&#39; &#39;,$str);</code></pre>
+<h3 id="espaços-duplicados-e-quebras-de-linha">espaços duplicados e quebras de linha</h3>
+<pre><code>$str=preg_replace(&#39;/ {2,}/&#39;,&#39; &#39;,$str);</code></pre>
 <h2 id="remover-quebras-de-linha-duplicadas">remover quebras de linha duplicadas</h2>
 <pre><code>$str=str_replace(&quot;\r\n\r\n&quot;,&quot;\r\n&quot;,$str);</code></pre>
 <h2 id="sleep">sleep</h2>
