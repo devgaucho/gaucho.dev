@@ -48,3 +48,8 @@ character-set-server=utf8mb4
 ```
 CREATE DATABASE banco CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
+## DSN (mysql)
+```
+mysql:host=localhost;port=3307;dbname=nome_do_banco
+```
