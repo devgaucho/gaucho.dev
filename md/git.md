@@ -17,5 +17,4 @@ Fonte: [Stack Overflow](https://stackoverflow.com/a/23205409)
 /.idea
 /test*.php
 /*.txt
-/vendor
 ```
