@@ -11,6 +11,8 @@ Fonte: [Stack Overflow](https://stackoverflow.com/a/23205409)
 
 ```
 /.env
+/.idea
+/db/*.sqlite3
 /composer.json
 /composer.lock
 /vendor
