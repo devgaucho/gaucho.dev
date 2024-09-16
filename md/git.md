@@ -10,11 +10,11 @@ Fonte: [Stack Overflow](https://stackoverflow.com/a/23205409)
 ## .gitignore
 
 ```
-/composer.json
-/composer.lock
+/data/*
 /db/*.sqlite3
 /.env
 /.idea
+/public/thumb/*.*
 /test*.php
 /*.txt
 ```
