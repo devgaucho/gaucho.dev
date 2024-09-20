@@ -64,12 +64,6 @@ sudo setsid mintstick -m iso
 wc -l arquivo.txt
 ```
 
-### filtrar linhas únicas
-
-```
-cat in.txt | sort | uniq >> out.txt
-```
-
 ### imprimir a apenas a linha 10
 
 ```
@@ -80,6 +74,12 @@ cat arquivo.txt | grep -m 10 . | tail -n 1
 
 ```
 gawk 'NR>=2 && NR<=5' arquivo.txt
+```
+
+### linhas únicas (filtrar)
+
+```
+cat a.txt b.txt | sort | uniq -u
 ```
 
 ## make
