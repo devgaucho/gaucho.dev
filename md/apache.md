@@ -12,8 +12,9 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 
-# erro 403
+# erros
 ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
 
 # charset
 AddCharset utf-8 .css .html .js .json .md .txt .wat
@@ -21,4 +22,7 @@ AddCharset utf-8 .css .html .js .json .md .txt .wat
 # mimes
 AddType application/wasm .wasm
 AddType text/plain .wat
+
+# bloqueios
+RedirectMatch 404 /\.git
 ```

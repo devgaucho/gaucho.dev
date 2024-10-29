@@ -97,9 +97,11 @@ class DOM
 }</code></pre>
 <h2 id="email-válido">email válido</h2>
 <pre><code>$isValid=filter_var($email,FILTER_VALIDATE_EMAIL);</code></pre>
-<h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um arquivo com append</h2>
+<h2 id="escrever-dados-em-um-arquivo-com-append">escrever dados em um
+arquivo com append</h2>
 <pre><code>file_put_contents(&#39;nome do arquivo&#39;,$dados,FILE_APPEND);</code></pre>
-<p>Fonte: <a href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
+<p>Fonte: <a
+href="https://www.php.net/manual/en/function.file-put-contents#example-2224">PHP</a></p>
 <h2 id="exibir-erros">exibir erros</h2>
 <pre><code>if($bool){
     ini_set(&#39;display_errors&#39;, 1);
@@ -123,7 +125,8 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
 <pre><code>$mix=json_decode($json,true);</code></pre>
 <h2 id="json-encode-pretty">json encode (pretty)</h2>
 <pre><code>$json=json_encode($mix,JSON_PRETTY_PRINT);</code></pre>
-<h2 id="json-validate-polyfill-php-8.3">json validate (polyfill php &lt; 8.3)</h2>
+<h2 id="json-validate-polyfill-php-8.3">json validate (polyfill php &lt;
+8.3)</h2>
 <pre><code>if(!function_exists(&quot;json_validate&quot;)) {
     function json_validate(string $string): bool {
         json_decode($string);
@@ -131,7 +134,8 @@ die(json_encode($mix,JSON_PRETTY_PRINT));</code></pre>
         return json_last_error() === JSON_ERROR_NONE;
     }
 }</code></pre>
-<p>Fonte: <a href="https://www.php.net/manual/en/function.json-validate.php">PHP</a></p>
+<p>Fonte: <a
+href="https://www.php.net/manual/en/function.json-validate.php">PHP</a></p>
 <h2 id="ler-dados-de-um-arquivo">ler dados de um arquivo</h2>
 <pre><code>$str=file_get_contents(&#39;nome_do_arquivo&#39;);</code></pre>
 <h2 id="match">match</h2>
@@ -141,20 +145,24 @@ $out=match($in){
         &#39;olá mundo&#39;=&gt;&#39;hello world&#39;
 };
 print $out;</code></pre>
-<p>Fonte: <a href="https://www.php.net/manual/pt_BR/control-structures.match.php">PHP</a></p>
+<p>Fonte: <a
+href="https://www.php.net/manual/pt_BR/control-structures.match.php">PHP</a></p>
 <h2 id="publicindex.php">public/index.php</h2>
 <pre><code>require __DIR__.&#39;/../cfg.php&#39;;</code></pre>
 <h2 id="remover-espaços">remover espaços</h2>
 <h3 id="apenas-espaços-duplicados">apenas espaços duplicados</h3>
 <pre><code>$str=preg_replace(&#39;/\s+/&#39;,&#39; &#39;,$str);</code></pre>
-<h3 id="espaços-duplicados-e-quebras-de-linha">espaços duplicados e quebras de linha</h3>
+<h3 id="espaços-duplicados-e-quebras-de-linha">espaços duplicados e
+quebras de linha</h3>
 <pre><code>$str=preg_replace(&#39;/ {2,}/&#39;,&#39; &#39;,$str);</code></pre>
-<h2 id="remover-quebras-de-linha-duplicadas">remover quebras de linha duplicadas</h2>
+<h2 id="remover-quebras-de-linha-duplicadas">remover quebras de linha
+duplicadas</h2>
 <pre><code>$str=str_replace(&quot;\r\n\r\n&quot;,&quot;\r\n&quot;,$str);</code></pre>
 <h2 id="sleep">sleep</h2>
 <pre><code>sleep(1);//pausa de 1 segundo
 usleep(1);//pausa de 1 milisegundo</code></pre>
-<h2 id="tempo-de-execução-em-segundos.milisegundos">tempo de execução em segundos.milisegundos</h2>
+<h2 id="tempo-de-execução-em-segundos.milisegundos">tempo de execução em
+segundos.milisegundos</h2>
 <pre><code>$start=hrtime(true);
 //código a ser executado
 $end=hrtime(true);
@@ -166,10 +174,12 @@ print &#39;&lt;hr&gt;&#39;.$totalSMs.&#39; segundo(s)&#39;;</code></pre>
 <pre><code>$trans=[&quot;hello&quot;=&gt;&quot;olá&quot;,&quot;world&quot;=&gt;&quot;mundo&quot;];
 print strtr(&quot;hello world&quot;,$trans);</code></pre>
 <p>Retorna “olá mundo”</p>
-<p>Fonte: <a href="https://www.php.net/manual/en/function.strtr">PHP</a></p>
+<p>Fonte: <a
+href="https://www.php.net/manual/en/function.strtr">PHP</a></p>
 <h2 id="user-agent">user-agent</h2>
 <pre><code>$str=$_SERVER[&#39;HTTP_USER_AGENT&#39;];</code></pre>
-<h2 id="verificar-se-a-string-contém-apenas-letras">verificar se a string contém apenas letras</h2>
+<h2 id="verificar-se-a-string-contém-apenas-letras">verificar se a
+string contém apenas letras</h2>
 <pre><code>$char=&#39;café&#39;;
 if(preg_match(&#39;/^[\p{L}]$/u&#39;,$char)){
     print &#39;contém apenas letras&#39;;

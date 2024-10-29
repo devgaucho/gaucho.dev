@@ -1,5 +1,6 @@
 <h2 id="buscar-arquivos">buscar arquivos</h2>
-<h3 id="mp4-maiores-que-200m-no-diretório-opt">mp4 maiores que 200M no diretório /opt</h3>
+<h3 id="mp4-maiores-que-200m-no-diretório-opt">mp4 maiores que 200M no
+diretório /opt</h3>
 <pre><code>find /opt -type f -size +200M -name \*.mp4</code></pre>
 <h2 id="cpu">cpu</h2>
 <h3 id="bogomips">bogomips</h3>
@@ -9,7 +10,8 @@
 <pre><code>lscpu</code></pre>
 <h3 id="frequência-dos-núcleos">frequência dos núcleos</h3>
 <pre><code>sudo apt install cpufrequtils -y &amp;&amp; cpufreq-info</code></pre>
-<h2 id="formatar-pendrive-gravar-iso-linux-mint">formatar pendrive &amp; gravar iso (linux mint)</h2>
+<h2 id="formatar-pendrive-gravar-iso-linux-mint">formatar pendrive &amp;
+gravar iso (linux mint)</h2>
 <h3 id="formatar-pendrive">formatar pendrive</h3>
 <pre><code>sudo setsid mintstick -m format</code></pre>
 <h3 id="gravar-iso">gravar iso</h3>
@@ -48,12 +50,14 @@ install: bin/mig.php less/style.less
     $(UGLIFY) js/script.js --output public/js/script.js --compress
     echo &quot;pronto!&quot;</code></pre>
 <h2 id="parallel">parallel</h2>
-<h3 id="rodando-dois-comandos-em-paralelo">rodando dois comandos em paralelo</h3>
+<h3 id="rodando-dois-comandos-em-paralelo">rodando dois comandos em
+paralelo</h3>
 <pre><code>parallel --gnu &lt;&lt; &#39;EOF&#39;
 date &gt;&gt; out1 &amp;&amp; sleep 5
 date &gt;&gt; out2 &amp;&amp; sleep 5
 EOF</code></pre>
-<p>Fonte: <a href="https://stackoverflow.com/a/33765906">StackOverwlow</a></p>
+<p>Fonte: <a
+href="https://stackoverflow.com/a/33765906">StackOverwlow</a></p>
 <h2 id="poppler">Poppler</h2>
 <ul>
 <li>pdfdetach – lists or extracts embedded files (attachments)</li>
@@ -62,14 +66,16 @@ EOF</code></pre>
 <li>pdfinfo – document information</li>
 <li>pdfseparate – page extraction tool</li>
 <li>pdfsig – verifies digital signatures</li>
-<li>pdftocairo – PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using Cairo</li>
+<li>pdftocairo – PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using
+Cairo</li>
 <li>pdftohtml – PDF to HTML converter</li>
 <li>pdftoppm – PDF to PPM/PNG/JPEG image converter</li>
 <li>pdftops – PDF to PostScript (PS) converter</li>
 <li>pdftotext – text extraction</li>
 <li>pdfunite – document merging tool</li>
 </ul>
-<h3 id="rodando-comandos-em-paralelo-com-argumentos">rodando comandos em paralelo com argumentos</h3>
+<h3 id="rodando-comandos-em-paralelo-com-argumentos">rodando comandos em
+paralelo com argumentos</h3>
 <pre><code>date &amp;&amp; parallel sleep ::: 1 1 1 1 1 1 1 1 1 1 &amp;&amp; date</code></pre>
 <p>Tempo para rodar o comando acima:</p>
 <ul>
@@ -87,11 +93,14 @@ EOF</code></pre>
 <pre><code>tar -hcvf arquivo.tar diretório</code></pre>
 <h3 id="extrair-arquivos">extrair arquivos</h3>
 <pre><code>tar -xf arquivo.tar</code></pre>
-<h2 id="linhas-únicas-em-3-listas-diferentes">linhas únicas em 3 listas diferentes</h2>
+<h2 id="linhas-únicas-em-3-listas-diferentes">linhas únicas em 3 listas
+diferentes</h2>
 <pre><code>sort &lt;(cat lista1 lista2 lista3) | uniq -d</code></pre>
-<h2 id="repetir-comando-a-cada-n-segundos">repetir comando a cada n segundos</h2>
+<h2 id="repetir-comando-a-cada-n-segundos">repetir comando a cada n
+segundos</h2>
 <pre><code>watch -n 1 date</code></pre>
-<h2 id="tabelas-de-alocação-ver-os-nomes">tabelas de alocação (ver os nomes)</h2>
+<h2 id="tabelas-de-alocação-ver-os-nomes">tabelas de alocação (ver os
+nomes)</h2>
 <pre><code>sudo parted --list</code></pre>
 <h2 id="tsv">tsv</h2>
 <h3 id="gerar-2-arquivos">gerar 2 arquivos</h3>
