@@ -1,7 +1,16 @@
+a:link{
+	font-weight: bold;
+}
+a:hover{
+	color:red;
+}
+a:visited{
+	color:red;
+}
 body{
-	width: 800px;
+	display:block;
 	margin:0 auto;
-	max-width: 100%;
+	width: 800px;
 }
 button{
 	cursor: pointer;
@@ -24,17 +33,3 @@ textarea{
 	text-align: center;
 }
 /*ids*/
-#posts{
-	margin: 0;
-	padding: 0;
-}
-#posts li{
-	border: 1px dashed gray;
-	list-style: none;
-	margin: 0;
-	padding: 1em;
-}
-#posts li:hover{
-	background: yellow;
-	cursor: pointer;
-}
