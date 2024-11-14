@@ -8,6 +8,7 @@
 define('ROOT',__DIR__);
 
 //autoload
+require 'app/vendor/autoload.php';
 spl_autoload_register(function ($class) {
 	$baseDir=ROOT.'/app/';
 	$file=$baseDir.str_replace('\\','/',$class).'.php';
