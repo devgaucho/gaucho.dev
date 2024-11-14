@@ -1,0 +1,13 @@
+id
+created_at
+model
+provider
+in_length
+out_length
+total_length
+tps
+response_time
+l3_in
+l3_out
+l3_total
+l3_tps
