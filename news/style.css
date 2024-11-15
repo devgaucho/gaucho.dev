@@ -8,9 +8,9 @@ a:visited{
 	color:red;
 }
 body{
-	display:block;
 	margin:0 auto;
 	width: 800px;
+	max-width:calc(100% - 20px);
 }
 button{
 	cursor: pointer;
@@ -20,6 +20,9 @@ form{
 }
 h1,h2{
 	text-align: center;
+}
+html{
+	width:100%;
 }
 p{
 	text-align: justify;
