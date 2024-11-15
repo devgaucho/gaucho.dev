@@ -30,6 +30,9 @@ faça o seguinte:
 11) não explique as siglas nem as datas
 12) caso a notícia cite algum país mantenha ele no resumo
 13) não retorne nada além dos 3 parágrafos em plain-text
+
+importante:
+1) cada um dos 3 parágrafos deverá ter no máximo 30 palavras
 heredoc;
 	$m=$_ENV['AI_MODEL'];
 	$data=[
