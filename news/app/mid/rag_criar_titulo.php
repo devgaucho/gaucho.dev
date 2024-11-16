@@ -13,6 +13,8 @@ resuma esse texto em no máximo 8 palavras em português brasileiro:
 <início do texto>
 {$post}
 </fim do texto>
+
+verifique a ortografia e retorne apenas o resumo corrigido
 heredoc;
 	$m=$_ENV['AI_MODEL'];
 	$data=[
