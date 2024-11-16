@@ -8,24 +8,11 @@ return function($post){
 	$start=hrtime(true);
 	$hoje_epoch=$this->mode('int_data_pt_str');
 	$p=<<<heredoc
-hoje é {$hoje_epoch}
+resuma esse texto em no máximo 8 palavras em português brasileiro:
 
-o texto abaixo é o resumo de uma notícia:
-
-<texto>
+<início do texto>
 {$post}
-</texto>
-
-faça o seguinte:
-1) resuma esse texto em uma frase com no máximo 8 palavras
-2) use apenas letras e números nessa frase
-3) use apenas palavra em português brasileiro nessa frase
-4) caso o texto fale sobre algum país inclua o nome do país na frase
-5) revise a ortografia da frase
-6) tente usar na frase palavras que constam no texto
-7) verifique a a frase faz sentido
-8) não explique nada
-9) apenas retorne essa frase em plain-text e não diga mais nada
+</fim do texto>
 heredoc;
 	$m=$_ENV['AI_MODEL'];
 	$data=[

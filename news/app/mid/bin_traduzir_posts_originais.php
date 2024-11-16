@@ -29,14 +29,9 @@ return function(){
 			);
 			continue;
 		}
-		$post_com_data='essa notícia foi publicada em ';
-		$c_at=$post['created_at'];
-		$post_com_data.=$this->mode('int_data_pt_str',$c_at);
-		$post_com_data.=PHP_EOL.PHP_EOL;
-		$post_com_data.=$post['post'];
 		$post_resumido=$this->mode(
 			'rag_resumir_e_traduzir_post',
-			$post_com_data
+			$post['post']
 		);
 		if(!$post_resumido){
 			$this->mode(
