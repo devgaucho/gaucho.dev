@@ -12,6 +12,9 @@ return function($prompt){
 			//totalmente alucinado, nem tente usar pra resumir
 			$m='@cf/meta/llama-3.1-8b-instruct';
 			break;
+		case 'llama3.2:11b':
+			$m='@cf/meta/llama-3.2-1b-instruct';
+			break;
 		case 'llama3.1:70b':
 			$m='@cf/meta/llama-3.1-70b-instruct';
 			break;

@@ -17,12 +17,12 @@ foreach($posts as $post){
 	print '<li>';
 	$href=$_ENV['SITE_URL'];
 	$href.='/post_traduzido.php?id='.$post['id'];
-	print '<small>';
-	print date('r',$post['created_at']);
-	print ' ~ ';
-	print $post['post_length'].' chars | ';
-	print count(explode(PHP_EOL,trim($post['post']))).' parágrafos';
-	print '</small><br>';
+//	print '<small>';
+//	print date('r',$post['created_at']);
+//	print ' ~ ';
+//	print $post['post_length'].' chars | ';
+//	print count(explode(PHP_EOL,trim($post['post']))).' parágrafos';
+//	print '</small><br>';
 	print '<a href="'.$href.'">'.$post['title'].'</a>';
 	print '</li>';
 }
