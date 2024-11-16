@@ -8,7 +8,9 @@ return function($post){
 	$start=hrtime(true);
 	$hoje_epoch=$this->mode('int_data_pt_str');
 	$p=<<<heredoc
-resuma esse texto em no máximo 8 palavras em português brasileiro:
+resuma esse texto em no máximo 8 palavras em português brasileiro
+
+caso o texto faça referência a um país cite o nome do país
 
 <início do texto>
 {$post}
