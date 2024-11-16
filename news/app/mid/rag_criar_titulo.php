@@ -12,6 +12,8 @@ resuma esse texto em no máximo 8 palavras em português brasileiro
 
 caso o texto faça referência a um país cite o nome do país
 
+caso o texto faça referência a alguma figura governamental cite o cargo
+
 <início do texto>
 {$post}
 </fim do texto>
