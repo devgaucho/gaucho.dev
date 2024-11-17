@@ -7,9 +7,16 @@
  */
 return function($prompt){
 	switch($prompt['model']){
+		case 'llama3.2:1b':
+			//não presta pra sumarização
+			$m='@cf/meta/llama-3.2-1b-instruct';
+			break;
+		case 'llama3.2:3b':
+			//não presta pra sumarização nem tradução
+			$m='@cf/meta/llama-3.2-3b-instruct';
+			break;
 		case 'llama3.1:8b':
 			//ruim pra sumarização e tradução (Bamalá Harris)
-			//totalmente alucinado, nem tente usar pra resumir
 			$m='@cf/meta/llama-3.1-8b-instruct';
 			break;
 		case 'llama3.2:11b':
