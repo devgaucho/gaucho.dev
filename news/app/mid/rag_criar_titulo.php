@@ -10,17 +10,11 @@ return function($post){
 	$p=<<<heredoc
 hoje é dia {$hoje_epoch}
 
-resuma esse texto em no máximo 8 palavras em português brasileiro
-
-caso o texto faça referência a um país cite o nome do país
-
-caso o texto faça referência a alguma figura governamental cite o cargo
+Gere um título para o resumo abaixo em no máximo 8 palavras em português brasileiro. Caso o texto faça referência a um país, cite o nome do país. Caso o texto faça referência a alguma figura governamental, cite o cargo. Não use pontuação ou parênteses no título. Verifique a ortografia e retorne apenas o título corrigido.
 
 <início do texto>
 {$post}
 </fim do texto>
-
-verifique a ortografia e retorne apenas o resumo corrigido
 heredoc;
 	$m=$_ENV['AI_MODEL'];
 	$data=[

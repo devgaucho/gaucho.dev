@@ -10,11 +10,7 @@ return function($post){
 	$p=<<<heredoc
 hoje é dia {$hoje_epoch}
 
-resuma o texto abaixo em 3 parágrafos cada um com no máximo 30 palavras em português brasileiro
-
-quando o texto tiver uma citação entre aspas usa as palavras entre aspas para gerar o resumo e não troque as palavras
-
-não retorne mais nada além dos 3 parágrafos e não enumere os parágrafos
+Resuma a notícia abaixo em 3 parágrafos curtos (máximo 30 caracteres cada) em português brasileiro.Quando o texto tiver uma citação entre aspas, use as palavras entre aspas para gerar o resumo e não troque as palavras. Revise os 3 paragrafos para ter certeza que todas as palavras foram traduzidas corretamente para o português brasileiro. Não retorne mais nada além dos 3 parágrafos e não enumere os parágrafos.
 
 <início do texto>
 {$post}
