@@ -27,11 +27,12 @@ return function($prompt){
 	$data = array(
 		'model' => 'accounts/fireworks/models/'.$model,
 		'max_tokens'=>(int) $_ENV['AI_MAX_TOKENS'],
-		'temperature'=>0,
-		'top_p'=>0,
-		'top_k'=>1,
-		'presence_penalty' => 0,
-		'frequency_penalty' => 0,
+		'temperature'=>(int) 0,
+		'top_p'=>(int) 1,
+		'top_k'=>(int) 1,
+		'seed'=>(int) 1,
+		'presence_penalty' =>(int) 0,
+		'frequency_penalty' =>(int) 0,
 		'messages' => array(
 			[
 				'role' => 'user',

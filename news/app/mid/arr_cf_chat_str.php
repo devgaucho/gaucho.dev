@@ -37,6 +37,12 @@ return function($prompt){
 	$data=[
 		'stream'=>false,
 		'max_tokens'=>(int) $_ENV['AI_MAX_TOKENS'],
+		'temperature'=>(int) 0,
+		'top_p'=>(int) 1,
+		'top_k'=>(int) 1,
+		'seed'=>(int) 1,
+		'presence_penalty' =>(int) 0,
+		'frequency_penalty' =>(int) 0,
 		'messages'=>[
 			[
 				'role'=>"user",
@@ -62,6 +68,7 @@ return function($prompt){
 		if($_ENV['AI_DEBUG']){
 			die(var_dump($arr));
 		}
+		die(var_dump($arr));
 		return false;
 	}
 };
