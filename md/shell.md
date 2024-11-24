@@ -198,6 +198,20 @@ watch -n 1 date
 sudo parted --list
 ```
 
+## texto
+
+### converter para maiúsculo
+
+```
+tr '[:lower:]' '[:upper:]'
+```
+
+### converter para minúsculo
+
+```
+tr '[:upper:]' '[:lower:]'
+```
+
 ## tsv
 
 ### gerar 2 arquivos
