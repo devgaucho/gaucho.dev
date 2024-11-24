@@ -10,6 +10,13 @@ diretório /opt</h3>
 <pre><code>lscpu</code></pre>
 <h3 id="frequência-dos-núcleos">frequência dos núcleos</h3>
 <pre><code>sudo apt install cpufrequtils -y &amp;&amp; cpufreq-info</code></pre>
+<h2 id="palavras">palavras</h2>
+<h3 id="contar-palavras-apenas-letras">contar palavras (apenas
+letras)</h3>
+<pre><code>grep -o -E &#39;[[:alpha:]]+&#39; file.txt | sort | uniq -i -c | sort -rn</code></pre>
+<h3 id="contar-palavras-incluindo-números">contar palavras (incluindo
+números)</h3>
+<pre><code>grep -o -E &#39;\w+&#39; file.txt | sort -f | uniq -c | sort -rn</code></pre>
 <h2 id="formatar-pendrive-gravar-iso-linux-mint">formatar pendrive &amp;
 gravar iso (linux mint)</h2>
 <h3 id="formatar-pendrive">formatar pendrive</h3>

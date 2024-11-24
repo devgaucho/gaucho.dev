@@ -27,6 +27,21 @@ lscpu
 sudo apt install cpufrequtils -y && cpufreq-info
 ```
 
+## palavras
+
+
+### contar palavras (apenas letras)
+
+```
+grep -o -E '[[:alpha:]]+' file.txt | sort | uniq -i -c | sort -rn
+```
+
+### contar palavras (incluindo números)
+
+```
+grep -o -E '\w+' file.txt | sort -f | uniq -c | sort -rn
+```
+
 ## formatar pendrive & gravar iso (linux mint)
 
 ### formatar pendrive
