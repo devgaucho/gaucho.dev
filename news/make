@@ -1,5 +1,5 @@
 clear
 ROOTX=$(dirname "$0")
 php -f "$ROOTX/app/bin/mig.php"
-#php -f "$ROOTX/app/bin/baixar_neuters.php"
+php -f "$ROOTX/app/bin/baixar_neuters.php"
 php -f "$ROOTX/app/bin/traduzir_posts_originais.php"
