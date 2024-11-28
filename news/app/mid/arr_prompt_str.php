@@ -12,7 +12,11 @@ return function($data){
 	){
 		$out=$this->mode('arr_fireworks_chat_str',$data);
 	}else{
-		$out=$this->mode('arr_cf_chat_str',$data);
+		if($_ENV['AI_PROVIDER']=='duck'){
+			$out=$this->mode('arr_aichat_str',$data);
+		}else{
+			$out=$this->mode('arr_cf_chat_str',$data);
+		}
 	}
 	return $out;
 };

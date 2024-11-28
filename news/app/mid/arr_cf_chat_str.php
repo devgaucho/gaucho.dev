@@ -19,6 +19,12 @@ return function($prompt){
 			//ruim pra sumarização e tradução (Bamalá Harris)
 			$m='@cf/meta/llama-3.1-8b-instruct';
 			break;
+		case 'llama3.1:8b-fast':
+			$m='@cf/meta/llama-3.1-8b-instruct-fast';
+			break;
+		case 'llama3.1:8b-q4':
+			$m='@cf/meta/llama-3.1-8b-instruct-awq';
+			break;
 		case 'llama3.2:11b':
 			$m='@cf/meta/llama-3.2-1b-instruct';
 			break;

@@ -6,6 +6,9 @@
 use src\crud;
 return function(){
 	$html=$this->mode('str_baixar_str','https://neuters.de/');
+	if(!$html){
+		die("erro ao baixar da neuters.de");
+	}
 	$links_arr=$this->mode('html_neuters_links_arr',$html);
 	$crud=new crud();
 	print 'verificando se os posts estão no db...'.PHP_EOL;
@@ -54,6 +57,21 @@ return function(){
 			);
 			continue;
 		}
+
+		//verificar o tamanho do post
+		$post_len=mb_strlen($post['post']);
+		//reserva 1k chars pra rag
+		$max_len=bcsub($_ENV['AI_MAX_TOKENS'],1000);
+		if($post_len>$max_len){
+			$msg=$post_len.' chars ~ ';
+			$msg.=$post['title'];
+			$this->mode(
+				'cli_error',
+				$msg
+			);
+			continue;
+		}
+
 		$post['url']=$url;
 		$post_id=$crud->create('posts_originais',$post);
 		if(is_numeric($post_id)){
